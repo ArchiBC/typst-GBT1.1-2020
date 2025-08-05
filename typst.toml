@@ -1,0 +1,16 @@
+[package]
+name = "GBT1.1"
+version = "0.0.1"
+compiler = "0.13.1"
+entrypoint = "lib.typ"
+repository = ""
+authors = ["ArchiBC"]
+license = "MIT"
+description = "基于中国国家标准GBT1.1-2020的标准写作模板"
+keywords = ["standard"]
+categories = ["Book"]
+
+[template]
+path = "template"
+entrypoint = "main.typ"
+thumbnail = "thumbnail.png"
