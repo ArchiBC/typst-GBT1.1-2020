@@ -1,0 +1,82 @@
+[
+  {
+    "file": "SourceHanSerifSC-Regular.otf",
+    "family": "Source Han Serif SC",
+    "weight": "Regular",
+    "source": "https://raw.githubusercontent.com/adobe-fonts/source-han-serif/7889f11bf31170b5d092a083b357c8c8130f89e0/OTF/SimplifiedChinese/SourceHanSerifSC-Regular.otf",
+    "bytes": 24543332,
+    "sha256": "78aa7a328fd974df2d688c8a9fd74a33d8334dfa84ab24d9d11efb2ffc464117"
+  },
+  {
+    "file": "SourceHanSerifSC-Bold.otf",
+    "family": "Source Han Serif SC",
+    "weight": "Bold",
+    "source": "https://raw.githubusercontent.com/adobe-fonts/source-han-serif/7889f11bf31170b5d092a083b357c8c8130f89e0/OTF/SimplifiedChinese/SourceHanSerifSC-Bold.otf",
+    "bytes": 25521732,
+    "sha256": "706b8c0de2deff6cbc0c87e2cdedfd33a78b7ffd76cebb4549012f197ba611fe"
+  },
+  {
+    "file": "SourceHanSansSC-Regular.otf",
+    "family": "Source Han Sans SC",
+    "weight": "Regular",
+    "source": "https://raw.githubusercontent.com/adobe-fonts/source-han-sans/a4f7cf94edfb9d7ffbdfc4841de276358bd7e0f2/OTF/SimplifiedChinese/SourceHanSansSC-Regular.otf",
+    "bytes": 16529832,
+    "sha256": "f1d8611151880c6c336aabeac4640ef434fa13cbfbf1ffe82d0a71b2a5637256"
+  },
+  {
+    "file": "SourceHanSansSC-Medium.otf",
+    "family": "Source Han Sans SC",
+    "weight": "Medium",
+    "source": "https://raw.githubusercontent.com/adobe-fonts/source-han-sans/a4f7cf94edfb9d7ffbdfc4841de276358bd7e0f2/OTF/SimplifiedChinese/SourceHanSansSC-Medium.otf",
+    "bytes": 16546328,
+    "sha256": "1df61d31687d04fd2f928a3bb6ca6cd61f0e988cc267cf317f32406edbb49f70"
+  },
+  {
+    "file": "SourceHanSansSC-Bold.otf",
+    "family": "Source Han Sans SC",
+    "weight": "Bold",
+    "source": "https://raw.githubusercontent.com/adobe-fonts/source-han-sans/a4f7cf94edfb9d7ffbdfc4841de276358bd7e0f2/OTF/SimplifiedChinese/SourceHanSansSC-Bold.otf",
+    "bytes": 16963428,
+    "sha256": "df2b90f5bcc6d01dfc964cec5f6d535d6b6aebd26ed7fd79a9c1b3f2112fcb6b"
+  },
+  {
+    "file": "LiberationSerif-BoldItalic.ttf",
+    "family": "Liberation Serif",
+    "weight": "BoldItalic",
+    "source": "https://github.com/liberationfonts/liberation-fonts/files/7261482/liberation-fonts-ttf-2.1.5.tar.gz",
+    "bytes": 376772,
+    "sha256": "f17db8af71e24d2066b587546021d4f0b296be389512b658dec3c09affeb11a7",
+    "archive_sha256": "7191c669bf38899f73a2094ed00f7b800553364f90e2637010a69c0e268f25d0",
+    "archive_member": "liberation-fonts-ttf-2.1.5/LiberationSerif-BoldItalic.ttf"
+  },
+  {
+    "file": "LiberationSerif-Italic.ttf",
+    "family": "Liberation Serif",
+    "weight": "Italic",
+    "source": "https://github.com/liberationfonts/liberation-fonts/files/7261482/liberation-fonts-ttf-2.1.5.tar.gz",
+    "bytes": 375632,
+    "sha256": "0e3dea9f8d613e006ccfa62201f33e265d19167bd0907725c3e145368b04fc2e",
+    "archive_sha256": "7191c669bf38899f73a2094ed00f7b800553364f90e2637010a69c0e268f25d0",
+    "archive_member": "liberation-fonts-ttf-2.1.5/LiberationSerif-Italic.ttf"
+  },
+  {
+    "file": "LiberationSerif-Bold.ttf",
+    "family": "Liberation Serif",
+    "weight": "Bold",
+    "source": "https://github.com/liberationfonts/liberation-fonts/files/7261482/liberation-fonts-ttf-2.1.5.tar.gz",
+    "bytes": 370096,
+    "sha256": "d754ba427cfe0bca54ae052384baa8f842da5bd6550ad4da024ac441e7a7d5ce",
+    "archive_sha256": "7191c669bf38899f73a2094ed00f7b800553364f90e2637010a69c0e268f25d0",
+    "archive_member": "liberation-fonts-ttf-2.1.5/LiberationSerif-Bold.ttf"
+  },
+  {
+    "file": "LiberationSerif-Regular.ttf",
+    "family": "Liberation Serif",
+    "weight": "Regular",
+    "source": "https://github.com/liberationfonts/liberation-fonts/files/7261482/liberation-fonts-ttf-2.1.5.tar.gz",
+    "bytes": 393576,
+    "sha256": "058ea80864aef09a23f45cbec2bb5400bc3dfbdea01c3f10538a21fcb497fb74",
+    "archive_sha256": "7191c669bf38899f73a2094ed00f7b800553364f90e2637010a69c0e268f25d0",
+    "archive_member": "liberation-fonts-ttf-2.1.5/LiberationSerif-Regular.ttf"
+  }
+]

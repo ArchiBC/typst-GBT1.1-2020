@@ -1,0 +1,4564 @@
+{
+  "status": "manual_review_completed",
+  "reviewed_at": "2026-10-11",
+  "source_pages": 72,
+  "generated_pages": 79,
+  "pdf_sha256": "f7c5ec84b6cb41bd2a00cfa32af72c502d229091413b981a42896ecea6f397f8",
+  "open_pdf_sha256": "b217b5d4e13a3381420115f4004df673825f94cd742850007319a46159956c2e",
+  "source_sha256": "de976965ba8f6562e7e72bd3da5e44e1c6ca5f45efc08fd18305ad88c1c6f957",
+  "source_pdf_sha256": "df673d9b44c6cf720cb46d94e533e0e14ddfdbadd65d84dfeb0acad15d1e38a3",
+  "source_text_extraction_used": false,
+  "method": "逐页显示原图；历史 OCR 定位疑点；查看编译书及真实示例，修订后复核受影响页。",
+  "historical_ocr_items_checked": 1699,
+  "exact_normalized_matches": 1510,
+  "manually_adjudicated_candidates": 189,
+  "automatic_checks": "passed",
+  "corrections": [
+    {
+      "source_pages": [
+        17
+      ],
+      "location": "7.1.3",
+      "before": "第 × 部分、× 为部分编号",
+      "after": "第 * 部分、* 为部分编号"
+    },
+    {
+      "source_pages": [
+        32,
+        35,
+        66
+      ],
+      "location": "9.7.3、9.8.3、表 F.1",
+      "before": "共 × 页、× 是总数",
+      "after": "共 * 页、* 是总数；保留 # 当前页占位符"
+    },
+    {
+      "source_pages": [
+        35
+      ],
+      "location": "9.8.4 示例 2",
+      "before": "ρ_l",
+      "after": "ρ₁（数字 1）"
+    },
+    {
+      "source_pages": [
+        49,
+        50
+      ],
+      "location": "表 C.1、C.2、C.4、C.5、C.6、C.7",
+      "before": "额外句号、在……之前",
+      "after": "删除原文没有的句号；在…之前；保留 C.4 注的原句号"
+    },
+    {
+      "source_pages": [
+        48
+      ],
+      "location": "B.6.3.2、B.7.2",
+      "before": "手写 B.6.3.3/B.7.1 引用",
+      "after": "标签引用，从对应条目自动读取编号"
+    },
+    {
+      "source_pages": [
+        58
+      ],
+      "location": "图 E.6",
+      "before": "备案号 XXXXX—XXXX",
+      "after": "备案号 XXXX—XXXX"
+    },
+    {
+      "source_pages": [
+        59
+      ],
+      "location": "图 E.7",
+      "before": "DBXX/T XXXXX—XXXX",
+      "after": "DBXX/T XXX—XXXX（含代替行）"
+    },
+    {
+      "source_pages": [
+        60
+      ],
+      "location": "图 E.8",
+      "before": "部分占位符数量和前置页码与原图不同",
+      "after": "30 个目录条目逐项校正；前言 III、引言 IV 由实际分页生成"
+    },
+    {
+      "source_pages": [
+        65
+      ],
+      "location": "表 F.1 序号 23",
+      "before": "第一行",
+      "after": "第二行"
+    }
+  ],
+  "changed_generated_pages": [
+    20,
+    21,
+    35,
+    38,
+    52,
+    53,
+    54,
+    63,
+    64,
+    65,
+    71,
+    72
+  ],
+  "unchanged_generated_pages": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28,
+    29,
+    30,
+    31,
+    32,
+    33,
+    34,
+    36,
+    37,
+    39,
+    40,
+    41,
+    42,
+    43,
+    44,
+    45,
+    46,
+    47,
+    48,
+    49,
+    50,
+    51,
+    55,
+    56,
+    57,
+    58,
+    59,
+    60,
+    61,
+    62,
+    66,
+    67,
+    68,
+    69,
+    70,
+    73,
+    74,
+    75,
+    76,
+    77,
+    78,
+    79
+  ],
+  "limits": [
+    "核查按原书 72 页的内容对应到 Typst 输出 79 页，页码和断行由当前源码自动生成；不强制原分页或逐像素一致。",
+    "原出版水印与签名提示不转录；示例中的占位正文采用真实模板排版。",
+    "历史 OCR 不是原文真值；文字层比对只定位疑点，所有疑点以原图和实际输出裁决。",
+    "原字体确切历史版本尚未确认，12 组已有字高样本不能保证所有字形一致。",
+    "人工核查结论只针对记录的源码和 PDF 哈希；后续变化需复查受影响页。"
+  ],
+  "pages": [
+    {
+      "source_page": 1,
+      "generated_pages": [
+        1
+      ],
+      "status": "manual_text_review_completed",
+      "visual_review": "reviewed",
+      "manual_note": "封面：名称、英文译名、一致性标识、编号、代替编号、分类号、日期及发布机构逐项比对。",
+      "historical_ocr_items_checked": 14,
+      "exact_normalized_matches": 14,
+      "candidates": [],
+      "candidate_resolution": "已对照原图逐行核查，未发现需要修订的文字差异。",
+      "evidence_source": "research/pages/001.png"
+    },
+    {
+      "source_page": 2,
+      "generated_pages": [
+        3
+      ],
+      "status": "manual_text_review_completed",
+      "visual_review": "reviewed",
+      "manual_note": "目次首面：章、条的名称和编号；页码由当前源码位置生成，原书页码不硬编码。",
+      "historical_ocr_items_checked": 11,
+      "exact_normalized_matches": 9,
+      "candidates": [
+        {
+          "source_text": "目标、原则和要求··",
+          "generated_candidate": "目标、原则和要求45",
+          "similarity": 0.8,
+          "region_pt": [
+            87.824,
+            332.951,
+            171.38799999999998,
+            343.136
+          ],
+          "status": "manually_adjudicated",
+          "resolution": "目录页码动态重排，OCR 点线不构成正文文字。",
+          "evidence": "research/pages/002.png",
+          "generated_pages": [
+            3
+          ]
+        },
+        {
+          "source_text": "术语和定义···",
+          "generated_candidate": "术语和定",
+          "similarity": 0.6667,
+          "region_pt": [
+            106.005,
+            697.507,
+            169.274,
+            707.6919999999999
+          ],
+          "status": "manually_adjudicated",
+          "resolution": "目录页码动态重排，OCR 点线不构成正文文字。",
+          "evidence": "research/pages/002.png",
+          "generated_pages": [
+            3
+          ]
+        }
+      ],
+      "candidate_resolution": "目录页码动态重排，OCR 点线不构成正文文字。",
+      "evidence_source": "research/pages/002.png"
+    },
+    {
+      "source_page": 3,
+      "generated_pages": [
+        4
+      ],
+      "status": "manual_text_review_completed",
+      "visual_review": "reviewed",
+      "manual_note": "目次续面：8.12～10.4、附录 A～D 及附录内部条目；数字和点线从正文读取。",
+      "historical_ocr_items_checked": 17,
+      "exact_normalized_matches": 7,
+      "candidates": [
+        {
+          "source_text": "附加信息…·",
+          "generated_candidate": "附加信息",
+          "similarity": 0.6667,
+          "region_pt": [
+            97.972,
+            183.14,
+            149.825,
+            195.44699999999997
+          ],
+          "status": "manually_adjudicated",
+          "resolution": "目录末尾点线、前置字号的历史 OCR 误识；条目名称及顺序与原图一致。",
+          "evidence": "research/pages/003.png",
+          "generated_pages": [
+            4
+          ]
+        },
+        {
+          "source_text": "条文·…··",
+          "generated_candidate": "条文199.5引",
+          "similarity": 0.375,
+          "region_pt": [
+            97.972,
+            214.97,
+            133.33499999999998,
+            226.429
+          ],
+          "status": "manually_adjudicated",
+          "resolution": "目录末尾点线、前置字号的历史 OCR 误识；条目名称及顺序与原图一致。",
+          "evidence": "research/pages/003.png",
+          "generated_pages": [
+            4
+          ]
+        },
+        {
+          "source_text": "层次编号示例 ·",
+          "generated_candidate": "层次编号示例3",
+          "similarity": 0.8571,
+          "region_pt": [
+            150.825,
+            460.27,
+            221.28199999999998,
+            470.88
+          ],
+          "status": "manually_adjudicated",
+          "resolution": "目录末尾点线、前置字号的历史 OCR 误识；条目名称及顺序与原图一致。",
+          "evidence": "research/pages/003.png",
+          "generated_pages": [
+            4
+          ]
+        },
+        {
+          "source_text": "标记体系·…",
+          "generated_candidate": "标记体系",
+          "similarity": 0.6667,
+          "region_pt": [
+            98.818,
+            528.598,
+            151.939,
+            539.632
+          ],
+          "status": "manually_adjudicated",
+          "resolution": "目录末尾点线、前置字号的历史 OCR 误识；条目名称及顺序与原图一致。",
+          "evidence": "research/pages/003.png",
+          "generated_pages": [
+            4
+          ]
+        },
+        {
+          "source_text": "字符的用法··",
+          "generated_candidate": "字符的用法40",
+          "similarity": 0.7143,
+          "region_pt": [
+            98.818,
+            543.876,
+            159.55,
+            554.91
+          ],
+          "status": "manually_adjudicated",
+          "resolution": "目录末尾点线、前置字号的历史 OCR 误识；条目名称及顺序与原图一致。",
+          "evidence": "research/pages/003.png",
+          "generated_pages": [
+            4
+          ]
+        },
+        {
+          "source_text": "识别段·…",
+          "generated_candidate": "识别段",
+          "similarity": 0.6,
+          "region_pt": [
+            98.818,
+            575.705,
+            141.369,
+            586.739
+          ],
+          "status": "manually_adjudicated",
+          "resolution": "目录末尾点线、前置字号的历史 OCR 误识；条目名称及顺序与原图一致。",
+          "evidence": "research/pages/003.png",
+          "generated_pages": [
+            4
+          ]
+        },
+        {
+          "source_text": "国际标准化项目标记的采用·",
+          "generated_candidate": "国际标准化项目标记的采用4",
+          "similarity": 0.9231,
+          "region_pt": [
+            100.509,
+            592.257,
+            232.69799999999998,
+            601.169
+          ],
+          "status": "manually_adjudicated",
+          "resolution": "目录末尾点线、前置字号的历史 OCR 误识；条目名称及顺序与原图一致。",
+          "evidence": "research/pages/003.png",
+          "generated_pages": [
+            4
+          ]
+        },
+        {
+          "source_text": "指示·…·",
+          "generated_candidate": "指示43C.3",
+          "similarity": 0.4286,
+          "region_pt": [
+            98.818,
+            643.609,
+            130.375,
+            655.4920000000001
+          ],
+          "status": "manually_adjudicated",
+          "resolution": "目录末尾点线、前置字号的历史 OCR 误识；条目名称及顺序与原图一致。",
+          "evidence": "research/pages/003.png",
+          "generated_pages": [
+            4
+          ]
+        },
+        {
+          "source_text": "专利信息的征集·…·",
+          "generated_candidate": "专利信息的征集4",
+          "similarity": 0.7,
+          "region_pt": [
+            100.086,
+            727.639,
+            182.805,
+            739.946
+          ],
+          "status": "manually_adjudicated",
+          "resolution": "目录末尾点线、前置字号的历史 OCR 误识；条目名称及顺序与原图一致。",
+          "evidence": "research/pages/003.png",
+          "generated_pages": [
+            4
+          ]
+        },
+        {
+          "source_text": "尚未识别出涉及专利··",
+          "generated_candidate": "尚未识别出涉及专利45",
+          "similarity": 0.8182,
+          "region_pt": [
+            100.509,
+            744.19,
+            200.986,
+            755.224
+          ],
+          "status": "manually_adjudicated",
+          "resolution": "目录末尾点线、前置字号的历史 OCR 误识；条目名称及顺序与原图一致。",
+          "evidence": "research/pages/003.png",
+          "generated_pages": [
+            4
+          ]
+        }
+      ],
+      "candidate_resolution": "目录末尾点线、前置字号的历史 OCR 误识；条目名称及顺序与原图一致。",
+      "evidence_source": "research/pages/003.png"
+    },
+    {
+      "source_page": 4,
+      "generated_pages": [
+        5
+      ],
+      "status": "manual_text_review_completed",
+      "visual_review": "reviewed",
+      "manual_note": "目次末面：附录 E/F、参考文献、索引及全部图表名称、序号。",
+      "historical_ocr_items_checked": 13,
+      "exact_normalized_matches": 10,
+      "candidates": [
+        {
+          "source_text": "附录　E（规范性）文件格式·",
+          "generated_candidate": "附录E(规范性)文件格式4",
+          "similarity": 0.9231,
+          "region_pt": [
+            71.757,
+            100.383,
+            206.483,
+            110.14399999999999
+          ],
+          "status": "manually_adjudicated",
+          "resolution": "图表名称保留；当前页码自动更新，不能和原出版页码逐字相等。",
+          "evidence": "research/pages/004.png",
+          "generated_pages": [
+            5
+          ]
+        },
+        {
+          "source_text": "附录格式···",
+          "generated_candidate": "附录格",
+          "similarity": 0.6,
+          "region_pt": [
+            115.73,
+            380.484,
+            172.234,
+            390.66999999999996
+          ],
+          "status": "manually_adjudicated",
+          "resolution": "图表名称保留；当前页码自动更新，不能和原出版页码逐字相等。",
+          "evidence": "research/pages/004.png",
+          "generated_pages": [
+            5
+          ]
+        },
+        {
+          "source_text": "层次及其编号·",
+          "generated_candidate": "层次及其编号7",
+          "similarity": 0.8571,
+          "region_pt": [
+            98.818,
+            428.016,
+            173.07999999999998,
+            437.77700000000004
+          ],
+          "status": "manually_adjudicated",
+          "resolution": "图表名称保留；当前页码自动更新，不能和原出版页码逐字相等。",
+          "evidence": "research/pages/004.png",
+          "generated_pages": [
+            5
+          ]
+        }
+      ],
+      "candidate_resolution": "图表名称保留；当前页码自动更新，不能和原出版页码逐字相等。",
+      "evidence_source": "research/pages/004.png"
+    },
+    {
+      "source_page": 5,
+      "generated_pages": [
+        7,
+        8
+      ],
+      "status": "manual_text_review_completed",
+      "visual_review": "reviewed",
+      "manual_note": "前言首面：a)～t) 技术变化，特别检查 l)、o)、q)、引号、括号及引用编号。",
+      "historical_ocr_items_checked": 37,
+      "exact_normalized_matches": 30,
+      "candidates": [
+        {
+          "source_text": "本文件代替 GB/T 1.1一2009《标准化工作导则第 1 部分 ： 标准的结构和编写 》 ， 与 GB/T 1.1—",
+          "generated_candidate": "本文件代替GB/T1.1—2009《标准化工作导则第1部分:标准的结构和编写》,与GB/T1.1—",
+          "similarity": 0.9796,
+          "region_pt": [
+            92.898,
+            286.692,
+            530.364,
+            296.029
+          ],
+          "status": "manually_adjudicated",
+          "resolution": "原生列项替代 OCR 错误的 l)/o)/q)，并恢复成对引号；跨页段落文字完整。",
+          "evidence": "research/pages/005.png",
+          "generated_pages": [
+            7,
+            8
+          ]
+        },
+        {
+          "source_text": "更改了编写要素“前言\"时不允许使用的条款类型的规定（见8.3，2009年版的6.1.3）；",
+          "generated_candidate": "更改了编写要素“前言”时不允许使用的条款类型的规定(见8.3,2009年版的6.1.3);",
+          "similarity": 0.9778,
+          "region_pt": [
+            112.771,
+            413.162,
+            490.197,
+            423.34799999999996
+          ],
+          "status": "manually_adjudicated",
+          "resolution": "原生列项替代 OCR 错误的 l)/o)/q)，并恢复成对引号；跨页段落文字完整。",
+          "evidence": "research/pages/005.png",
+          "generated_pages": [
+            7,
+            8
+          ]
+        },
+        {
+          "source_text": "求\"的编写规定（见2009年版的6.3.4）；",
+          "generated_candidate": "求”的编写规定(见2009年版的6.3.4);",
+          "similarity": 0.9565,
+          "region_pt": [
+            113.193,
+            508.227,
+            288.087,
+            517.139
+          ],
+          "status": "manually_adjudicated",
+          "resolution": "原生列项替代 OCR 错误的 l)/o)/q)，并恢复成对引号；跨页段落文字完整。",
+          "evidence": "research/pages/005.png",
+          "generated_pages": [
+            7,
+            8
+          ]
+        },
+        {
+          "source_text": "将“总则\"更改为“目标、原则和要求”,细分了原则,并将 2009 年版的有关内容更改后纳入（见",
+          "generated_candidate": "将“总则”更改为“目标、原则和要求”,细分了原则,并将2009年版的有关内容更改后纳入(见",
+          "similarity": 0.9778,
+          "region_pt": [
+            112.967,
+            333.983,
+            530.634,
+            343.31600000000003
+          ],
+          "status": "manually_adjudicated",
+          "resolution": "原生列项替代 OCR 错误的 l)/o)/q)，并恢复成对引号；跨页段落文字完整。",
+          "evidence": "research/pages/005.png",
+          "generated_pages": [
+            7,
+            8
+          ]
+        },
+        {
+          "source_text": "更改了“列项\"的具体形式及编写规则（见7.5,2009年版的5.2.6）；",
+          "generated_candidate": "更改了“列项”的具体形式及编写规则(见7.5,2009年版的5.2.6);",
+          "similarity": 0.973,
+          "region_pt": [
+            112.967,
+            397.317,
+            405.3,
+            406.317
+          ],
+          "status": "manually_adjudicated",
+          "resolution": "原生列项替代 OCR 错误的 l)/o)/q)，并恢复成对引号；跨页段落文字完整。",
+          "evidence": "research/pages/005.png",
+          "generated_pages": [
+            7,
+            8
+          ]
+        },
+        {
+          "source_text": "更改了要素“分类和编码\"的编写规则（见8.9.1、8.9.3,2009年版的6.3.5）,增加了要素“系统构",
+          "generated_candidate": "更改了要素“分类和编码”的编写规则(见8.9.1、8.9.3,2009年版的6.3.5),增加了要素“系统构",
+          "similarity": 0.9815,
+          "region_pt": [
+            112.967,
+            555.65,
+            530.3000000000001,
+            564.983
+          ],
+          "status": "manually_adjudicated",
+          "resolution": "原生列项替代 OCR 错误的 l)/o)/q)，并恢复成对引号；跨页段落文字完整。",
+          "evidence": "research/pages/005.png",
+          "generated_pages": [
+            7,
+            8
+          ]
+        },
+        {
+          "source_text": "更改了要素“参考文献\"的编写规则（见8.13,2009年版的6.4.2）、要素“索引\"的编写规则（见",
+          "generated_candidate": "更改了要素“参考文献”的编写规则(见8.13,2009年版的6.4.2)、要素“索引”的编写规则(见",
+          "similarity": 0.96,
+          "region_pt": [
+            112.967,
+            634.65,
+            530.634,
+            643.983
+          ],
+          "status": "manually_adjudicated",
+          "resolution": "原生列项替代 OCR 错误的 l)/o)/q)，并恢复成对引号；跨页段落文字完整。",
+          "evidence": "research/pages/005.png",
+          "generated_pages": [
+            7,
+            8
+          ]
+        }
+      ],
+      "candidate_resolution": "原生列项替代 OCR 错误的 l)/o)/q)，并恢复成对引号；跨页段落文字完整。",
+      "evidence_source": "research/pages/005.png"
+    },
+    {
+      "source_page": 6,
+      "generated_pages": [
+        8
+      ],
+      "status": "manual_text_review_completed",
+      "visual_review": "reviewed",
+      "manual_note": "前言续面：t) 的续文、u)～y)、起草机构和人员、历次版本；正文破折号与列项不混淆。",
+      "historical_ocr_items_checked": 31,
+      "exact_normalized_matches": 21,
+      "candidates": [
+        {
+          "source_text": "被引用的文件的规定（见9.5.4.4.2、9.5.4.4.3）；删除了关于部分之间引1用的规则（见2009年版",
+          "generated_candidate": "被引用的文件的规定(见9.5.4.4.2、9.5.4.4.3);删除了关于部分之间引用的规则(见2009年版的",
+          "similarity": 0.9818,
+          "region_pt": [
+            105.583,
+            116.51,
+            523.177,
+            126.271
+          ],
+          "status": "manually_adjudicated",
+          "resolution": "历史 OCR 丢失破折号、混入 l/I，及人/入误识；按原图校对原生列项和正文。",
+          "evidence": "research/pages/006.png",
+          "generated_pages": [
+            8
+          ]
+        },
+        {
+          "source_text": "更改了关于“图\"和“表”的用法的规则（见9.7.1、9.8.1，2009年版的7.3.1、7.4.1）、图和表转页",
+          "generated_candidate": "更改了关于“图”和“表”的用法的规则(见9.7.1、9.8.1,2009年版的7.3.1、7.4.1)、图和表转页",
+          "similarity": 0.9825,
+          "region_pt": [
+            103.469,
+            179.32,
+            522.754,
+            189.081
+          ],
+          "status": "manually_adjudicated",
+          "resolution": "历史 OCR 丢失破折号、混入 l/I，及人/入误识；按原图校对原生列项和正文。",
+          "evidence": "research/pages/006.png",
+          "generated_pages": [
+            8
+          ]
+        },
+        {
+          "source_text": "-1981年首次发布为　GB1.1一1981，1987年第一次修订，1993年第二次修订；",
+          "generated_candidate": "—1981年首次发布为GB1.1—1981,1987年第一次修订,1993年第二次修订;",
+          "similarity": 0.9545,
+          "region_pt": [
+            99.663,
+            447.114,
+            444.10900000000004,
+            456.02599999999995
+          ],
+          "status": "manually_adjudicated",
+          "resolution": "历史 OCR 丢失破折号、混入 l/I，及人/入误识；按原图校对原生列项和正文。",
+          "evidence": "research/pages/006.png",
+          "generated_pages": [
+            8
+          ]
+        },
+        {
+          "source_text": "2000 年第三次修订时 ，并人了 GB/T 1.2一 1996《标准化工作导则第 1 单元 ： 标准的起草与",
+          "generated_candidate": "2000年第三次修订时,并入了GB/T1.2—1996《标准化工作导则第1单元:标准的起草与",
+          "similarity": 0.9565,
+          "region_pt": [
+            104.737,
+            461.543,
+            522.754,
+            472.153
+          ],
+          "status": "manually_adjudicated",
+          "resolution": "历史 OCR 丢失破折号、混入 l/I，及人/入误识；按原图校对原生列项和正文。",
+          "evidence": "research/pages/006.png",
+          "generated_pages": [
+            8
+          ]
+        },
+        {
+          "source_text": "表述规则第 2 部分 ：标准出版印刷的规定 》 的内容 （GB/T 1.2一1996 的历次版本发布情况",
+          "generated_candidate": "表述规则第2部分:标准出版印刷的规定》的内容(GB/T1.2—1996的历次版本发布情况",
+          "similarity": 0.9773,
+          "region_pt": [
+            106.005,
+            477.67,
+            522.7529999999999,
+            487.43100000000004
+          ],
+          "status": "manually_adjudicated",
+          "resolution": "历史 OCR 丢失破折号、混入 l/I，及人/入误识；按原图校对原生列项和正文。",
+          "evidence": "research/pages/006.png",
+          "generated_pages": [
+            8
+          ]
+        },
+        {
+          "source_text": "2009 年第四次修订时 ，并人了 GB/T 1.2一2002《标准化工作导则第 2 部分 ： 标准中规范性",
+          "generated_candidate": "2009年第四次修订时,并入了GB/T1.2—2002《标准化工作导则第2部分:标准中规范性",
+          "similarity": 0.9565,
+          "region_pt": [
+            105.16,
+            509.5,
+            522.754,
+            518.837
+          ],
+          "status": "manually_adjudicated",
+          "resolution": "历史 OCR 丢失破折号、混入 l/I，及人/入误识；按原图校对原生列项和正文。",
+          "evidence": "research/pages/006.png",
+          "generated_pages": [
+            8
+          ]
+        },
+        {
+          "source_text": "技术要素内容的确定方法 》 的内容 （ GB/T 1.2一2002 代替的文件及历次版本发布情况为 ：",
+          "generated_candidate": "技术要素内容的确定方法》的内容(GB/T1.2—2002代替的文件及历次版本发布情况为:",
+          "similarity": 0.9773,
+          "region_pt": [
+            106.005,
+            525.202,
+            521.9069999999999,
+            534.539
+          ],
+          "status": "manually_adjudicated",
+          "resolution": "历史 OCR 丢失破折号、混入 l/I，及人/入误识；按原图校对原生列项和正文。",
+          "evidence": "research/pages/006.png",
+          "generated_pages": [
+            8
+          ]
+        },
+        {
+          "source_text": "GB 1.3一1987《标准化工作导则产品标准编写规定》 、 GB/T 1.3一1997 ； GB 1.7一1988《标准",
+          "generated_candidate": "GB1.3—1987《标准化工作导则产品标准编写规定》、GB/T1.3—1997;GB1.7—1988《标准",
+          "similarity": 0.9444,
+          "region_pt": [
+            106.005,
+            540.905,
+            523.1759999999999,
+            550.6659999999999
+          ],
+          "status": "manually_adjudicated",
+          "resolution": "历史 OCR 丢失破折号、混入 l/I，及人/入误识；按原图校对原生列项和正文。",
+          "evidence": "research/pages/006.png",
+          "generated_pages": [
+            8
+          ]
+        },
+        {
+          "source_text": "增加了“重要提示”“术语条目”“来源\"等内容中的字号和字体的规定（见表　F.1）。",
+          "generated_candidate": "增加了“重要提示”“术语条目”“来源”等内容中的字号和字体的规定(见表F.1)。",
+          "similarity": 0.975,
+          "region_pt": [
+            105.3,
+            273.317,
+            460.63300000000004,
+            282.984
+          ],
+          "status": "manually_adjudicated",
+          "resolution": "历史 OCR 丢失破折号、混入 l/I，及人/入误识；按原图校对原生列项和正文。",
+          "evidence": "research/pages/006.png",
+          "generated_pages": [
+            8
+          ]
+        },
+        {
+          "source_text": "本文件参考“ISO/IEC导则,第2部分,2018,《ISO和　IEC文件的结构和起草的原则与规则》\"起",
+          "generated_candidate": "本文件参考“ISO/IEC导则,第2部分,2018,《ISO和IEC文件的结构和起草的原则与规则》”起",
+          "similarity": 0.9804,
+          "region_pt": [
+            84.633,
+            289.317,
+            522.966,
+            298.65000000000003
+          ],
+          "status": "manually_adjudicated",
+          "resolution": "历史 OCR 丢失破折号、混入 l/I，及人/入误识；按原图校对原生列项和正文。",
+          "evidence": "research/pages/006.png",
+          "generated_pages": [
+            8
+          ]
+        }
+      ],
+      "candidate_resolution": "历史 OCR 丢失破折号、混入 l/I，及人/入误识；按原图校对原生列项和正文。",
+      "evidence_source": "research/pages/006.png"
+    },
+    {
+      "source_page": 7,
+      "generated_pages": [
+        9
+      ],
+      "status": "manual_text_review_completed",
+      "visual_review": "reviewed",
+      "manual_note": "引言：标准体系、修订缘由及末段；原 OCR 的“深人”按原图确认是“深入”。",
+      "historical_ocr_items_checked": 27,
+      "exact_normalized_matches": 24,
+      "candidates": [
+        {
+          "source_text": "GB/T 1.1 ，规定了标准的结构和起草规则 。 GB/T 1.1一2009 发布实施已十余年 ， 这期间标准化的作用",
+          "generated_candidate": "GB/T1.1,规定了标准的结构和起草规则。GB/T1.1—2009发布实施已十余年,这期间标准化的作用",
+          "similarity": 0.9808,
+          "region_pt": [
+            72.18,
+            379.211,
+            530.365,
+            387.699
+          ],
+          "status": "manually_adjudicated",
+          "resolution": "原图是“深入”，历史 OCR 为“深人”；引号按中文成对恢复。",
+          "evidence": "research/pages/007.png",
+          "generated_pages": [
+            9
+          ]
+        },
+        {
+          "source_text": "我国标准化原理与方法研究不断深人 ， 逐步建立起从不同维度划分标准的分类体系 ， 自 2014 年开始陆",
+          "generated_candidate": "我国标准化原理与方法研究不断深入,逐步建立起从不同维度划分标准的分类体系,自2014年开始陆",
+          "similarity": 0.9783,
+          "region_pt": [
+            72.18,
+            410.616,
+            530.787,
+            419.104
+          ],
+          "status": "manually_adjudicated",
+          "resolution": "原图是“深入”，历史 OCR 为“深人”；引号按中文成对恢复。",
+          "evidence": "research/pages/007.png",
+          "generated_pages": [
+            9
+          ]
+        },
+        {
+          "source_text": "的广泛应用以及标准起草实践的逐渐深人 ，新的需求与建议不断产生 。 再次 ， GB/T 1.1 依据的主要国",
+          "generated_candidate": "的广泛应用以及标准起草实践的逐渐深入,新的需求与建议不断产生。再次,GB/T1.1依据的主要国",
+          "similarity": 0.9787,
+          "region_pt": [
+            72.18,
+            457.724,
+            530.365,
+            466.63599999999997
+          ],
+          "status": "manually_adjudicated",
+          "resolution": "原图是“深入”，历史 OCR 为“深人”；引号按中文成对恢复。",
+          "evidence": "research/pages/007.png",
+          "generated_pages": [
+            9
+          ]
+        }
+      ],
+      "candidate_resolution": "原图是“深入”，历史 OCR 为“深人”；引号按中文成对恢复。",
+      "evidence_source": "research/pages/007.png"
+    },
+    {
+      "source_page": 8,
+      "generated_pages": [
+        11
+      ],
+      "status": "manual_text_review_completed",
+      "visual_review": "reviewed",
+      "manual_note": "正文首页：范围、规范性引用文件、术语 3.1.1；ISO/IEC 编号及来源年份。",
+      "historical_ocr_items_checked": 29,
+      "exact_normalized_matches": 26,
+      "candidates": [
+        {
+          "source_text": "ISO8oooo（所有部分）量和单位（Quantitiesandunits）",
+          "generated_candidate": "ISO80000(所有部分)量和单位(Quantitiesandunits)",
+          "similarity": 0.8947,
+          "region_pt": [
+            92.052,
+            566.793,
+            344.322,
+            576.554
+          ],
+          "status": "manually_adjudicated",
+          "resolution": "ISO/IEC 数字 0 及文件代号的年份分隔线；不接受历史 OCR 的 o、汉字一。",
+          "evidence": "research/pages/008.png",
+          "generated_pages": [
+            11
+          ]
+        },
+        {
+          "source_text": "IEC80ooo（所有部分）量和单位（Quantitiesandunits）",
+          "generated_candidate": "ISO80000(所有部分)量和单位(Quantitiesandunits)",
+          "similarity": 0.8684,
+          "region_pt": [
+            92.052,
+            599.047,
+            344.745,
+            609.2330000000001
+          ],
+          "status": "manually_adjudicated",
+          "resolution": "ISO/IEC 数字 0 及文件代号的年份分隔线；不接受历史 OCR 的 o、汉字一。",
+          "evidence": "research/pages/008.png",
+          "generated_pages": [
+            11
+          ]
+        },
+        {
+          "source_text": "[来源 ： GB/T 20000.1一2014 ， 5.2]",
+          "generated_candidate": "[来源:GB/T20000.1—2014,5.2]",
+          "similarity": 0.96,
+          "region_pt": [
+            92.898,
+            761.166,
+            243.268,
+            770.0780000000001
+          ],
+          "status": "manually_adjudicated",
+          "resolution": "ISO/IEC 数字 0 及文件代号的年份分隔线；不接受历史 OCR 的 o、汉字一。",
+          "evidence": "research/pages/008.png",
+          "generated_pages": [
+            11
+          ]
+        }
+      ],
+      "candidate_resolution": "ISO/IEC 数字 0 及文件代号的年份分隔线；不接受历史 OCR 的 o、汉字一。",
+      "evidence_source": "research/pages/008.png"
+    },
+    {
+      "source_page": 9,
+      "generated_pages": [
+        12
+      ],
+      "status": "manual_text_review_completed",
+      "visual_review": "reviewed",
+      "manual_note": "术语 3.1.2～3.3.2：中文名称、英文对应词、定义、注和来源；术语引用使用标签。",
+      "historical_ocr_items_checked": 28,
+      "exact_normalized_matches": 28,
+      "candidates": [],
+      "candidate_resolution": "已对照原图逐行核查，未发现需要修订的文字差异。",
+      "evidence_source": "research/pages/009.png"
+    },
+    {
+      "source_page": 10,
+      "generated_pages": [
+        13,
+        14
+      ],
+      "status": "manual_text_review_completed",
+      "visual_review": "reviewed",
+      "manual_note": "术语后段及文件类别：3.3.3～3.3.7、4.1/4.2 与分类列项；来源及中文标点。",
+      "historical_ocr_items_checked": 32,
+      "exact_normalized_matches": 31,
+      "candidates": [
+        {
+          "source_text": "[来源 ： GB/T 20000.1一2014 ， 9.2 ，有修改]",
+          "generated_candidate": "[来源:GB/T20000.1—2014,9.2,有修改]",
+          "similarity": 0.9655,
+          "region_pt": [
+            92.475,
+            329.132,
+            280.054,
+            338.044
+          ],
+          "status": "manually_adjudicated",
+          "resolution": "来源中文引号及版本年份间的一字线，按原图输出。",
+          "evidence": "research/pages/010.png",
+          "generated_pages": [
+            13,
+            14
+          ]
+        }
+      ],
+      "candidate_resolution": "来源中文引号及版本年份间的一字线，按原图输出。",
+      "evidence_source": "research/pages/010.png"
+    },
+    {
+      "source_page": 11,
+      "generated_pages": [
+        14,
+        15
+      ],
+      "status": "manual_text_review_completed",
+      "visual_review": "reviewed",
+      "manual_note": "文件类别续项、5.1～5.3.1：核查嵌套列项、规则型语句和跨页段落。",
+      "historical_ocr_items_checked": 35,
+      "exact_normalized_matches": 32,
+      "candidates": [
+        {
+          "source_text": "-文件拟分为部分的原因（见5.2.1)以及文件分为部分后各部分之间的关系；",
+          "generated_candidate": "—文件拟分为部分的原因(见5.2.1)以及文件分为部分后各部分之间的关系;",
+          "similarity": 0.973,
+          "region_pt": [
+            100.932,
+            621.116,
+            438.19,
+            630.028
+          ],
+          "status": "manually_adjudicated",
+          "resolution": "原 OCR 将破折号当汉字一；长段落被新页眉隔开但正文没有遗漏。",
+          "evidence": "research/pages/011.png",
+          "generated_pages": [
+            14,
+            15
+          ]
+        },
+        {
+          "source_text": "产品 /系统 、过程或服务 ， 还是与某领域相关的内容 ； 是完整的标准化对象 ， 还是标准化对象的某个方面 ，",
+          "generated_candidate": "产品/系统、过程或服务,还是与某领域相关的内容;是完整的标准化对象,还是标准化对象的某个方4G",
+          "similarity": 0.9574,
+          "region_pt": [
+            64.146,
+            727.639,
+            523.1759999999999,
+            737.4
+          ],
+          "status": "manually_adjudicated",
+          "resolution": "原 OCR 将破折号当汉字一；长段落被新页眉隔开但正文没有遗漏。",
+          "evidence": "research/pages/011.png",
+          "generated_pages": [
+            14,
+            15
+          ]
+        },
+        {
+          "source_text": "一分为部分的文件中预期的每个部分的名称和范围。",
+          "generated_candidate": "—分为部分的文件中预期的每个部分的名称和范围。",
+          "similarity": 0.9565,
+          "region_pt": [
+            84.633,
+            637.317,
+            328.3,
+            646.65
+          ],
+          "status": "manually_adjudicated",
+          "resolution": "原 OCR 将破折号当汉字一；长段落被新页眉隔开但正文没有遗漏。",
+          "evidence": "research/pages/011.png",
+          "generated_pages": [
+            14,
+            15
+          ]
+        }
+      ],
+      "candidate_resolution": "原 OCR 将破折号当汉字一；长段落被新页眉隔开但正文没有遗漏。",
+      "evidence_source": "research/pages/011.png"
+    },
+    {
+      "source_page": 12,
+      "generated_pages": [
+        15,
+        16
+      ],
+      "status": "manual_text_review_completed",
+      "visual_review": "reviewed",
+      "manual_note": "5.3.2～5.5.2：文件使用者原则、目的导向、表述原则与总体要求；引用和续文。",
+      "historical_ocr_items_checked": 36,
+      "exact_normalized_matches": 36,
+      "candidates": [],
+      "candidate_resolution": "已对照原图逐行核查，未发现需要修订的文字差异。",
+      "evidence_source": "research/pages/012.png"
+    },
+    {
+      "source_page": 13,
+      "generated_pages": [
+        16,
+        17
+      ],
+      "status": "manual_text_review_completed",
+      "visual_review": "reviewed",
+      "manual_note": "5.5.3 及 6.1.1/6.1.2：文件名称组成、引导/主体/补充元素、命名示例。",
+      "historical_ocr_items_checked": 33,
+      "exact_normalized_matches": 33,
+      "candidates": [],
+      "candidate_resolution": "已对照原图逐行核查，未发现需要修订的文字差异。",
+      "evidence_source": "research/pages/013.png"
+    },
+    {
+      "source_page": 14,
+      "generated_pages": [
+        17
+      ],
+      "status": "manual_text_review_completed",
+      "visual_review": "reviewed",
+      "manual_note": "6.1.3/6.1.4、表 1、6.2.1 及表 2：英文译名、数值单位、层次和编号样式。",
+      "historical_ocr_items_checked": 25,
+      "exact_normalized_matches": 23,
+      "candidates": [
+        {
+          "source_text": "试验方法、…的测定",
+          "generated_candidate": "试验方法、......的测定t",
+          "similarity": 0.8462,
+          "region_pt": [
+            220.59,
+            453.48,
+            305.423,
+            463.666
+          ],
+          "status": "manually_adjudicated",
+          "resolution": "省略号和成对中文引号，OCR 长度及形态不可靠。",
+          "evidence": "research/pages/014.png",
+          "generated_pages": [
+            17
+          ]
+        },
+        {
+          "source_text": "6.1.4.1　文件名称不必描述文件作为“标准\"或“标准化指导性技术文件”的类别,不应包含“",
+          "generated_candidate": "6.1.4.1文件名称不必描述文件作为“标准”或“标准化指导性技术文件”的类别,不应包含“",
+          "similarity": 0.9778,
+          "region_pt": [
+            71.633,
+            278.317,
+            478.966,
+            287.65000000000003
+          ],
+          "status": "manually_adjudicated",
+          "resolution": "省略号和成对中文引号，OCR 长度及形态不可靠。",
+          "evidence": "research/pages/014.png",
+          "generated_pages": [
+            17
+          ]
+        }
+      ],
+      "candidate_resolution": "省略号和成对中文引号，OCR 长度及形态不可靠。",
+      "evidence_source": "research/pages/014.png"
+    },
+    {
+      "source_page": 15,
+      "generated_pages": [
+        18
+      ],
+      "status": "manual_text_review_completed",
+      "visual_review": "reviewed",
+      "manual_note": "6.2.2 与表 3 首部：要素分类、构成及表述，功能单元和要素之间不擅加破折号。",
+      "historical_ocr_items_checked": 26,
+      "exact_normalized_matches": 26,
+      "candidates": [],
+      "candidate_resolution": "已对照原图逐行核查，未发现需要修订的文字差异。",
+      "evidence_source": "research/pages/015.png"
+    },
+    {
+      "source_page": 16,
+      "generated_pages": [
+        19
+      ],
+      "status": "manual_text_review_completed",
+      "visual_review": "reviewed",
+      "manual_note": "表 3 续页、6.2.2.3 及 7.1.1：要素、脚注 a、两种部分划分方式及示例。",
+      "historical_ocr_items_checked": 29,
+      "exact_normalized_matches": 28,
+      "candidates": [
+        {
+          "source_text": "。章编号和标题的设置是必备的，要素内容的有无根据具体情况进行选择。",
+          "generated_candidate": "a章编号和标题的设置是必备的,要素内容的有无根据具体情况进行选择。",
+          "similarity": 0.9697,
+          "region_pt": [
+            92.898,
+            226.004,
+            382.37699999999995,
+            236.61399999999998
+          ],
+          "status": "manually_adjudicated",
+          "resolution": "原图脚注 a 是上标，OCR 丢失或混入正文。",
+          "evidence": "research/pages/016.png",
+          "generated_pages": [
+            19
+          ]
+        }
+      ],
+      "candidate_resolution": "原图脚注 a 是上标，OCR 丢失或混入正文。",
+      "evidence_source": "research/pages/016.png"
+    },
+    {
+      "source_page": 17,
+      "generated_pages": [
+        19,
+        20
+      ],
+      "status": "manual_text_review_completed",
+      "visual_review": "reviewed",
+      "manual_note": "部分划分、7.1.2/7.1.3、章和条：原图的星号 * 已恢复，替换错误的 ×；页首续项核对。",
+      "historical_ocr_items_checked": 34,
+      "exact_normalized_matches": 32,
+      "candidates": [
+        {
+          "source_text": "分为部分的文件中的每个部分的名称的组成方式应符合6.1的规定。部分的名称中应包含“第￥",
+          "generated_candidate": "分为部分的文件中的每个部分的名称的组成方式应符合6.1的规定。部分的名称中应包含“第*",
+          "similarity": 0.9767,
+          "region_pt": [
+            84.442,
+            411.04,
+            520.64,
+            421.225
+          ],
+          "status": "manually_adjudicated",
+          "resolution": "原图是 *；历史 OCR ￥和旧书的×都不正确，本次已恢复星号。",
+          "evidence": "research/pages/017.png",
+          "generated_pages": [
+            19,
+            20
+          ]
+        },
+        {
+          "source_text": "部分：”（￥为使用阿拉伯数字的部分编号），后跟补充元素。每个部分名称的补充元素应不同，以便区分",
+          "generated_candidate": "部分:”(*为使用阿拉伯数字的部分编号),后跟补充元素。每个部分名称的补充元素应不同,以便区分",
+          "similarity": 0.9787,
+          "region_pt": [
+            64.569,
+            427.167,
+            522.331,
+            436.928
+          ],
+          "status": "manually_adjudicated",
+          "resolution": "原图是 *；历史 OCR ￥和旧书的×都不正确，本次已恢复星号。",
+          "evidence": "research/pages/017.png",
+          "generated_pages": [
+            19,
+            20
+          ]
+        }
+      ],
+      "candidate_resolution": "原图是 *；历史 OCR ￥和旧书的×都不正确，本次已恢复星号。",
+      "evidence_source": "research/pages/017.png"
+    },
+    {
+      "source_page": 18,
+      "generated_pages": [
+        20,
+        21
+      ],
+      "status": "manual_text_review_completed",
+      "visual_review": "reviewed",
+      "manual_note": "段和列项：悬置段示例及 7.5.1，示例左右栏由真实 Typst 分别生成，检查示例编号与正文。",
+      "historical_ocr_items_checked": 40,
+      "exact_normalized_matches": 37,
+      "candidates": [
+        {
+          "source_text": "{××X×××X×××X×××",
+          "generated_candidate": "要求×××××××××",
+          "similarity": 0.6923,
+          "region_pt": [
+            101.354,
+            347.381,
+            234.81099999999998,
+            355.86899999999997
+          ],
+          "status": "manually_adjudicated",
+          "resolution": "悬置段的占位符在原图中混有符号和编号；核对实际左右示例，而非用线性 PDF 阅读顺序判缺字。",
+          "evidence": "research/pages/018.png",
+          "generated_pages": [
+            20,
+            21
+          ]
+        },
+        {
+          "source_text": "5.2×××××××X",
+          "generated_candidate": "5.2××××××××",
+          "similarity": 0.9091,
+          "region_pt": [
+            316.994,
+            388.972,
+            409.01500000000004,
+            399.157
+          ],
+          "status": "manually_adjudicated",
+          "resolution": "悬置段的占位符在原图中混有符号和编号；核对实际左右示例，而非用线性 PDF 阅读顺序判缺字。",
+          "evidence": "research/pages/018.png",
+          "generated_pages": [
+            20,
+            21
+          ]
+        },
+        {
+          "source_text": "5.2××××××X",
+          "generated_candidate": "5.2×××××××",
+          "similarity": 0.9,
+          "region_pt": [
+            81.482,
+            417.83,
+            165.046,
+            428.015
+          ],
+          "status": "manually_adjudicated",
+          "resolution": "悬置段的占位符在原图中混有符号和编号；核对实际左右示例，而非用线性 PDF 阅读顺序判缺字。",
+          "evidence": "research/pages/018.png",
+          "generated_pages": [
+            20,
+            21
+          ]
+        }
+      ],
+      "candidate_resolution": "悬置段的占位符在原图中混有符号和编号；核对实际左右示例，而非用线性 PDF 阅读顺序判缺字。",
+      "evidence_source": "research/pages/018.png"
+    },
+    {
+      "source_page": 19,
+      "generated_pages": [
+        21,
+        22
+      ],
+      "status": "manual_text_review_completed",
+      "visual_review": "reviewed",
+      "manual_note": "列项续文、7.5.2/7.5.3 和 8.1：半括号、破折号、二级 · 号、封面组成和脚注。",
+      "historical_ocr_items_checked": 31,
+      "exact_normalized_matches": 27,
+      "candidates": [
+        {
+          "source_text": "7.5.3　在列项的各项之前应标明列项符号或列项编号。列项符号为破折号（一)或间隔号（·）；列项",
+          "generated_candidate": "7.5.3在列项的各项之前应标明列项符号或列项编号。列项符号为破折号(——)或间隔号(·);列",
+          "similarity": 0.9574,
+          "region_pt": [
+            62.878,
+            327.01,
+            522.754,
+            337.195
+          ],
+          "status": "manually_adjudicated",
+          "resolution": "破折号、引号和脚注上标；PDF 的列项编号、脚注与正文读取次序不同。",
+          "evidence": "research/pages/019.png",
+          "generated_pages": [
+            21,
+            22
+          ]
+        },
+        {
+          "source_text": "编号为字母编号[即后带半圆括号的小写拉丁字母，如　a）、b)等或数字编号[即后带半圆括号的阿拉伯",
+          "generated_candidate": "编号为字母编号[即后带半圆括号的小写拉丁字母,如a)、b)等]或数字编号[即后带半圆括号的阿拉",
+          "similarity": 0.9787,
+          "region_pt": [
+            64.569,
+            344.41,
+            521.908,
+            353.322
+          ],
+          "status": "manually_adjudicated",
+          "resolution": "破折号、引号和脚注上标；PDF 的列项编号、脚注与正文读取次序不同。",
+          "evidence": "research/pages/019.png",
+          "generated_pages": [
+            21,
+            22
+          ]
+        },
+        {
+          "source_text": "人民共和国国家标准化指导性技术文件”等字样）、文件代号（如“GB”）、文件编号）、国际标准分类",
+          "generated_candidate": "民共和国国家标准化指导性技术文件”等字样)、文件代号(如“GB”)、文件编号1)、国际标准分类",
+          "similarity": 0.9787,
+          "region_pt": [
+            64.146,
+            566.793,
+            523.1759999999999,
+            576.554
+          ],
+          "status": "manually_adjudicated",
+          "resolution": "破折号、引号和脚注上标；PDF 的列项编号、脚注与正文读取次序不同。",
+          "evidence": "research/pages/019.png",
+          "generated_pages": [
+            21,
+            22
+          ]
+        },
+        {
+          "source_text": "GB/TXXXXX-XXXX。",
+          "generated_candidate": "GB/TXXXXX—XXXX。",
+          "similarity": 0.9333,
+          "region_pt": [
+            100.086,
+            758.195,
+            186.187,
+            766.259
+          ],
+          "status": "manually_adjudicated",
+          "resolution": "破折号、引号和脚注上标；PDF 的列项编号、脚注与正文读取次序不同。",
+          "evidence": "research/pages/019.png",
+          "generated_pages": [
+            21,
+            22
+          ]
+        }
+      ],
+      "candidate_resolution": "破折号、引号和脚注上标；PDF 的列项编号、脚注与正文读取次序不同。",
+      "evidence_source": "research/pages/019.png"
+    },
+    {
+      "source_page": 20,
+      "generated_pages": [
+        22,
+        23
+      ],
+      "status": "manual_text_review_completed",
+      "visual_review": "reviewed",
+      "manual_note": "8.2/8.3：目次与前言的必备内容、列项顺序、引导语及省略号。",
+      "historical_ocr_items_checked": 34,
+      "exact_normalized_matches": 31,
+      "candidates": [
+        {
+          "source_text": "a）文件起草所依据的标准。具体表述为“本文件按照　GB/T1.1一2020《标准化工作导则第1",
+          "generated_candidate": "a)文件起草所依据的标准。具体表述为“本文件按照GB/T1.1—2020《标准化工作导则第1",
+          "similarity": 0.9783,
+          "region_pt": [
+            92.052,
+            448.387,
+            528.25,
+            458.148
+          ],
+          "status": "manually_adjudicated",
+          "resolution": "引号及省略号按原图保留，列项采用原生语法。",
+          "evidence": "research/pages/020.png",
+          "generated_pages": [
+            22,
+            23
+          ]
+        },
+        {
+          "source_text": "·“本文件起草单位：·…····",
+          "generated_candidate": "·“本文件起草单位:....",
+          "similarity": 0.8125,
+          "region_pt": [
+            110.657,
+            743.766,
+            233.12099999999998,
+            756.9219999999999
+          ],
+          "status": "manually_adjudicated",
+          "resolution": "引号及省略号按原图保留，列项采用原生语法。",
+          "evidence": "research/pages/020.png",
+          "generated_pages": [
+            22,
+            23
+          ]
+        },
+        {
+          "source_text": "“本文件主要起草人：…·…",
+          "generated_candidate": "“本文件主要起草人:......。",
+          "similarity": 0.9412,
+          "region_pt": [
+            114.039,
+            758.195,
+            240.731,
+            772.624
+          ],
+          "status": "manually_adjudicated",
+          "resolution": "引号及省略号按原图保留，列项采用原生语法。",
+          "evidence": "research/pages/020.png",
+          "generated_pages": [
+            22,
+            23
+          ]
+        }
+      ],
+      "candidate_resolution": "引号及省略号按原图保留，列项采用原生语法。",
+      "evidence_source": "research/pages/020.png"
+    },
+    {
+      "source_page": 21,
+      "generated_pages": [
+        23,
+        24
+      ],
+      "status": "manual_text_review_completed",
+      "visual_review": "reviewed",
+      "manual_note": "8.4～8.6.2：引言、范围、规范性引用文件引导语；转页处无缺句。",
+      "historical_ocr_items_checked": 36,
+      "exact_normalized_matches": 32,
+      "candidates": [
+        {
+          "source_text": "一文件技术内容的特殊信息或说明。",
+          "generated_candidate": "—文件技术内容的特殊信息或说明。",
+          "similarity": 0.9375,
+          "region_pt": [
+            97.126,
+            226.004,
+            255.53,
+            234.916
+          ],
+          "status": "manually_adjudicated",
+          "resolution": "破折号和中文引号；原图中的列项/引导语已逐项核查。",
+          "evidence": "research/pages/021.png",
+          "generated_pages": [
+            23,
+            24
+          ]
+        },
+        {
+          "source_text": "“本文件提供了的指导/指南/建议”；",
+          "generated_candidate": "文件提供了......的指导/指南/建议”;",
+          "similarity": 0.8,
+          "region_pt": [
+            105.16,
+            473.002,
+            286.81899999999996,
+            484.036
+          ],
+          "status": "manually_adjudicated",
+          "resolution": "破折号和中文引号；原图中的列项/引导语已逐项核查。",
+          "evidence": "research/pages/021.png",
+          "generated_pages": [
+            23,
+            24
+          ]
+        },
+        {
+          "source_text": "“本文件适用于…”；",
+          "generated_candidate": "“本文件适用于......”;—",
+          "similarity": 0.8571,
+          "region_pt": [
+            104.314,
+            535.388,
+            203.1,
+            546.847
+          ],
+          "status": "manually_adjudicated",
+          "resolution": "破折号和中文引号；原图中的列项/引导语已逐项核查。",
+          "evidence": "research/pages/021.png",
+          "generated_pages": [
+            23,
+            24
+          ]
+        },
+        {
+          "source_text": "“本文件不适用于”",
+          "generated_candidate": "“本文件不适用于.",
+          "similarity": 0.8889,
+          "region_pt": [
+            103.891,
+            549.817,
+            209.442,
+            563.398
+          ],
+          "status": "manually_adjudicated",
+          "resolution": "破折号和中文引号；原图中的列项/引导语已逐项核查。",
+          "evidence": "research/pages/021.png",
+          "generated_pages": [
+            23,
+            24
+          ]
+        }
+      ],
+      "candidate_resolution": "破折号和中文引号；原图中的列项/引导语已逐项核查。",
+      "evidence_source": "research/pages/021.png"
+    },
+    {
+      "source_page": 22,
+      "generated_pages": [
+        24,
+        25
+      ],
+      "status": "manual_text_review_completed",
+      "visual_review": "reviewed",
+      "manual_note": "8.6.3～8.7.3：文件清单、术语和定义的构成、条目编号；引用和八项示例。",
+      "historical_ocr_items_checked": 37,
+      "exact_normalized_matches": 33,
+      "candidates": [
+        {
+          "source_text": "注日期的引用文件，给出“文件代号、顺序号及发布年份号和或月份号”以及“文件名称”；",
+          "generated_candidate": "注日期的引用文件,给出“文件代号、顺序号及发布年份号和/或月份号”以及“文件名称”",
+          "similarity": 0.9756,
+          "region_pt": [
+            112.348,
+            179.32,
+            509.223,
+            189.081
+          ],
+          "status": "manually_adjudicated",
+          "resolution": "省略号、引号及带斜线的描述；转页段落完整。",
+          "evidence": "research/pages/022.png",
+          "generated_pages": [
+            24,
+            25
+          ]
+        },
+        {
+          "source_text": "引用国际文件、国外其他出版物，给出“文件编号\"或“文件代号、顺序号\"以及“原文名称的中文",
+          "generated_candidate": "引用国际文件、国外其他出版物,给出“文件编号”或“文件代号、顺序号”以及“原文名称的中文",
+          "similarity": 0.9545,
+          "region_pt": [
+            112.771,
+            242.131,
+            530.788,
+            252.316
+          ],
+          "status": "manually_adjudicated",
+          "resolution": "省略号、引号及带斜线的描述；转页段落完整。",
+          "evidence": "research/pages/022.png",
+          "generated_pages": [
+            24,
+            25
+          ]
+        },
+        {
+          "source_text": "……·界定的术语和定义适用于本文件。”(如果仅其他文件中界定的术语和定义适用时)",
+          "generated_candidate": "“......界定的术语和定义适用于本文件。”(如果仅其他文件中界定的术语和定义适用时)",
+          "similarity": 0.9773,
+          "region_pt": [
+            117.845,
+            609.233,
+            505.418,
+            623.6619999999999
+          ],
+          "status": "manually_adjudicated",
+          "resolution": "省略号、引号及带斜线的描述；转页段落完整。",
+          "evidence": "research/pages/022.png",
+          "generated_pages": [
+            24,
+            25
+          ]
+        },
+        {
+          "source_text": "“..界定的以及下列术语和定义适用于本文件。”（如果其他文件以及该要素界定的术语和定",
+          "generated_candidate": "...界定的以及下列术语和定义适用于本文件。”(如果其他文件以及该要素界定的术语和定",
+          "similarity": 0.9762,
+          "region_pt": [
+            112.771,
+            625.36,
+            531.21,
+            638.941
+          ],
+          "status": "manually_adjudicated",
+          "resolution": "省略号、引号及带斜线的描述；转页段落完整。",
+          "evidence": "research/pages/022.png",
+          "generated_pages": [
+            24,
+            25
+          ]
+        }
+      ],
+      "candidate_resolution": "省略号、引号及带斜线的描述；转页段落完整。",
+      "evidence_source": "research/pages/022.png"
+    },
+    {
+      "source_page": 23,
+      "generated_pages": [
+        25,
+        26
+      ],
+      "status": "manual_text_review_completed",
+      "visual_review": "reviewed",
+      "manual_note": "术语条目续文：a)～h)、定义公式、来源和示例；＝、＋按原图保留。",
+      "historical_ocr_items_checked": 32,
+      "exact_normalized_matches": 30,
+      "candidates": [
+        {
+          "source_text": "定义的表述宜能在上下文中代替其术语。 定义宜采取内涵定义的形式 ， 其优选结构为 ： “定义一用",
+          "generated_candidate": "定义的表述宜能在上下文中代替其术语。定义宜采取内涵定义的形式,其优选结构为:“定义=用",
+          "similarity": 0.9767,
+          "region_pt": [
+            84.864,
+            603.291,
+            522.753,
+            612.628
+          ],
+          "status": "manually_adjudicated",
+          "resolution": "＝、＋曾被 OCR 当成一、十；恢复原图运算符。",
+          "evidence": "research/pages/023.png",
+          "generated_pages": [
+            25,
+            26
+          ]
+        },
+        {
+          "source_text": "于区分所定义的概念同其他并列概念间的区别特征十上位概念”。",
+          "generated_candidate": "于区分所定义的概念同其他并列概念间的区别特征+上位概念”。",
+          "similarity": 0.9655,
+          "region_pt": [
+            64.992,
+            619.418,
+            355.31600000000003,
+            628.755
+          ],
+          "status": "manually_adjudicated",
+          "resolution": "＝、＋曾被 OCR 当成一、十；恢复原图运算符。",
+          "evidence": "research/pages/023.png",
+          "generated_pages": [
+            25,
+            26
+          ]
+        }
+      ],
+      "candidate_resolution": "＝、＋曾被 OCR 当成一、十；恢复原图运算符。",
+      "evidence_source": "research/pages/023.png"
+    },
+    {
+      "source_page": 24,
+      "generated_pages": [
+        26,
+        27
+      ],
+      "status": "manual_text_review_completed",
+      "visual_review": "reviewed",
+      "manual_note": "术语来源续文、8.8～8.10：符号顺序、缩略语、分类和系统构成、总体原则要求。",
+      "historical_ocr_items_checked": 30,
+      "exact_normalized_matches": 28,
+      "candidates": [
+        {
+          "source_text": "根据编写的需要，该要素可并人“术语和定义”（见8.7）。",
+          "generated_candidate": "根据编写的需要,该要素可并入“术语和定义”(见8.7)。",
+          "similarity": 0.9643,
+          "region_pt": [
+            71.757,
+            218.365,
+            316.839,
+            228.97500000000002
+          ],
+          "status": "manually_adjudicated",
+          "resolution": "原图并入/加入中的入与破折号，OCR 误作人、一；引用和正文已校正。",
+          "evidence": "research/pages/024.png",
+          "generated_pages": [
+            26,
+            27
+          ]
+        },
+        {
+          "source_text": "一“下列符号适用于本文件。”（如果该要素列出的符号适用时）",
+          "generated_candidate": "—“下列符号适用于本文件。”(如果该要素列出的符号适用时)",
+          "similarity": 0.9655,
+          "region_pt": [
+            105.16,
+            281.6,
+            378.571,
+            290.937
+          ],
+          "status": "manually_adjudicated",
+          "resolution": "原图并入/加入中的入与破折号，OCR 误作人、一；引用和正文已校正。",
+          "evidence": "research/pages/024.png",
+          "generated_pages": [
+            26,
+            27
+          ]
+        }
+      ],
+      "candidate_resolution": "原图并入/加入中的入与破折号，OCR 误作人、一；引用和正文已校正。",
+      "evidence_source": "research/pages/024.png"
+    },
+    {
+      "source_page": 25,
+      "generated_pages": [
+        27,
+        28
+      ],
+      "status": "manual_text_review_completed",
+      "visual_review": "reviewed",
+      "manual_note": "8.11～8.14 与表 4：核心/其他技术要素、参考文献、索引；表头、脚注和跨页内容。",
+      "historical_ocr_items_checked": 35,
+      "exact_normalized_matches": 34,
+      "candidates": [
+        {
+          "source_text": "功能类型标准所具有的核心技术要素以及所使用的条款类型应符合表 4 的规定 。 各种功能类型标准的",
+          "generated_candidate": "20类型标准所具有的核心技术要素以及所使用的条款类型应符合表4的规定。各种功能类型标准的",
+          "similarity": 0.9545,
+          "region_pt": [
+            63.723,
+            163.193,
+            522.7529999999999,
+            173.37800000000001
+          ],
+          "status": "manually_adjudicated",
+          "resolution": "正文跨页引入页眉；内容合并后完整。",
+          "evidence": "research/pages/025.png",
+          "generated_pages": [
+            27,
+            28
+          ]
+        }
+      ],
+      "candidate_resolution": "正文跨页引入页眉；内容合并后完整。",
+      "evidence_source": "research/pages/025.png"
+    },
+    {
+      "source_page": 26,
+      "generated_pages": [
+        28,
+        29
+      ],
+      "status": "manual_text_review_completed",
+      "visual_review": "reviewed",
+      "manual_note": "索引续文及 9.1～9.4.2.2：条款、附加信息、通用内容、汉字标点和常用词。",
+      "historical_ocr_items_checked": 32,
+      "exact_normalized_matches": 30,
+      "candidates": [
+        {
+          "source_text": "件清单和信息资源清单、“目次”中的目次列表和“索引\"中的索引列表等。除了图表脚注之外，它们宜表",
+          "generated_candidate": "件清单和信息资源清单、“目次”中的目次列表和“索引”中的索引列表等。除了图表脚注之外,它们宜表",
+          "similarity": 0.9787,
+          "region_pt": [
+            72.18,
+            391.518,
+            530.787,
+            400.85499999999996
+          ],
+          "status": "manually_adjudicated",
+          "resolution": "中文引号及省略号，按原图保留。",
+          "evidence": "research/pages/026.png",
+          "generated_pages": [
+            28,
+            29
+          ]
+        },
+        {
+          "source_text": "示例2：文件的起草和表述应遵守·的规定。",
+          "generated_candidate": "示例2:文件的起草和表述应遵守.",
+          "similarity": 0.8333,
+          "region_pt": [
+            89.515,
+            745.888,
+            269.483,
+            755.225
+          ],
+          "status": "manually_adjudicated",
+          "resolution": "中文引号及省略号，按原图保留。",
+          "evidence": "research/pages/026.png",
+          "generated_pages": [
+            28,
+            29
+          ]
+        }
+      ],
+      "candidate_resolution": "中文引号及省略号，按原图保留。",
+      "evidence_source": "research/pages/026.png"
+    },
+    {
+      "source_page": 27,
+      "generated_pages": [
+        29,
+        30
+      ],
+      "status": "manual_text_review_completed",
+      "visual_review": "reviewed",
+      "manual_note": "9.4.2.3～9.4.5.2：有前提条件的要求、简称缩略语、数值表示和公差；示例前的省略号确认保留。",
+      "historical_ocr_items_checked": 31,
+      "exact_normalized_matches": 30,
+      "candidates": [
+        {
+          "source_text": "示例：公共信息图形符号（以下简称“图形符号”）。",
+          "generated_candidate": "共信息图形符号(以下简称“图形符号”)。",
+          "similarity": 0.9091,
+          "region_pt": [
+            81.905,
+            300.697,
+            290.202,
+            310.458
+          ],
+          "status": "manually_adjudicated",
+          "resolution": "原图“示例：”之后还有“……”；历史 OCR 丢失，输出已保留。",
+          "evidence": "research/pages/027.png",
+          "generated_pages": [
+            29,
+            30
+          ]
+        }
+      ],
+      "candidate_resolution": "原图“示例：”之后还有“……”；历史 OCR 丢失，输出已保留。",
+      "evidence_source": "research/pages/027.png"
+    },
+    {
+      "source_page": 28,
+      "generated_pages": [
+        30,
+        31
+      ],
+      "status": "manual_text_review_completed",
+      "visual_review": "reviewed",
+      "manual_note": "公差续例、9.4.6/9.4.7 和 9.5：公式上下标、量与单位、引用和提示的正文。",
+      "historical_ocr_items_checked": 36,
+      "exact_normalized_matches": 34,
+      "candidates": [
+        {
+          "source_text": "在文件中需要称呼文件自身时应使用的表述形式为：“本文件·….”（包括标准、标准的某个部分、标",
+          "generated_candidate": "文件中需要称呼文件自身时应使用的表述形式为:“本文件......”(包括标准、标准的某个部分、标",
+          "similarity": 0.9583,
+          "region_pt": [
+            92.898,
+            714.483,
+            531.21,
+            724.6679999999999
+          ],
+          "status": "manually_adjudicated",
+          "resolution": "引用语中的中文引号、省略号和公差符号；按实际图像判断。",
+          "evidence": "research/pages/028.png",
+          "generated_pages": [
+            30,
+            31
+          ]
+        },
+        {
+          "source_text": "\"GB/TXXXXX\"",
+          "generated_candidate": "“GB/TXXXXX”",
+          "similarity": 0.8182,
+          "region_pt": [
+            71.334,
+            759.469,
+            148.97899999999998,
+            771.7760000000001
+          ],
+          "status": "manually_adjudicated",
+          "resolution": "引用语中的中文引号、省略号和公差符号；按实际图像判断。",
+          "evidence": "research/pages/028.png",
+          "generated_pages": [
+            30,
+            31
+          ]
+        }
+      ],
+      "candidate_resolution": "引用语中的中文引号、省略号和公差符号；按实际图像判断。",
+      "evidence_source": "research/pages/028.png"
+    },
+    {
+      "source_page": 29,
+      "generated_pages": [
+        32
+      ],
+      "status": "manual_text_review_completed",
+      "visual_review": "reviewed",
+      "manual_note": "9.5.3/9.5.4：具体内容编号、日期引用、规范性和资料性引用；文件代号年份分隔线。",
+      "historical_ocr_items_checked": 38,
+      "exact_normalized_matches": 33,
+      "candidates": [
+        {
+          "source_text": "……履行　GB/TXXXXX一2009第5章确立的程序…”（注日期引用其他文件中具体的章）",
+          "generated_candidate": "“......履行GB/TXXXXX—2009第5章确立的程序......”(注日期引用其他文件中具体的章)",
+          "similarity": 0.9423,
+          "region_pt": [
+            85.287,
+            389.82,
+            436.07500000000005,
+            403.401
+          ],
+          "status": "manually_adjudicated",
+          "resolution": "文件代号与年份间的一字线、省略号及引号；原图不是汉字一。",
+          "evidence": "research/pages/029.png",
+          "generated_pages": [
+            32
+          ]
+        },
+        {
+          "source_text": "“.…符合　GB/TXXXXX一2013中6.3列项的第二项规定的……\"（注日期引用其他文件中具体的列项）",
+          "generated_candidate": ".....符合GB/TXXXXX—2013中6.3列项的第二项规定的......”(注日期引用其他文件中具体的列项)",
+          "similarity": 0.9483,
+          "region_pt": [
+            83.173,
+            430.987,
+            479.626,
+            446.26500000000004
+          ],
+          "status": "manually_adjudicated",
+          "resolution": "文件代号与年份间的一字线、省略号及引号；原图不是汉字一。",
+          "evidence": "research/pages/029.png",
+          "generated_pages": [
+            32
+          ]
+        },
+        {
+          "source_text": "“.符合　GB/TXXXXX（所有部分)中的规定。”",
+          "generated_candidate": "..符合GB/TXXXXX(所有部分)中的规定。”",
+          "similarity": 0.96,
+          "region_pt": [
+            83.173,
+            626.208,
+            266.946,
+            639.789
+          ],
+          "status": "manually_adjudicated",
+          "resolution": "文件代号与年份间的一字线、省略号及引号；原图不是汉字一。",
+          "evidence": "research/pages/029.png",
+          "generated_pages": [
+            32
+          ]
+        },
+        {
+          "source_text": "·…·使用　GB/TXXXXX.1—2012表1中界定的符号·",
+          "generated_candidate": ".....使用GB/TXXXXX.1—2012表1中界定的符号.",
+          "similarity": 0.9062,
+          "region_pt": [
+            95.967,
+            448.65,
+            289.967,
+            456.65
+          ],
+          "status": "manually_adjudicated",
+          "resolution": "文件代号与年份间的一字线、省略号及引号；原图不是汉字一。",
+          "evidence": "research/pages/029.png",
+          "generated_pages": [
+            32
+          ]
+        },
+        {
+          "source_text": "\"(注日期引用其他文件中具体的表)",
+          "generated_candidate": "”(注日期引用其他文件中具体的表)",
+          "similarity": 0.9412,
+          "region_pt": [
+            301.3,
+            448.65,
+            441.63300000000004,
+            456.65
+          ],
+          "status": "manually_adjudicated",
+          "resolution": "文件代号与年份间的一字线、省略号及引号；原图不是汉字一。",
+          "evidence": "research/pages/029.png",
+          "generated_pages": [
+            32
+          ]
+        }
+      ],
+      "candidate_resolution": "文件代号与年份间的一字线、省略号及引号；原图不是汉字一。",
+      "evidence_source": "research/pages/029.png"
+    },
+    {
+      "source_page": 30,
+      "generated_pages": [
+        33
+      ],
+      "status": "manual_text_review_completed",
+      "visual_review": "reviewed",
+      "manual_note": "引用规则续文：试验方法、来源、限定条件、应公开获得的文件和不得引用的内容。",
+      "historical_ocr_items_checked": 36,
+      "exact_normalized_matches": 32,
+      "candidates": [
+        {
+          "source_text": "示例：“甲醛含量按　GB/T2912.1一2009描述的方法测定应不大于20mg/kg”，其中的　GB/T2912.1一2009为规范",
+          "generated_candidate": "示例:“甲醛含量按GB/T2912.1—2009描述的方法测定应不大于20mg/kg”,其中的GB/T2912.1—2009为规范",
+          "similarity": 0.9692,
+          "region_pt": [
+            89.515,
+            116.51,
+            531.21,
+            126.271
+          ],
+          "status": "manually_adjudicated",
+          "resolution": "中文引号和省略号，以及标准代号年份分隔线。",
+          "evidence": "research/pages/030.png",
+          "generated_pages": [
+            33
+          ]
+        },
+        {
+          "source_text": "9.5.4.2.2　资料性引1用",
+          "generated_candidate": "9.5.4.2.2资料性引用资",
+          "similarity": 0.9333,
+          "region_pt": [
+            70.911,
+            220.487,
+            170.965,
+            231.09699999999998
+          ],
+          "status": "manually_adjudicated",
+          "resolution": "中文引号和省略号，以及标准代号年份分隔线。",
+          "evidence": "research/pages/030.png",
+          "generated_pages": [
+            33
+          ]
+        },
+        {
+          "source_text": "“依据··法律规定，在这些环境中必须穿戴不透明的护目用具。”（用“必须\"指出外部约束）",
+          "generated_candidate": ".法律规定,在这些环境中必须穿戴不透明的护目用具。”(用“必须”指出外部约束)",
+          "similarity": 0.9024,
+          "region_pt": [
+            89.515,
+            419.104,
+            439.034,
+            428.01599999999996
+          ],
+          "status": "manually_adjudicated",
+          "resolution": "中文引号和省略号，以及标准代号年份分隔线。",
+          "evidence": "research/pages/030.png",
+          "generated_pages": [
+            33
+          ]
+        },
+        {
+          "source_text": "示例：[来源：GB/TXXXXX-2015，4.3.5]",
+          "generated_candidate": "示例:[来源:GB/TXXXXX—2015,4.3.5]",
+          "similarity": 0.9643,
+          "region_pt": [
+            89.515,
+            515.866,
+            245.805,
+            525.203
+          ],
+          "status": "manually_adjudicated",
+          "resolution": "中文引号和省略号，以及标准代号年份分隔线。",
+          "evidence": "research/pages/030.png",
+          "generated_pages": [
+            33
+          ]
+        }
+      ],
+      "candidate_resolution": "中文引号和省略号，以及标准代号年份分隔线。",
+      "evidence_source": "research/pages/030.png"
+    },
+    {
+      "source_page": 31,
+      "generated_pages": [
+        33,
+        34
+      ],
+      "status": "manual_text_review_completed",
+      "visual_review": "reviewed",
+      "manual_note": "引用限定条件、9.5.5 与 9.6：提示、附录目的/类型/编号构成；全部跨页续文。",
+      "historical_ocr_items_checked": 34,
+      "exact_normalized_matches": 27,
+      "candidates": [
+        {
+          "source_text": "“..应符合7.5.2中的相关规定。”",
+          "generated_candidate": "...应符合7.5.2中的相关规定。”",
+          "similarity": 0.9474,
+          "region_pt": [
+            81.059,
+            270.141,
+            217.899,
+            284.146
+          ],
+          "status": "manually_adjudicated",
+          "resolution": "附录标识和引用中的引号/省略号、破折号；跨页续文完整。",
+          "evidence": "research/pages/031.png",
+          "generated_pages": [
+            33,
+            34
+          ]
+        },
+        {
+          "source_text": "“.…按照5.1规定的测试程序…",
+          "generated_candidate": ".....按照5.1规定的测试程序...",
+          "similarity": 0.95,
+          "region_pt": [
+            82.327,
+            286.268,
+            220.013,
+            300.27299999999997
+          ],
+          "status": "manually_adjudicated",
+          "resolution": "附录标识和引用中的引号/省略号、破折号；跨页续文完整。",
+          "evidence": "research/pages/031.png",
+          "generated_pages": [
+            33,
+            34
+          ]
+        },
+        {
+          "source_text": "需要提示使用者参看、阅看文件自身的具体内容时，应使用“见\"提及文件内容的编号，而不应使用",
+          "generated_candidate": "需要提示使用者参看、阅看文件自身的具体内容时,应使用“见”提及文件内容的编号,而不应使用",
+          "similarity": 0.9773,
+          "region_pt": [
+            84.864,
+            338.044,
+            522.753,
+            347.805
+          ],
+          "status": "manually_adjudicated",
+          "resolution": "附录标识和引用中的引号/省略号、破折号；跨页续文完整。",
+          "evidence": "research/pages/031.png",
+          "generated_pages": [
+            33,
+            34
+          ]
+        },
+        {
+          "source_text": "示例1：·应符合附录　A的规定。",
+          "generated_candidate": ".应符合附录A的规定。",
+          "similarity": 0.7692,
+          "region_pt": [
+            82.327,
+            628.755,
+            219.167,
+            638.092
+          ],
+          "status": "manually_adjudicated",
+          "resolution": "附录标识和引用中的引号/省略号、破折号；跨页续文完整。",
+          "evidence": "research/pages/031.png",
+          "generated_pages": [
+            33,
+            34
+          ]
+        },
+        {
+          "source_text": "示例2：·相关示例见附录　D。",
+          "generated_candidate": "例2:......相关示例见附录D。",
+          "similarity": 0.75,
+          "region_pt": [
+            82.327,
+            661.858,
+            205.637,
+            670.77
+          ],
+          "status": "manually_adjudicated",
+          "resolution": "附录标识和引用中的引号/省略号、破折号；跨页续文完整。",
+          "evidence": "research/pages/031.png",
+          "generated_pages": [
+            33,
+            34
+          ]
+        },
+        {
+          "source_text": "始，例如“附录　A”“附录　B\"等。只有一个附录时，仍应给出附录编号“附录　A”。附录编号之下应标明附",
+          "generated_candidate": "始,例如“附录A”“附录B”等。只有一个附录时,仍应给出附录编号“附录A”。附录编号之下应标明附",
+          "similarity": 0.9792,
+          "region_pt": [
+            64.146,
+            744.615,
+            522.331,
+            753.1030000000001
+          ],
+          "status": "manually_adjudicated",
+          "resolution": "附录标识和引用中的引号/省略号、破折号；跨页续文完整。",
+          "evidence": "research/pages/031.png",
+          "generated_pages": [
+            33,
+            34
+          ]
+        },
+        {
+          "source_text": "录的作用一一即“（规范性）”或“（资料性）”，再下方为附录标题。",
+          "generated_candidate": "录的作用——即“(规范性)”或“(资料性)”,再下方为附录标题。",
+          "similarity": 0.9375,
+          "region_pt": [
+            63.723,
+            761.166,
+            345.168,
+            770.927
+          ],
+          "status": "manually_adjudicated",
+          "resolution": "附录标识和引用中的引号/省略号、破折号；跨页续文完整。",
+          "evidence": "research/pages/031.png",
+          "generated_pages": [
+            33,
+            34
+          ]
+        }
+      ],
+      "candidate_resolution": "附录标识和引用中的引号/省略号、破折号；跨页续文完整。",
+      "evidence_source": "research/pages/031.png"
+    },
+    {
+      "source_page": 32,
+      "generated_pages": [
+        35
+      ],
+      "status": "manual_text_review_completed",
+      "visual_review": "reviewed",
+      "manual_note": "9.6.3 与 9.7.1～9.7.4.1：附录、图的用法/编号/续图，恢复 #、*，确认 l₁/l₂/l₃。",
+      "historical_ocr_items_checked": 33,
+      "exact_normalized_matches": 26,
+      "candidates": [
+        {
+          "source_text": "示例1：的结构应与图2相符合。",
+          "generated_candidate": "的结构应与图2相符合。",
+          "similarity": 0.8462,
+          "region_pt": [
+            89.515,
+            334.225,
+            230.16000000000003,
+            344.83500000000004
+          ],
+          "status": "manually_adjudicated",
+          "resolution": "原图有省略号、*、# 和斜体 l₁/l₂/l₃；OCR 丢失符号/下标。",
+          "evidence": "research/pages/032.png",
+          "generated_pages": [
+            35
+          ]
+        },
+        {
+          "source_text": "示例2：.·的循环过程见图3。",
+          "generated_candidate": "示例2:......的循环过程见图3。",
+          "similarity": 0.8235,
+          "region_pt": [
+            89.093,
+            349.078,
+            210.289,
+            359.26399999999995
+          ],
+          "status": "manually_adjudicated",
+          "resolution": "原图有省略号、*、# 和斜体 l₁/l₂/l₃；OCR 丢失符号/下标。",
+          "evidence": "research/pages/032.png",
+          "generated_pages": [
+            35
+          ]
+        },
+        {
+          "source_text": "9.7.2.1　每幅图均应有编号。图编号由“图\"和从1开始的阿拉伯数字组成，例如“图1\"“图2\"等。只有",
+          "generated_candidate": "9.7.2.1每幅图均应有编号。图编号由“图”和从1开始的阿拉伯数字组成,例如“图1”“图2”等。只有",
+          "similarity": 0.9412,
+          "region_pt": [
+            70.488,
+            477.67,
+            530.787,
+            489.129
+          ],
+          "status": "manually_adjudicated",
+          "resolution": "原图有省略号、*、# 和斜体 l₁/l₂/l₃；OCR 丢失符号/下标。",
+          "evidence": "research/pages/032.png",
+          "generated_pages": [
+            35
+          ]
+        },
+        {
+          "source_text": "页/共￥页）”，其中#为该图当前的页面序数，￥是该图所占页面的总数，均使用阿拉伯数字。续图均应",
+          "generated_candidate": "页/共*页)”,其中#为该图当前的页面序数,*是该图所占页面的总数,均使用阿拉伯数字。续图均应",
+          "similarity": 0.9574,
+          "region_pt": [
+            72.18,
+            592.257,
+            530.787,
+            601.5939999999999
+          ],
+          "status": "manually_adjudicated",
+          "resolution": "原图有省略号、*、# 和斜体 l₁/l₂/l₃；OCR 丢失符号/下标。",
+          "evidence": "research/pages/032.png",
+          "generated_pages": [
+            35
+          ]
+        },
+        {
+          "source_text": "图中表示各种长度时使用符号系列　l、l2、L3等，而不使用诸如　A、B、C或　a、b、c等符号。",
+          "generated_candidate": "图中表示各种长度时使用符号系列l1、l2、l3等,而不使用诸如A、B、C或a、b、c等符号",
+          "similarity": 0.9556,
+          "region_pt": [
+            92.898,
+            760.742,
+            485.54499999999996,
+            770.5029999999999
+          ],
+          "status": "manually_adjudicated",
+          "resolution": "原图有省略号、*、# 和斜体 l₁/l₂/l₃；OCR 丢失符号/下标。",
+          "evidence": "research/pages/032.png",
+          "generated_pages": [
+            35
+          ]
+        },
+        {
+          "source_text": "\"A.2”..·…·表示；图用“图　A.1\"“图　A.2”\"...…·表示；表用“表　A.1\"“表　A.2””",
+          "generated_candidate": "“A.2”......表示;图用“图A.1”“图A.2”......表示;表用“表A.1”“表A.2”",
+          "similarity": 0.8868,
+          "region_pt": [
+            208.3,
+            165.317,
+            530.633,
+            174.65
+          ],
+          "status": "manually_adjudicated",
+          "resolution": "原图有省略号、*、# 和斜体 l₁/l₂/l₃；OCR 丢失符号/下标。",
+          "evidence": "research/pages/032.png",
+          "generated_pages": [
+            35
+          ]
+        },
+        {
+          "source_text": "9.6.3.2　附录中不准许设置“范围”“规范性引用文件\"“术语和定义\"等内容。",
+          "generated_candidate": "9.6.3.2附录中不准许设置“范围”“规范性引用文件”“术语和定义”等内容。",
+          "similarity": 0.9487,
+          "region_pt": [
+            71.633,
+            197.983,
+            408.633,
+            207.316
+          ],
+          "status": "manually_adjudicated",
+          "resolution": "原图有省略号、*、# 和斜体 l₁/l₂/l₃；OCR 丢失符号/下标。",
+          "evidence": "research/pages/032.png",
+          "generated_pages": [
+            35
+          ]
+        }
+      ],
+      "candidate_resolution": "原图有省略号、*、# 和斜体 l₁/l₂/l₃；OCR 丢失符号/下标。",
+      "evidence_source": "research/pages/032.png"
+    },
+    {
+      "source_page": 33,
+      "generated_pages": [
+        35,
+        36
+      ],
+      "status": "manual_text_review_completed",
+      "visual_review": "reviewed",
+      "manual_note": "9.7.4.2/9.7.5：标引序号和图中注、脚注；抽芯铆钉示例及量纲说明。",
+      "historical_ocr_items_checked": 15,
+      "exact_normalized_matches": 15,
+      "candidates": [],
+      "candidate_resolution": "已对照原图逐行核查，未发现需要修订的文字差异。",
+      "evidence_source": "research/pages/033.png"
+    },
+    {
+      "source_page": 34,
+      "generated_pages": [
+        37
+      ],
+      "status": "manual_text_review_completed",
+      "visual_review": "reviewed",
+      "manual_note": "9.7.6 与 9.8.1/9.8.2：分图限制、表的用法和编号；引号、列项及上标 a。",
+      "historical_ocr_items_checked": 27,
+      "exact_normalized_matches": 23,
+      "candidates": [
+        {
+          "source_text": "包含分图　a）、b)等］，不应使用其他形式的编号（例如1.1、1.2、，1-1、1-2、\"，等）。",
+          "generated_candidate": "包含分图a)、b)等],不应使用其他形式的编号(例如1.1、1.2、......,1-1、1-2",
+          "similarity": 0.875,
+          "region_pt": [
+            72.18,
+            177.198,
+            434.384,
+            186.959
+          ],
+          "status": "manually_adjudicated",
+          "resolution": "编号内省略号、中文引号及上标脚注 a，按图像而非 OCR 误识输出。",
+          "evidence": "research/pages/034.png",
+          "generated_pages": [
+            37
+          ]
+        },
+        {
+          "source_text": "“图脚注的内容",
+          "generated_candidate": "a图脚注的内容",
+          "similarity": 0.8571,
+          "region_pt": [
+            91.207,
+            437.777,
+            151.516,
+            446.68899999999996
+          ],
+          "status": "manually_adjudicated",
+          "resolution": "编号内省略号、中文引号及上标脚注 a，按图像而非 OCR 误识输出。",
+          "evidence": "research/pages/034.png",
+          "generated_pages": [
+            37
+          ]
+        },
+        {
+          "source_text": "示例1：的技术特性应符合表7给出的特性值。",
+          "generated_candidate": "的技术特性应符合表7给出的特性值。",
+          "similarity": 0.8947,
+          "region_pt": [
+            89.515,
+            624.935,
+            286.819,
+            633.847
+          ],
+          "status": "manually_adjudicated",
+          "resolution": "编号内省略号、中文引号及上标脚注 a，按图像而非 OCR 误识输出。",
+          "evidence": "research/pages/034.png",
+          "generated_pages": [
+            37
+          ]
+        },
+        {
+          "source_text": "9.8.1.3　不准许将表再细分为分表（例如将“表2\"分为“表2a”和“表2b”），也不准许表中套表或表中含",
+          "generated_candidate": "9.8.1.3不准许将表再细分为分表(例如将“表2”分为“表2a”和“表2b”),也不准许表中套表或表中含",
+          "similarity": 0.9811,
+          "region_pt": [
+            70.911,
+            653.794,
+            530.364,
+            663.555
+          ],
+          "status": "manually_adjudicated",
+          "resolution": "编号内省略号、中文引号及上标脚注 a，按图像而非 OCR 误识输出。",
+          "evidence": "research/pages/034.png",
+          "generated_pages": [
+            37
+          ]
+        }
+      ],
+      "candidate_resolution": "编号内省略号、中文引号及上标脚注 a，按图像而非 OCR 误识输出。",
+      "evidence_source": "research/pages/034.png"
+    },
+    {
+      "source_page": 35,
+      "generated_pages": [
+        38
+      ],
+      "status": "manual_text_review_completed",
+      "visual_review": "reviewed",
+      "manual_note": "9.8.3/9.8.4：续表的 # 和 *；表头单位；线密度符号原图为 ρ₁，已将错误的 l 下标改成 1。",
+      "historical_ocr_items_checked": 15,
+      "exact_normalized_matches": 12,
+      "candidates": [
+        {
+          "source_text": "当某个表需要转页接排，随后接排该表的各页上应重复表编号，后接表题（可选）和“（续）\"或“（第#",
+          "generated_candidate": "当某个表需要转页接排,随后接排该表的各页上应重复表编号,后接表题(可选)和“(续)”或“(第#",
+          "similarity": 0.9787,
+          "region_pt": [
+            85.287,
+            222.184,
+            521.908,
+            231.945
+          ],
+          "status": "manually_adjudicated",
+          "resolution": "原图为 #、*、ρ₁；OCR 的￥及 p 不正确，数学字形抽取顺序不代表页面缺字。",
+          "evidence": "research/pages/035.png",
+          "generated_pages": [
+            38
+          ]
+        },
+        {
+          "source_text": "页/共￥页)”，其中#为该表当前的页面序数，￥是该表所占页面的总数，均使用阿拉伯数字。续表均应",
+          "generated_candidate": "页/共*页)”,其中#为该表当前的页面序数,*是该表所占页面的总数,均使用阿拉伯数字。续表均应",
+          "similarity": 0.9574,
+          "region_pt": [
+            64.992,
+            237.887,
+            522.754,
+            248.072
+          ],
+          "status": "manually_adjudicated",
+          "resolution": "原图为 #、*、ρ₁；OCR 的￥及 p 不正确，数学字形抽取顺序不代表页面缺字。",
+          "evidence": "research/pages/035.png",
+          "generated_pages": [
+            38
+          ]
+        },
+        {
+          "source_text": "p /(kg/m)",
+          "generated_candidate": "1/(kg/m)",
+          "similarity": 0.875,
+          "region_pt": [
+            210.02,
+            507.802,
+            252.993,
+            521.807
+          ],
+          "status": "manually_adjudicated",
+          "resolution": "原图为 #、*、ρ₁；OCR 的￥及 p 不正确，数学字形抽取顺序不代表页面缺字。",
+          "evidence": "research/pages/035.png",
+          "generated_pages": [
+            38
+          ]
+        }
+      ],
+      "candidate_resolution": "原图为 #、*、ρ₁；OCR 的￥及 p 不正确，数学字形抽取顺序不代表页面缺字。",
+      "evidence_source": "research/pages/035.png"
+    },
+    {
+      "source_page": 36,
+      "generated_pages": [
+        39
+      ],
+      "status": "manual_text_review_completed",
+      "visual_review": "reviewed",
+      "manual_note": "表头正例、9.8.5 及 9.9 首段：正确的行列表头、注/脚注位置、数学公式的不等式。",
+      "historical_ocr_items_checked": 19,
+      "exact_normalized_matches": 17,
+      "candidates": [
+        {
+          "source_text": ".·..….（1）",
+          "generated_candidate": ".......",
+          "similarity": 0.6667,
+          "region_pt": [
+            488.237,
+            598.198,
+            523.177,
+            606.262
+          ],
+          "status": "manually_adjudicated",
+          "resolution": "公式和编号点线为矢量内容，线性文本读取顺序不等于版面；原图标点复核。",
+          "evidence": "research/pages/036.png",
+          "generated_pages": [
+            39
+          ]
+        },
+        {
+          "source_text": "中列出，否则应在数学公式后用“式中：\"引出对字母符号含义的解释。",
+          "generated_candidate": "中列出,否则应在数学公式后用“式中:”引出对字母符号含义的解释。",
+          "similarity": 0.9688,
+          "region_pt": [
+            72.603,
+            720.849,
+            378.995,
+            729.7610000000001
+          ],
+          "status": "manually_adjudicated",
+          "resolution": "公式和编号点线为矢量内容，线性文本读取顺序不等于版面；原图标点复核。",
+          "evidence": "research/pages/036.png",
+          "generated_pages": [
+            39
+          ]
+        }
+      ],
+      "candidate_resolution": "公式和编号点线为矢量内容，线性文本读取顺序不等于版面；原图标点复核。",
+      "evidence_source": "research/pages/036.png"
+    },
+    {
+      "source_page": 37,
+      "generated_pages": [
+        40
+      ],
+      "status": "manual_text_review_completed",
+      "visual_review": "reviewed",
+      "manual_note": "数学公式：匀速式、i 下标的 MSE/MSR、分式、解释项、示例序号及公式编号。",
+      "historical_ocr_items_checked": 15,
+      "exact_normalized_matches": 13,
+      "candidates": [
+        {
+          "source_text": "系统的残差均方 ；",
+          "generated_candidate": "统i的残差均方;",
+          "similarity": 0.875,
+          "region_pt": [
+            138.14,
+            740.795,
+            212.825,
+            749.707
+          ],
+          "status": "manually_adjudicated",
+          "resolution": "数学下标 i 及解释项在 PDF 抽取时次序改变；实际公式显示与原图对应。",
+          "evidence": "research/pages/037.png",
+          "generated_pages": [
+            40
+          ]
+        },
+        {
+          "source_text": "系统由于回归产生的均方 。",
+          "generated_candidate": "统i由于回归产生的均方。",
+          "similarity": 0.9167,
+          "region_pt": [
+            138.14,
+            755.649,
+            248.765,
+            764.561
+          ],
+          "status": "manually_adjudicated",
+          "resolution": "数学下标 i 及解释项在 PDF 抽取时次序改变；实际公式显示与原图对应。",
+          "evidence": "research/pages/037.png",
+          "generated_pages": [
+            40
+          ]
+        }
+      ],
+      "candidate_resolution": "数学下标 i 及解释项在 PDF 抽取时次序改变；实际公式显示与原图对应。",
+      "evidence_source": "research/pages/037.png"
+    },
+    {
+      "source_page": 38,
+      "generated_pages": [
+        40,
+        41
+      ],
+      "status": "manual_text_review_completed",
+      "visual_review": "reviewed",
+      "manual_note": "9.9.3.2～9.11：多层上标下标/多行式的错例正例、示例方框、注的规则和数值。",
+      "historical_ocr_items_checked": 25,
+      "exact_normalized_matches": 22,
+      "candidates": [
+        {
+          "source_text": "例时，宜标明示例编号，在同一章（未分条）、条或术语条目中示例编号均从“示例1\"开始，即“示例1：”",
+          "generated_candidate": "例时,宜标明示例编号,在同一章(未分条)、条或术语条目中示例编号均从“示例1”开始,即“示例1:”",
+          "similarity": 0.9796,
+          "region_pt": [
+            72.18,
+            382.606,
+            529.519,
+            393.216
+          ],
+          "status": "manually_adjudicated",
+          "resolution": "多行公式和中文引号；以真实示例片段放大核对。",
+          "evidence": "research/pages/038.png",
+          "generated_pages": [
+            40,
+            41
+          ]
+        },
+        {
+          "source_text": "注时，应标明注编号，在同一章（未分条）或条、术语条目、图或表中注编号均从“注1：\"开始，即“注1：”",
+          "generated_candidate": "注时,应标明注编号,在同一章(未分条)或条、术语条目、图或表中注编号均从“注1:”开始,即“注1:”",
+          "similarity": 0.98,
+          "region_pt": [
+            71.757,
+            591.408,
+            529.942,
+            601.169
+          ],
+          "status": "manually_adjudicated",
+          "resolution": "多行公式和中文引号；以真实示例片段放大核对。",
+          "evidence": "research/pages/038.png",
+          "generated_pages": [
+            40,
+            41
+          ]
+        },
+        {
+          "source_text": "“注2：\"等。（9.7.5中给出了图中的注的示例，9.8.5中给出了表中的注的示例）",
+          "generated_candidate": "“注2:”等。(9.7.5中给出了图中的注的示例,9.8.5中给出了表中的注的示例)",
+          "similarity": 0.9762,
+          "region_pt": [
+            71.757,
+            607.535,
+            420.008,
+            617.2959999999999
+          ],
+          "status": "manually_adjudicated",
+          "resolution": "多行公式和中文引号；以真实示例片段放大核对。",
+          "evidence": "research/pages/038.png",
+          "generated_pages": [
+            40,
+            41
+          ]
+        }
+      ],
+      "candidate_resolution": "多行公式和中文引号；以真实示例片段放大核对。",
+      "evidence_source": "research/pages/038.png"
+    },
+    {
+      "source_page": 39,
+      "generated_pages": [
+        42,
+        43
+      ],
+      "status": "manual_text_review_completed",
+      "visual_review": "reviewed",
+      "manual_note": "9.12/9.13 与第 10 章开头：图表脚注 a/b/c、商品名商标 ®/TM、专利与重要提示。",
+      "historical_ocr_items_checked": 34,
+      "exact_normalized_matches": 30,
+      "candidates": [
+        {
+          "source_text": "形式的小写拉丁字母，即、、等。在图或表中需注释的位置应插入与图表脚注编号相同的上标形式的",
+          "generated_candidate": "标形式的小写拉丁字母,即a、b、c等。在图或表中需注释的位置应插入与图表脚注编号相同的上标形式的",
+          "similarity": 0.9565,
+          "region_pt": [
+            62.878,
+            159.798,
+            523.6,
+            171.681
+          ],
+          "status": "manually_adjudicated",
+          "resolution": "原图有 ®/TM、脚注上标 a/b/c 与 ±；历史 OCR 丢失或误识这些符号。",
+          "evidence": "research/pages/039.png",
+          "generated_pages": [
+            42,
+            43
+          ]
+        },
+        {
+          "source_text": "质。例如对于注册商标用符号?指明，对于商标用符号　TM指明。",
+          "generated_candidate": "质。例如对于注册商标用符号®指明,对于商标用符号TM指明。",
+          "similarity": 0.9655,
+          "region_pt": [
+            64.146,
+            318.098,
+            341.786,
+            327.85900000000004
+          ],
+          "status": "manually_adjudicated",
+          "resolution": "原图有 ®/TM、脚注上标 a/b/c 与 ±；历史 OCR 丢失或误识这些符号。",
+          "evidence": "research/pages/039.png",
+          "generated_pages": [
+            42,
+            43
+          ]
+        },
+        {
+          "source_text": "示例：用“聚四氟乙烯（PTFE)”，而不用“特氟纶?”。",
+          "generated_candidate": "示例:用“聚四氟乙烯(PTFE)”,而不用“特氟纶®”。",
+          "similarity": 0.9643,
+          "region_pt": [
+            81.905,
+            332.951,
+            279.209,
+            341.439
+          ],
+          "status": "manually_adjudicated",
+          "resolution": "原图有 ®/TM、脚注上标 a/b/c 与 ±；历史 OCR 丢失或误识这些符号。",
+          "evidence": "research/pages/039.png",
+          "generated_pages": [
+            42,
+            43
+          ]
+        },
+        {
+          "source_text": "出版文件应采用　A4开本，幅面尺寸为210mm×297mm，允许公差土1mm。在特殊情况下（例如",
+          "generated_candidate": "出版文件应采用A4开本,幅面尺寸为210mm×297mm,允许公差±1mm。在特殊情况下(例如",
+          "similarity": 0.9787,
+          "region_pt": [
+            85.71,
+            720.424,
+            522.754,
+            729.761
+          ],
+          "status": "manually_adjudicated",
+          "resolution": "原图有 ®/TM、脚注上标 a/b/c 与 ±；历史 OCR 丢失或误识这些符号。",
+          "evidence": "research/pages/039.png",
+          "generated_pages": [
+            42,
+            43
+          ]
+        }
+      ],
+      "candidate_resolution": "原图有 ®/TM、脚注上标 a/b/c 与 ±；历史 OCR 丢失或误识这些符号。",
+      "evidence_source": "research/pages/039.png"
+    },
+    {
+      "source_page": 40,
+      "generated_pages": [
+        43,
+        44
+      ],
+      "status": "manual_text_review_completed",
+      "visual_review": "reviewed",
+      "manual_note": "10.1/10.2：单/双数页、罗马页码 I、目录和正文的编号，章条和列项间距要求。",
+      "historical_ocr_items_checked": 33,
+      "exact_normalized_matches": 31,
+      "candidates": [
+        {
+          "source_text": "从目次页到正文首页前用从工开始的正体大写罗马数字编页码；正文首页起用从1开始的阿拉伯",
+          "generated_candidate": "从目次页到正文首页前用从I开始的正体大写罗马数字编页码;正文首页起用从1开始的阿拉伯",
+          "similarity": 0.9762,
+          "region_pt": [
+            92.898,
+            241.706,
+            530.364,
+            251.04299999999998
+          ],
+          "status": "manually_adjudicated",
+          "resolution": "罗马数字 I 不是汉字工；破折号按列项符号输出。",
+          "evidence": "research/pages/040.png",
+          "generated_pages": [
+            43,
+            44
+          ]
+        },
+        {
+          "source_text": "第一层次列项的各项之前的破折号（一一）、字母编号均应空两个汉字起排，其后的文字以及文字回",
+          "generated_candidate": "第一层次列项的各项之前的破折号(——)、字母编号均应空两个汉字起排,其后的文字以及文字回",
+          "similarity": 0.9545,
+          "region_pt": [
+            92.898,
+            595.228,
+            530.364,
+            604.9889999999999
+          ],
+          "status": "manually_adjudicated",
+          "resolution": "罗马数字 I 不是汉字工；破折号按列项符号输出。",
+          "evidence": "research/pages/040.png",
+          "generated_pages": [
+            43,
+            44
+          ]
+        }
+      ],
+      "candidate_resolution": "罗马数字 I 不是汉字工；破折号按列项符号输出。",
+      "evidence_source": "research/pages/040.png"
+    },
+    {
+      "source_page": 41,
+      "generated_pages": [
+        44,
+        45
+      ],
+      "status": "manual_text_review_completed",
+      "visual_review": "reviewed",
+      "manual_note": "10.3：封面英文连接线、范围、规范性引用、术语条目及编号的编排要求。",
+      "historical_ocr_items_checked": 32,
+      "exact_normalized_matches": 31,
+      "candidates": [
+        {
+          "source_text": "“英文对应词\"位于“术语”之后，与术语之间空一个汉字的间隙。除非原文需要大写，英文对应词的",
+          "generated_candidate": "“英文对应词”位于“术语”之后,与术语之间空一个汉字的间隙。除非原文需要大写,英文对应词的",
+          "similarity": 0.9778,
+          "region_pt": [
+            84.442,
+            666.102,
+            522.754,
+            676.2869999999999
+          ],
+          "status": "manually_adjudicated",
+          "resolution": "成对中文引号与连接线；原图版式相关语句完整。",
+          "evidence": "research/pages/041.png",
+          "generated_pages": [
+            44,
+            45
+          ]
+        }
+      ],
+      "candidate_resolution": "成对中文引号与连接线；原图版式相关语句完整。",
+      "evidence_source": "research/pages/041.png"
+    },
+    {
+      "source_page": 42,
+      "generated_pages": [
+        45,
+        46
+      ],
+      "status": "manual_text_review_completed",
+      "visual_review": "reviewed",
+      "manual_note": "10.3.6 和 10.4：文献/索引、附录、图表、公式、注/脚注和示例；＝/＋/－/±/∓ 与大写 X。",
+      "historical_ocr_items_checked": 34,
+      "exact_normalized_matches": 29,
+      "candidates": [
+        {
+          "source_text": "附录编号、附录的作用一一即“（规范性）”或“（资料性）”，以及附录标题，每项应各占一行，居中",
+          "generated_candidate": "附录编号、附录的作用——即“(规范性)”或“(资料性)”,以及附录标题,每项应各占一行,居中",
+          "similarity": 0.9565,
+          "region_pt": [
+            92.475,
+            219.638,
+            530.787,
+            229.823
+          ],
+          "status": "manually_adjudicated",
+          "resolution": "原图为 ＝/＋/－/±/∓ 及大写 X，OCR 误作十、×等；公式编号点线不是正文。",
+          "evidence": "research/pages/042.png",
+          "generated_pages": [
+            45,
+            46
+          ]
+        },
+        {
+          "source_text": "文件中的数学公式应另行居中编排，较长的数学公式应在符号一、十、一、土或干之后，必要时，在",
+          "generated_candidate": "文件中的数学公式应另行居中编排,较长的数学公式应在符号=、+、−、±或∓之后,必要时,在",
+          "similarity": 0.8864,
+          "region_pt": [
+            92.898,
+            490.402,
+            531.21,
+            500.163
+          ],
+          "status": "manually_adjudicated",
+          "resolution": "原图为 ＝/＋/－/±/∓ 及大写 X，OCR 误作十、×等；公式编号点线不是正文。",
+          "evidence": "research/pages/042.png",
+          "generated_pages": [
+            45,
+            46
+          ]
+        },
+        {
+          "source_text": "数学公式编号应右端对齐，公式与编号之间由“\"连接。",
+          "generated_candidate": "数学公式编号应右端对齐,公式与编号之间由“",
+          "similarity": 0.913,
+          "region_pt": [
+            91.63,
+            520.958,
+            354.471,
+            532.841
+          ],
+          "status": "manually_adjudicated",
+          "resolution": "原图为 ＝/＋/－/±/∓ 及大写 X，OCR 误作十、×等；公式编号点线不是正文。",
+          "evidence": "research/pages/042.png",
+          "generated_pages": [
+            45,
+            46
+          ]
+        },
+        {
+          "source_text": "数学公式之下的“式中：\"应空两个汉字起排,单独占一行。数学公式中需要解释的符号应按先左后",
+          "generated_candidate": "数学公式之下的“式中:”应空两个汉字起排,单独占一行。数学公式中需要解释的符号应按先左后",
+          "similarity": 0.9773,
+          "region_pt": [
+            92.633,
+            538.317,
+            530.3,
+            547.65
+          ],
+          "status": "manually_adjudicated",
+          "resolution": "原图为 ＝/＋/－/±/∓ 及大写 X，OCR 误作十、×等；公式编号点线不是正文。",
+          "evidence": "research/pages/042.png",
+          "generated_pages": [
+            45,
+            46
+          ]
+        },
+        {
+          "source_text": "示例应另行空两个汉字起排。“示例：\"或“示例×:\"宜单独占一行。文字类的示例回行时宜顶格",
+          "generated_candidate": "示例应另行空两个汉字起排。“示例:”或“示例X:”宜单独占一行。文字类的示例回行时宜顶格",
+          "similarity": 0.9318,
+          "region_pt": [
+            92.3,
+            744.983,
+            530.633,
+            754.3159999999999
+          ],
+          "status": "manually_adjudicated",
+          "resolution": "原图为 ＝/＋/－/±/∓ 及大写 X，OCR 误作十、×等；公式编号点线不是正文。",
+          "evidence": "research/pages/042.png",
+          "generated_pages": [
+            45,
+            46
+          ]
+        }
+      ],
+      "candidate_resolution": "原图为 ＝/＋/－/±/∓ 及大写 X，OCR 误作十、×等；公式编号点线不是正文。",
+      "evidence_source": "research/pages/042.png"
+    },
+    {
+      "source_page": 43,
+      "generated_pages": [
+        46
+      ],
+      "status": "manual_text_review_completed",
+      "visual_review": "reviewed",
+      "manual_note": "示例线框及 10.4.6：变量斜体、单位正体、角度及单位间隙的要求。",
+      "historical_ocr_items_checked": 4,
+      "exact_normalized_matches": 4,
+      "candidates": [],
+      "candidate_resolution": "已对照原图逐行核查，未发现需要修订的文字差异。",
+      "evidence_source": "research/pages/043.png"
+    },
+    {
+      "source_page": 44,
+      "generated_pages": [
+        47
+      ],
+      "status": "manual_text_review_completed",
+      "visual_review": "reviewed",
+      "manual_note": "附录 A：全部层次示例、条目/图表/公式编号和附录前缀。",
+      "historical_ocr_items_checked": 16,
+      "exact_normalized_matches": 16,
+      "candidates": [],
+      "candidate_resolution": "已对照原图逐行核查，未发现需要修订的文字差异。",
+      "evidence_source": "research/pages/044.png"
+    },
+    {
+      "source_page": 45,
+      "generated_pages": [
+        49
+      ],
+      "status": "manual_text_review_completed",
+      "visual_review": "reviewed",
+      "manual_note": "附录 B 首面：B.1/B.2、项目特性与标记体系、埋头铆钉举例。",
+      "historical_ocr_items_checked": 31,
+      "exact_normalized_matches": 29,
+      "candidates": [
+        {
+          "source_text": "多个的（例如理头螺钉的长度范围）。在文件中对每个特性只规定一个数值时，提供标准代号和顺序号",
+          "generated_candidate": "多个的(例如埋头螺钉的长度范围)。在文件中对每个特性只规定一个数值时,提供标准代号和顺序号",
+          "similarity": 0.9778,
+          "region_pt": [
+            64.569,
+            500.163,
+            522.331,
+            508.651
+          ],
+          "status": "manually_adjudicated",
+          "resolution": "原图“埋头”曾被 OCR 误识为“理头”；脚注和引号按图像恢复。",
+          "evidence": "research/pages/045.png",
+          "generated_pages": [
+            49
+          ]
+        },
+        {
+          "source_text": "-对于某特性提供一种以上选择的文件。例如，从产品规范中的一系列供选择的尺寸或其他性",
+          "generated_candidate": "—对于某特性提供一种以上选择的文件。例如,从产品规范中的一系列供选择的尺寸或其他性",
+          "similarity": 0.9756,
+          "region_pt": [
+            102.623,
+            567.642,
+            523.177,
+            576.979
+          ],
+          "status": "manually_adjudicated",
+          "resolution": "原图“埋头”曾被 OCR 误识为“理头”；脚注和引号按图像恢复。",
+          "evidence": "research/pages/045.png",
+          "generated_pages": [
+            49
+          ]
+        }
+      ],
+      "candidate_resolution": "原图“埋头”曾被 OCR 误识为“理头”；脚注和引号按图像恢复。",
+      "evidence_source": "research/pages/045.png"
+    },
+    {
+      "source_page": 46,
+      "generated_pages": [
+        50
+      ],
+      "status": "manual_text_review_completed",
+      "visual_review": "reviewed",
+      "manual_note": "图 B.1 及 B.3～B.6.2：标记段、字符、描述段、识别段和发布年份；加人校正为加入。",
+      "historical_ocr_items_checked": 31,
+      "exact_normalized_matches": 27,
+      "candidates": [
+        {
+          "source_text": "B.4.4只准许使用的符号为短横线形式的连接号（-）、加号（十）、分隔号（/）、逗号（，）和乘号（×），在数",
+          "generated_candidate": "B.4.4只准许使用的符号为短横线形式的连接号(-)、加号(+)、分隔号(/)、逗号(,)和乘号(×),在数",
+          "similarity": 0.9815,
+          "region_pt": [
+            70.911,
+            365.205,
+            531.21,
+            374.966
+          ],
+          "status": "manually_adjudicated",
+          "resolution": "原图为加入与＋、中文引号，OCR 的加人和十错误。",
+          "evidence": "research/pages/046.png",
+          "generated_pages": [
+            50
+          ]
+        },
+        {
+          "source_text": "标准代号和顺序号段，最多由9个字符（字母“GB/T\"以外最多加5个数字)组成；",
+          "generated_candidate": "标准代号和顺序号段,最多由9个字符(字母“GB/T”以外最多加5个数字)组成;",
+          "similarity": 0.9744,
+          "region_pt": [
+            112.771,
+            574.008,
+            474.129,
+            583.769
+          ],
+          "status": "manually_adjudicated",
+          "resolution": "原图为加入与＋、中文引号，OCR 的加人和十错误。",
+          "evidence": "research/pages/046.png",
+          "generated_pages": [
+            50
+          ]
+        },
+        {
+          "source_text": "体上时，可在标准顺序号前加空格或“0”，例如　GB/T1可表示为“GB/T 1\"或“GB/T 00001”。",
+          "generated_candidate": "体上时,可在标准顺序号前加空格或“0”,例如GB/T1可表示为“GB/T1”或“GB/T00001”。",
+          "similarity": 0.9804,
+          "region_pt": [
+            71.757,
+            666.95,
+            485.968,
+            677.5600000000001
+          ],
+          "status": "manually_adjudicated",
+          "resolution": "原图为加入与＋、中文引号，OCR 的加人和十错误。",
+          "evidence": "research/pages/046.png",
+          "generated_pages": [
+            50
+          ]
+        },
+        {
+          "source_text": "与旧版的任何标记发生混淆 。 通常这一要求容易满足 ， 因此不必在标准代号和顺序号段内加人发布",
+          "generated_candidate": "与旧版的任何标记发生混淆。通常这一要求容易满足,因此不必在标准代号和顺序号段内加入发布",
+          "similarity": 0.9767,
+          "region_pt": [
+            72.603,
+            699.204,
+            530.788,
+            708.5409999999999
+          ],
+          "status": "manually_adjudicated",
+          "resolution": "原图为加入与＋、中文引号，OCR 的加人和十错误。",
+          "evidence": "research/pages/046.png",
+          "generated_pages": [
+            50
+          ]
+        }
+      ],
+      "candidate_resolution": "原图为加入与＋、中文引号，OCR 的加人和十错误。",
+      "evidence_source": "research/pages/046.png"
+    },
+    {
+      "source_page": 47,
+      "generated_pages": [
+        51
+      ],
+      "status": "manual_text_review_completed",
+      "visual_review": "reviewed",
+      "manual_note": "B.6.3：特性段、数据段及两个标记示例；℃、±、58-82、16/03/08、N-、P20；保留原文“11°法后角”。",
+      "historical_ocr_items_checked": 37,
+      "exact_normalized_matches": 25,
+      "candidates": [
+        {
+          "source_text": "B.6.3.4在特性段中，不应使用字母“I\"和“O”，以免与数字“1\"和“0”相混。",
+          "generated_candidate": "B.6.3.4在特性段中,不应使用字母“I”和“O”,以免与数字“1”和“0”相混。",
+          "similarity": 0.9524,
+          "region_pt": [
+            63.3,
+            257.833,
+            394.63800000000003,
+            267.59400000000005
+          ],
+          "status": "manually_adjudicated",
+          "resolution": "℃、±、一字线及尺寸/等级标记在 OCR 中混淆；结合原图和每个标记的解释项核查，不改写原文“11°法后角”。",
+          "evidence": "research/pages/047.png",
+          "generated_pages": [
+            51
+          ]
+        },
+        {
+          "source_text": "精密测量用短柱式内标温度计，符合　GB/TXXXX，分度为0.2C，量程为58℃～82℃。",
+          "generated_candidate": "精密测量用短柱式内标温度计,符合GB/TXXXX,分度为0.2°C,量程为58°C~82°C",
+          "similarity": 0.9783,
+          "region_pt": [
+            81.905,
+            422.074,
+            416.203,
+            431.411
+          ],
+          "status": "manually_adjudicated",
+          "resolution": "℃、±、一字线及尺寸/等级标记在 OCR 中混淆；结合原图和每个标记的解释项核查，不改写原文“11°法后角”。",
+          "evidence": "research/pages/047.png",
+          "generated_pages": [
+            51
+          ]
+        },
+        {
+          "source_text": "EC一一短柱式内标温度计；",
+          "generated_candidate": "EC——短柱式内标温度计;",
+          "similarity": 0.8462,
+          "region_pt": [
+            80.213,
+            478.095,
+            196.33499999999998,
+            489.129
+          ],
+          "status": "manually_adjudicated",
+          "resolution": "℃、±、一字线及尺寸/等级标记在 OCR 中混淆；结合原图和每个标记的解释项核查，不改写原文“11°法后角”。",
+          "evidence": "research/pages/047.png",
+          "generated_pages": [
+            51
+          ]
+        },
+        {
+          "source_text": "58—82——量程为 58 ℃～82 ℃。",
+          "generated_candidate": "58-82——量程为58°C~82°C。",
+          "similarity": 0.95,
+          "region_pt": [
+            81.059,
+            506.953,
+            203.523,
+            516.29
+          ],
+          "status": "manually_adjudicated",
+          "resolution": "℃、±、一字线及尺寸/等级标记在 OCR 中混淆；结合原图和每个标记的解释项核查，不改写原文“11°法后角”。",
+          "evidence": "research/pages/047.png",
+          "generated_pages": [
+            51
+          ]
+        },
+        {
+          "source_text": "T一一外形符号(正三角形)；",
+          "generated_candidate": "T——外形符号(正三角形);",
+          "similarity": 0.8571,
+          "region_pt": [
+            79.791,
+            633.848,
+            197.18099999999998,
+            644.882
+          ],
+          "status": "manually_adjudicated",
+          "resolution": "℃、±、一字线及尺寸/等级标记在 OCR 中混淆；结合原图和每个标记的解释项核查，不改写原文“11°法后角”。",
+          "evidence": "research/pages/047.png",
+          "generated_pages": [
+            51
+          ]
+        },
+        {
+          "source_text": "公差等级　G（正三角形的高度公差为土0.025mm，刀片的厚度公差为土0.13mm）；",
+          "generated_candidate": "公差等级G(正三角形的高度公差为±0.025mm,刀片的厚度公差为±0.13mm);",
+          "similarity": 0.9524,
+          "region_pt": [
+            110.657,
+            663.131,
+            426.351,
+            672.043
+          ],
+          "status": "manually_adjudicated",
+          "resolution": "℃、±、一字线及尺寸/等级标记在 OCR 中混淆；结合原图和每个标记的解释项核查，不改写原文“11°法后角”。",
+          "evidence": "research/pages/047.png",
+          "generated_pages": [
+            51
+          ]
+        },
+        {
+          "source_text": "一一尺寸符号（正三角形公称尺寸为16.5mm）；",
+          "generated_candidate": "——尺寸符号(正三角形公称尺寸为16.5mm);",
+          "similarity": 0.9167,
+          "region_pt": [
+            92.898,
+            691.141,
+            277.94,
+            700.478
+          ],
+          "status": "manually_adjudicated",
+          "resolution": "℃、±、一字线及尺寸/等级标记在 OCR 中混淆；结合原图和每个标记的解释项核查，不改写原文“11°法后角”。",
+          "evidence": "research/pages/047.png",
+          "generated_pages": [
+            51
+          ]
+        },
+        {
+          "source_text": "一一厚度符号（3.18mm）；",
+          "generated_candidate": "——厚度符号(3.18mm);",
+          "similarity": 0.8667,
+          "region_pt": [
+            93.744,
+            705.995,
+            194.644,
+            714.483
+          ],
+          "status": "manually_adjudicated",
+          "resolution": "℃、±、一字线及尺寸/等级标记在 OCR 中混淆；结合原图和每个标记的解释项核查，不改写原文“11°法后角”。",
+          "evidence": "research/pages/047.png",
+          "generated_pages": [
+            51
+          ]
+        },
+        {
+          "source_text": "8　一一刀尖圆角特征符号（刀尖圆角半径为0.8mm）；",
+          "generated_candidate": "8——刀尖圆角特征符号(刀尖圆角半径为0.8mm);",
+          "similarity": 0.9231,
+          "region_pt": [
+            87.824,
+            720.0,
+            291.46999999999997,
+            728.912
+          ],
+          "status": "manually_adjudicated",
+          "resolution": "℃、±、一字线及尺寸/等级标记在 OCR 中混淆；结合原图和每个标记的解释项核查，不改写原文“11°法后角”。",
+          "evidence": "research/pages/047.png",
+          "generated_pages": [
+            51
+          ]
+        },
+        {
+          "source_text": "一一切削方向符号（供左向和右向切削）；",
+          "generated_candidate": "——切削方向符号(供左向和右向切削);",
+          "similarity": 0.8947,
+          "region_pt": [
+            92.898,
+            748.434,
+            250.033,
+            756.922
+          ],
+          "status": "manually_adjudicated",
+          "resolution": "℃、±、一字线及尺寸/等级标记在 OCR 中混淆；结合原图和每个标记的解释项核查，不改写原文“11°法后角”。",
+          "evidence": "research/pages/047.png",
+          "generated_pages": [
+            51
+          ]
+        },
+        {
+          "source_text": "P20一一硬质合金使用范围和用途分组符号（适用于钢、铸钢、带长屑的可锻铸铁）。",
+          "generated_candidate": "P20——硬质合金使用范围和用途分组符号(适用于钢、铸钢、带长屑的可锻铸铁)。",
+          "similarity": 0.9487,
+          "region_pt": [
+            81.059,
+            762.439,
+            395.06100000000004,
+            771.351
+          ],
+          "status": "manually_adjudicated",
+          "resolution": "℃、±、一字线及尺寸/等级标记在 OCR 中混淆；结合原图和每个标记的解释项核查，不改写原文“11°法后角”。",
+          "evidence": "research/pages/047.png",
+          "generated_pages": [
+            51
+          ]
+        },
+        {
+          "source_text": "因为　GB/T XXXX中仅涉及短柱式内标温度计,故标记中字母“EC\"能够省略。",
+          "generated_candidate": "因为GB/TXXXX中仅涉及短柱式内标温度计,故标记中字母“EC”能够省略。",
+          "similarity": 0.9737,
+          "region_pt": [
+            82.633,
+            521.65,
+            377.633,
+            529.65
+          ],
+          "status": "manually_adjudicated",
+          "resolution": "℃、±、一字线及尺寸/等级标记在 OCR 中混淆；结合原图和每个标记的解释项核查，不改写原文“11°法后角”。",
+          "evidence": "research/pages/047.png",
+          "generated_pages": [
+            51
+          ]
+        }
+      ],
+      "candidate_resolution": "℃、±、一字线及尺寸/等级标记在 OCR 中混淆；结合原图和每个标记的解释项核查，不改写原文“11°法后角”。",
+      "evidence_source": "research/pages/047.png"
+    },
+    {
+      "source_page": 48,
+      "generated_pages": [
+        52
+      ],
+      "status": "manual_text_review_completed",
+      "visual_review": "reviewed",
+      "manual_note": "第三个标记示例及 B.7：GB/T 67、ISO 1580-M5×20，英文标记和国际标准的采用；B.6.3.3/B.7.1 改为自动引用。",
+      "historical_ocr_items_checked": 23,
+      "exact_normalized_matches": 21,
+      "candidates": [
+        {
+          "source_text": "紧固件的机械性能标准（GB/T 3098.1)还引　I用了其他一些标准：金属拉伸试验（GB/T 228），硬度试验（GB/T 230",
+          "generated_candidate": "紧固件的机械性能标准(GB/T3098.1)还引用了其他一些标准:金属拉伸试验(GB/T228),硬度试验(GB/T230和",
+          "similarity": 0.9839,
+          "region_pt": [
+            108.12,
+            272.263,
+            530.788,
+            279.902
+          ],
+          "status": "manually_adjudicated",
+          "resolution": "× 是乘号，中文引号和中文“引用”的 OCR 多出字符；B.7 编号由原生引用读取。",
+          "evidence": "research/pages/048.png",
+          "generated_pages": [
+            52
+          ]
+        },
+        {
+          "source_text": "\"SlottedpanscrewISO1580-M5X20-4,8\"",
+          "generated_candidate": "“SlottedpanscrewISO1580-M5×20-4,8”",
+          "similarity": 0.9118,
+          "region_pt": [
+            89.515,
+            476.821,
+            253.416,
+            487.00600000000003
+          ],
+          "status": "manually_adjudicated",
+          "resolution": "× 是乘号，中文引号和中文“引用”的 OCR 多出字符；B.7 编号由原生引用读取。",
+          "evidence": "research/pages/048.png",
+          "generated_pages": [
+            52
+          ]
+        }
+      ],
+      "candidate_resolution": "× 是乘号，中文引号和中文“引用”的 OCR 多出字符；B.7 编号由原生引用读取。",
+      "evidence_source": "research/pages/048.png"
+    },
+    {
+      "source_page": 49,
+      "generated_pages": [
+        53
+      ],
+      "status": "manual_text_review_completed",
+      "visual_review": "reviewed",
+      "manual_note": "附录 C 的 C.1～C.3：能愿动词、祈使句和表注；删除原文没有的句末句号，原图“在…之前”为一个省略号。",
+      "historical_ocr_items_checked": 12,
+      "exact_normalized_matches": 10,
+      "candidates": [
+        {
+          "source_text": "例如“开启记录仪。”“在之前不启动该机械装置。”",
+          "generated_candidate": "例如“开启记录仪。”“在...之前不启动该机械装置。”C",
+          "similarity": 0.9231,
+          "region_pt": [
+            78.522,
+            553.637,
+            274.557,
+            562.549
+          ],
+          "status": "manually_adjudicated",
+          "resolution": "原图 C.2 的“在…之前”为三点省略号；原表末段没有增添句号，恢复原图的引号。",
+          "evidence": "research/pages/049.png",
+          "generated_pages": [
+            53
+          ]
+        },
+        {
+          "source_text": "不使用“必须\"作为“应\"的替代词,以避免将文件的要求与外部约束（见9.5.4.2.2)相混淆",
+          "generated_candidate": "不使用“必须”作为“应”的替代词,以避免将文件的要求与外部约束(见9.5.4.2.2)相混淆",
+          "similarity": 0.9565,
+          "region_pt": [
+            77.967,
+            357.983,
+            413.3,
+            365.983
+          ],
+          "status": "manually_adjudicated",
+          "resolution": "原图 C.2 的“在…之前”为三点省略号；原表末段没有增添句号，恢复原图的引号。",
+          "evidence": "research/pages/049.png",
+          "generated_pages": [
+            53
+          ]
+        }
+      ],
+      "candidate_resolution": "原图 C.2 的“在…之前”为三点省略号；原表末段没有增添句号，恢复原图的引号。",
+      "evidence_source": "research/pages/049.png"
+    },
+    {
+      "source_page": 50,
+      "generated_pages": [
+        54
+      ],
+      "status": "manual_text_review_completed",
+      "visual_review": "reviewed",
+      "manual_note": "附录 C 的 C.4/C.5、表 C.4～C.7：允许、能力、可能性、陈述；保留带句号的注，删除另外增添的句号。",
+      "historical_ocr_items_checked": 18,
+      "exact_normalized_matches": 17,
+      "candidates": [
+        {
+          "source_text": "注：“可\"是文件表达的允许,而“能\"指主、客观原因导致的能力，“可能\"指主、客观原因导致的可能性。",
+          "generated_candidate": "注:“可”是文件表达的允许,而“能”指主、客观原因导致的能力,“可能”指主、客观原因导致的可能性。",
+          "similarity": 0.9388,
+          "region_pt": [
+            95.3,
+            276.65,
+            482.967,
+            284.65
+          ],
+          "status": "manually_adjudicated",
+          "resolution": "C.4 注保留原句号；其他表末段和“见表 C.4 的注”不擅加句号，引号恢复正确。",
+          "evidence": "research/pages/050.png",
+          "generated_pages": [
+            54
+          ]
+        }
+      ],
+      "candidate_resolution": "C.4 注保留原句号；其他表末段和“见表 C.4 的注”不擅加句号，引号恢复正确。",
+      "evidence_source": "research/pages/050.png"
+    },
+    {
+      "source_page": 51,
+      "generated_pages": [
+        55
+      ],
+      "status": "manual_text_review_completed",
+      "visual_review": "reviewed",
+      "manual_note": "附录 D：D.1～D.3、专利信息说明及三条原生列项；引号和省略号。",
+      "historical_ocr_items_checked": 17,
+      "exact_normalized_matches": 16,
+      "candidates": [
+        {
+          "source_text": "专利持有人姓名：·",
+          "generated_candidate": "专利持有人姓名:.",
+          "similarity": 0.8889,
+          "region_pt": [
+            84.442,
+            462.816,
+            179.845,
+            473.426
+          ],
+          "status": "manually_adjudicated",
+          "resolution": "专利典型语句中的省略号；OCR 混入半角点线。",
+          "evidence": "research/pages/051.png",
+          "generated_pages": [
+            55
+          ]
+        }
+      ],
+      "candidate_resolution": "专利典型语句中的省略号；OCR 混入半角点线。",
+      "evidence_source": "research/pages/051.png"
+    },
+    {
+      "source_page": 52,
+      "generated_pages": [
+        57
+      ],
+      "status": "manual_text_review_completed",
+      "visual_review": "reviewed",
+      "manual_note": "附录 E 引导页：规范性标识、12 个文件格式示例及标准化指导性技术文件的说明。",
+      "historical_ocr_items_checked": 4,
+      "exact_normalized_matches": 4,
+      "candidates": [],
+      "candidate_resolution": "已对照原图逐行核查，未发现需要修订的文字差异。",
+      "evidence_source": "research/pages/052.png"
+    },
+    {
+      "source_page": 53,
+      "generated_pages": [
+        58
+      ],
+      "status": "manual_text_review_completed",
+      "visual_review": "reviewed",
+      "manual_note": "图 E.1：单数页、尺寸标注、占位正文及页眉编号；由模板编译。",
+      "historical_ocr_items_checked": 4,
+      "exact_normalized_matches": 3,
+      "candidates": [
+        {
+          "source_text": "XXXX-XXXXXL/a",
+          "generated_candidate": "TXXXXX—XX",
+          "similarity": 0.4545,
+          "region_pt": [
+            393.102,
+            168.286,
+            472.015,
+            175.925
+          ],
+          "status": "manually_adjudicated",
+          "resolution": "编号年份之间为一字线，OCR 将它当短横线；尺寸和占位正文在真实页面上核对。",
+          "evidence": "research/pages/053.png",
+          "generated_pages": [
+            58
+          ]
+        }
+      ],
+      "candidate_resolution": "编号年份之间为一字线，OCR 将它当短横线；尺寸和占位正文在真实页面上核对。",
+      "evidence_source": "research/pages/053.png"
+    },
+    {
+      "source_page": 54,
+      "generated_pages": [
+        59
+      ],
+      "status": "manual_text_review_completed",
+      "visual_review": "reviewed",
+      "manual_note": "图 E.2：双数页、装订内外边距、尺寸标注及占位正文。",
+      "historical_ocr_items_checked": 4,
+      "exact_normalized_matches": 3,
+      "candidates": [
+        {
+          "source_text": "GB/TXXXXX-XXXX",
+          "generated_candidate": "GB/TXXXXX—XXXX",
+          "similarity": 0.9286,
+          "region_pt": [
+            121.65,
+            167.437,
+            201.409,
+            175.501
+          ],
+          "status": "manually_adjudicated",
+          "resolution": "同 E.1：页眉代号的分隔线不是短横线。",
+          "evidence": "research/pages/054.png",
+          "generated_pages": [
+            59
+          ]
+        }
+      ],
+      "candidate_resolution": "同 E.1：页眉代号的分隔线不是短横线。",
+      "evidence_source": "research/pages/054.png"
+    },
+    {
+      "source_page": 55,
+      "generated_pages": [
+        60
+      ],
+      "status": "manual_text_review_completed",
+      "visual_review": "reviewed",
+      "manual_note": "图 E.3：正文首页名称、重要提示、字号与正文留白位置。",
+      "historical_ocr_items_checked": 2,
+      "exact_normalized_matches": 1,
+      "candidates": [
+        {
+          "source_text": "GB/TXXXXX-XXXX",
+          "generated_candidate": "GB/TXXXXX—XXXX",
+          "similarity": 0.9286,
+          "region_pt": [
+            394.37,
+            167.862,
+            473.283,
+            176.774
+          ],
+          "status": "manually_adjudicated",
+          "resolution": "正文示例页的文件编号分隔线和尺寸，按原图保留。",
+          "evidence": "research/pages/055.png",
+          "generated_pages": [
+            60
+          ]
+        }
+      ],
+      "candidate_resolution": "正文示例页的文件编号分隔线和尺寸，按原图保留。",
+      "evidence_source": "research/pages/055.png"
+    },
+    {
+      "source_page": 56,
+      "generated_pages": [
+        61
+      ],
+      "status": "manual_text_review_completed",
+      "visual_review": "reviewed",
+      "manual_note": "图 E.4：封底的旋转编号、尺寸标注和边框。",
+      "historical_ocr_items_checked": 2,
+      "exact_normalized_matches": 1,
+      "candidates": [
+        {
+          "source_text": "XXXX-XXXXX",
+          "generated_candidate": "XXXX-XX-XX",
+          "similarity": 0.9,
+          "region_pt": [
+            492.465,
+            174.228,
+            501.19,
+            249.77
+          ],
+          "status": "manually_adjudicated",
+          "resolution": "封底的旋转编号影响 OCR 顺序，实际文字按图像复核。",
+          "evidence": "research/pages/056.png",
+          "generated_pages": [
+            61
+          ]
+        }
+      ],
+      "candidate_resolution": "封底的旋转编号影响 OCR 顺序，实际文字按图像复核。",
+      "evidence_source": "research/pages/056.png"
+    },
+    {
+      "source_page": 57,
+      "generated_pages": [
+        62
+      ],
+      "status": "manual_text_review_completed",
+      "visual_review": "reviewed",
+      "manual_note": "图 E.5：国家标准封面代号、顺序号、名称、译名、一致性标识、日期和机构。",
+      "historical_ocr_items_checked": 11,
+      "exact_normalized_matches": 9,
+      "candidates": [
+        {
+          "source_text": "GB/TXXXXX-XXXX",
+          "generated_candidate": "GB/TXXXXX—XXXX",
+          "similarity": 0.9286,
+          "region_pt": [
+            366.887,
+            236.189,
+            467.36400000000003,
+            245.101
+          ],
+          "status": "manually_adjudicated",
+          "resolution": "标准编号和代替编号使用一字线，历史 OCR 与 PDF 抽取字符不同。",
+          "evidence": "research/pages/057.png",
+          "generated_pages": [
+            62
+          ]
+        },
+        {
+          "source_text": "国家标准发布部门发布",
+          "generated_candidate": "家标准发布部门a发布",
+          "similarity": 0.9,
+          "region_pt": [
+            245.96,
+            667.375,
+            359.545,
+            678.834
+          ],
+          "status": "manually_adjudicated",
+          "resolution": "标准编号和代替编号使用一字线，历史 OCR 与 PDF 抽取字符不同。",
+          "evidence": "research/pages/057.png",
+          "generated_pages": [
+            62
+          ]
+        }
+      ],
+      "candidate_resolution": "标准编号和代替编号使用一字线，历史 OCR 与 PDF 抽取字符不同。",
+      "evidence_source": "research/pages/057.png"
+    },
+    {
+      "source_page": 58,
+      "generated_pages": [
+        63
+      ],
+      "status": "manual_text_review_completed",
+      "visual_review": "reviewed",
+      "manual_note": "图 E.6：行业标准封面；备案号原图是 XXXX—XXXX，已改正，顺序号保持 5 个 X。",
+      "historical_ocr_items_checked": 13,
+      "exact_normalized_matches": 10,
+      "candidates": [
+        {
+          "source_text": "备案号：XXXX一　XXXX",
+          "generated_candidate": "备案号:XXXX—XXXX",
+          "similarity": 0.9231,
+          "region_pt": [
+            138.14,
+            149.188,
+            217.899,
+            158.94899999999998
+          ],
+          "status": "manually_adjudicated",
+          "resolution": "原图备案号 4 个 X 已修正；编号与代替编号 5 个 X，年份为一字线。",
+          "evidence": "research/pages/058.png",
+          "generated_pages": [
+            63
+          ]
+        },
+        {
+          "source_text": "XX/TXXXXX-XXXX",
+          "generated_candidate": "XX/TXXXXX—XXXX",
+          "similarity": 0.9286,
+          "region_pt": [
+            375.766,
+            229.823,
+            474.975,
+            239.584
+          ],
+          "status": "manually_adjudicated",
+          "resolution": "原图备案号 4 个 X 已修正；编号与代替编号 5 个 X，年份为一字线。",
+          "evidence": "research/pages/058.png",
+          "generated_pages": [
+            63
+          ]
+        },
+        {
+          "source_text": "代替　XX/TXXXXX一　XXXX",
+          "generated_candidate": "代替XX/TXXXXX—XXXX",
+          "similarity": 0.9375,
+          "region_pt": [
+            385.491,
+            243.404,
+            472.015,
+            252.316
+          ],
+          "status": "manually_adjudicated",
+          "resolution": "原图备案号 4 个 X 已修正；编号与代替编号 5 个 X，年份为一字线。",
+          "evidence": "research/pages/058.png",
+          "generated_pages": [
+            63
+          ]
+        }
+      ],
+      "candidate_resolution": "原图备案号 4 个 X 已修正；编号与代替编号 5 个 X，年份为一字线。",
+      "evidence_source": "research/pages/058.png"
+    },
+    {
+      "source_page": 59,
+      "generated_pages": [
+        64
+      ],
+      "status": "manual_text_review_completed",
+      "visual_review": "reviewed",
+      "manual_note": "图 E.7：地方标准封面；顺序号及代替行原图为 DBXX/T XXX—XXXX，已改成 3 个 X。",
+      "historical_ocr_items_checked": 10,
+      "exact_normalized_matches": 8,
+      "candidates": [
+        {
+          "source_text": "DBXX/TXXX-XXXX",
+          "generated_candidate": "DBXX/TXXX—XXXX",
+          "similarity": 0.9286,
+          "region_pt": [
+            364.773,
+            230.248,
+            468.21000000000004,
+            239.16
+          ],
+          "status": "manually_adjudicated",
+          "resolution": "地方编号及代替编号 3 个 X 已修正；原图的年份分隔线不是短横线。",
+          "evidence": "research/pages/059.png",
+          "generated_pages": [
+            64
+          ]
+        },
+        {
+          "source_text": "代替　DBXX/TXXX-XXXX",
+          "generated_candidate": "代替DBXX/TXXX—XXXX",
+          "similarity": 0.9375,
+          "region_pt": [
+            375.766,
+            243.828,
+            465.25,
+            252.74
+          ],
+          "status": "manually_adjudicated",
+          "resolution": "地方编号及代替编号 3 个 X 已修正；原图的年份分隔线不是短横线。",
+          "evidence": "research/pages/059.png",
+          "generated_pages": [
+            64
+          ]
+        }
+      ],
+      "candidate_resolution": "地方编号及代替编号 3 个 X 已修正；原图的年份分隔线不是短横线。",
+      "evidence_source": "research/pages/059.png"
+    },
+    {
+      "source_page": 60,
+      "generated_pages": [
+        65
+      ],
+      "status": "manual_text_review_completed",
+      "visual_review": "reviewed",
+      "manual_note": "图 E.8：逐项核对 30 个名称/占位符及页码；章、条、附录、图表占位符已修正；前言 III/引言 IV 由真实分页生成。",
+      "historical_ocr_items_checked": 17,
+      "exact_normalized_matches": 15,
+      "candidates": [
+        {
+          "source_text": "GB/TXXXXX-XXXX",
+          "generated_candidate": "GB/TXXXXX—XXXX",
+          "similarity": 0.9286,
+          "region_pt": [
+            403.249,
+            167.862,
+            480.048,
+            175.501
+          ],
+          "status": "manually_adjudicated",
+          "resolution": "原图表 A.1 标题占位符是 7 个×；PDF 最近字符串匹配会截断，已单独验证全部 30 个条目及页码。",
+          "evidence": "research/pages/060.png",
+          "generated_pages": [
+            65
+          ]
+        },
+        {
+          "source_text": "表　A.1××××XXX",
+          "generated_candidate": "表A.1×××",
+          "similarity": 0.7778,
+          "region_pt": [
+            134.335,
+            684.775,
+            218.745,
+            692.838
+          ],
+          "status": "manually_adjudicated",
+          "resolution": "原图表 A.1 标题占位符是 7 个×；PDF 最近字符串匹配会截断，已单独验证全部 30 个条目及页码。",
+          "evidence": "research/pages/060.png",
+          "generated_pages": [
+            65
+          ]
+        }
+      ],
+      "candidate_resolution": "原图表 A.1 标题占位符是 7 个×；PDF 最近字符串匹配会截断，已单独验证全部 30 个条目及页码。",
+      "evidence_source": "research/pages/060.png"
+    },
+    {
+      "source_page": 61,
+      "generated_pages": [
+        66
+      ],
+      "status": "manual_text_review_completed",
+      "visual_review": "reviewed",
+      "manual_note": "图 E.9：前言及引言格式、占位正文、两条注和标题替换说明。",
+      "historical_ocr_items_checked": 6,
+      "exact_normalized_matches": 5,
+      "candidates": [
+        {
+          "source_text": "GB/TXXXXX-XXXX",
+          "generated_candidate": "GB/TXXXXX—XXXX",
+          "similarity": 0.9286,
+          "region_pt": [
+            394.37,
+            161.92,
+            470.324,
+            169.559
+          ],
+          "status": "manually_adjudicated",
+          "resolution": "页眉年份分隔线按原图，前言/引言说明完整。",
+          "evidence": "research/pages/061.png",
+          "generated_pages": [
+            66
+          ]
+        }
+      ],
+      "candidate_resolution": "页眉年份分隔线按原图，前言/引言说明完整。",
+      "evidence_source": "research/pages/061.png"
+    },
+    {
+      "source_page": 62,
+      "generated_pages": [
+        67
+      ],
+      "status": "manual_text_review_completed",
+      "visual_review": "reviewed",
+      "manual_note": "图 E.10：文献条目编号、占位文本、尺寸与注。",
+      "historical_ocr_items_checked": 12,
+      "exact_normalized_matches": 11,
+      "candidates": [
+        {
+          "source_text": "GB/TXXXXX-XXXX",
+          "generated_candidate": "GB/TXXXXX—XXXX",
+          "similarity": 0.9286,
+          "region_pt": [
+            402.826,
+            168.286,
+            480.471,
+            175.925
+          ],
+          "status": "manually_adjudicated",
+          "resolution": "页眉分隔线；文献占位文字实际图像中检查。",
+          "evidence": "research/pages/062.png",
+          "generated_pages": [
+            67
+          ]
+        }
+      ],
+      "candidate_resolution": "页眉分隔线；文献占位文字实际图像中检查。",
+      "evidence_source": "research/pages/062.png"
+    },
+    {
+      "source_page": 63,
+      "generated_pages": [
+        68
+      ],
+      "status": "manual_text_review_completed",
+      "visual_review": "reviewed",
+      "manual_note": "图 E.11：索引分组、所有示例编号、逗号和注；点线为模板生成的图形。",
+      "historical_ocr_items_checked": 13,
+      "exact_normalized_matches": 5,
+      "candidates": [
+        {
+          "source_text": "GB/TXXXXX-XXXX",
+          "generated_candidate": "GB/TXXXXX—XXXX",
+          "similarity": 0.9286,
+          "region_pt": [
+            395.216,
+            167.862,
+            472.438,
+            175.501
+          ],
+          "status": "manually_adjudicated",
+          "resolution": "索引点线由模板绘制；原 OCR 常把点线识成标点或丢失。示例编号和标点实际核对。",
+          "evidence": "research/pages/063.png",
+          "generated_pages": [
+            68
+          ]
+        },
+        {
+          "source_text": "·5.2.1，5.2.2，表　A.1",
+          "generated_candidate": "×5.2.1,5.2.2,表A.1",
+          "similarity": 0.9412,
+          "region_pt": [
+            391.41,
+            269.717,
+            471.16900000000004,
+            277.781
+          ],
+          "status": "manually_adjudicated",
+          "resolution": "索引点线由模板绘制；原 OCR 常把点线识成标点或丢失。示例编号和标点实际核对。",
+          "evidence": "research/pages/063.png",
+          "generated_pages": [
+            68
+          ]
+        },
+        {
+          "source_text": "XXXXXXX",
+          "generated_candidate": "XXXX—XX",
+          "similarity": 0.8571,
+          "region_pt": [
+            126.724,
+            284.57,
+            179.0,
+            291.36
+          ],
+          "status": "manually_adjudicated",
+          "resolution": "索引点线由模板绘制；原 OCR 常把点线识成标点或丢失。示例编号和标点实际核对。",
+          "evidence": "research/pages/063.png",
+          "generated_pages": [
+            68
+          ]
+        },
+        {
+          "source_text": ".·附录　B，C.3.1",
+          "generated_candidate": "××附录B,C.3.1",
+          "similarity": 0.8182,
+          "region_pt": [
+            415.088,
+            283.297,
+            470.74600000000004,
+            291.785
+          ],
+          "status": "manually_adjudicated",
+          "resolution": "索引点线由模板绘制；原 OCR 常把点线识成标点或丢失。示例编号和标点实际核对。",
+          "evidence": "research/pages/063.png",
+          "generated_pages": [
+            68
+          ]
+        },
+        {
+          "source_text": "··6.2.3，6.2.5，图1，表1",
+          "generated_candidate": "××6.2.3,6.2.5,图1,表1",
+          "similarity": 0.8947,
+          "region_pt": [
+            375.766,
+            310.883,
+            470.324,
+            318.94599999999997
+          ],
+          "status": "manually_adjudicated",
+          "resolution": "索引点线由模板绘制；原 OCR 常把点线识成标点或丢失。示例编号和标点实际核对。",
+          "evidence": "research/pages/063.png",
+          "generated_pages": [
+            68
+          ]
+        },
+        {
+          "source_text": ".·6.3.4",
+          "generated_candidate": "××6.3.4",
+          "similarity": 0.7143,
+          "region_pt": [
+            442.149,
+            324.888,
+            471.169,
+            332.95099999999996
+          ],
+          "status": "manually_adjudicated",
+          "resolution": "索引点线由模板绘制；原 OCR 常把点线识成标点或丢失。示例编号和标点实际核对。",
+          "evidence": "research/pages/063.png",
+          "generated_pages": [
+            68
+          ]
+        },
+        {
+          "source_text": ".·5.2.2",
+          "generated_candidate": "1,5.2.2",
+          "similarity": 0.7143,
+          "region_pt": [
+            439.189,
+            380.059,
+            471.16900000000004,
+            388.12300000000005
+          ],
+          "status": "manually_adjudicated",
+          "resolution": "索引点线由模板绘制；原 OCR 常把点线识成标点或丢失。示例编号和标点实际核对。",
+          "evidence": "research/pages/063.png",
+          "generated_pages": [
+            68
+          ]
+        },
+        {
+          "source_text": ".· 6.1.1",
+          "generated_candidate": "3,6.1.1",
+          "similarity": 0.7143,
+          "region_pt": [
+            442.995,
+            443.294,
+            471.17,
+            450.50899999999996
+          ],
+          "status": "manually_adjudicated",
+          "resolution": "索引点线由模板绘制；原 OCR 常把点线识成标点或丢失。示例编号和标点实际核对。",
+          "evidence": "research/pages/063.png",
+          "generated_pages": [
+            68
+          ]
+        }
+      ],
+      "candidate_resolution": "索引点线由模板绘制；原 OCR 常把点线识成标点或丢失。示例编号和标点实际核对。",
+      "evidence_source": "research/pages/063.png"
+    },
+    {
+      "source_page": 64,
+      "generated_pages": [
+        69
+      ],
+      "status": "manual_text_review_completed",
+      "visual_review": "reviewed",
+      "manual_note": "图 E.12：附录三行标题、占位正文、尺寸和注。",
+      "historical_ocr_items_checked": 4,
+      "exact_normalized_matches": 3,
+      "candidates": [
+        {
+          "source_text": "GB/TXXXXX-XXXX",
+          "generated_candidate": "GB/TXXXXX—XXXX",
+          "similarity": 0.9286,
+          "region_pt": [
+            402.826,
+            167.437,
+            480.471,
+            176.34900000000002
+          ],
+          "status": "manually_adjudicated",
+          "resolution": "页眉分隔线和附录字样，实际版面没有遗漏。",
+          "evidence": "research/pages/064.png",
+          "generated_pages": [
+            69
+          ]
+        }
+      ],
+      "candidate_resolution": "页眉分隔线和附录字样，实际版面没有遗漏。",
+      "evidence_source": "research/pages/064.png"
+    },
+    {
+      "source_page": 65,
+      "generated_pages": [
+        71,
+        72
+      ],
+      "status": "manual_text_review_completed",
+      "visual_review": "reviewed",
+      "manual_note": "表 F.1 的 01～28：各位置、内容、字号字体；第 23 项“第二行”已恢复；25～28 在新书的续表中。",
+      "historical_ocr_items_checked": 14,
+      "exact_normalized_matches": 13,
+      "candidates": [
+        {
+          "source_text": "中华人民共和国×X行业标准",
+          "generated_candidate": "中华人民共和国××行业标准",
+          "similarity": 0.9231,
+          "region_pt": [
+            275.98,
+            357.142,
+            392.524,
+            367.752
+          ],
+          "status": "manually_adjudicated",
+          "resolution": "“中华人民共和国××行业标准”是两个乘号，原 OCR 混入 X；第 23 项位置是第二行。",
+          "evidence": "research/pages/065.png",
+          "generated_pages": [
+            71,
+            72
+          ]
+        }
+      ],
+      "candidate_resolution": "“中华人民共和国××行业标准”是两个乘号，原 OCR 混入 X；第 23 项位置是第二行。",
+      "evidence_source": "research/pages/065.png"
+    },
+    {
+      "source_page": 66,
+      "generated_pages": [
+        72
+      ],
+      "status": "manual_text_review_completed",
+      "visual_review": "reviewed",
+      "manual_note": "表 F.1 的 29～48：36～40 在 6 行分组内均匀排列，没有“36 跨两行”的单项关系；#、*、示例 X、注 X 及 a/b 脚注。",
+      "historical_ocr_items_checked": 17,
+      "exact_normalized_matches": 15,
+      "candidates": [
+        {
+          "source_text": "标明示例的“示例：”“示例×：”",
+          "generated_candidate": "标明示例的“示例:”“示例X:”",
+          "similarity": 0.9375,
+          "region_pt": [
+            284.436,
+            388.547,
+            399.289,
+            398.30800000000005
+          ],
+          "status": "manually_adjudicated",
+          "resolution": "原图是大写 X：示例 X、注 X，不是乘号×；图/表组的序号和续表占位符已独立验证。",
+          "evidence": "research/pages/066.png",
+          "generated_pages": [
+            72
+          ]
+        },
+        {
+          "source_text": "标明注的“注 ： ” “注 × ： ”",
+          "generated_candidate": "标明注的“注:”“注X:”",
+          "similarity": 0.9231,
+          "region_pt": [
+            284.436,
+            425.045,
+            371.806,
+            433.957
+          ],
+          "status": "manually_adjudicated",
+          "resolution": "原图是大写 X：示例 X、注 X，不是乘号×；图/表组的序号和续表占位符已独立验证。",
+          "evidence": "research/pages/066.png",
+          "generated_pages": [
+            72
+          ]
+        }
+      ],
+      "candidate_resolution": "原图是大写 X：示例 X、注 X，不是乘号×；图/表组的序号和续表占位符已独立验证。",
+      "evidence_source": "research/pages/066.png"
+    },
+    {
+      "source_page": 67,
+      "generated_pages": [
+        73
+      ],
+      "status": "manual_text_review_completed",
+      "visual_review": "reviewed",
+      "manual_note": "参考文献：18 项逐项核对；GB/T 4458.1、ISO 690，英语行末连字符只用于原文换行，不转录为词内字符。",
+      "historical_ocr_items_checked": 26,
+      "exact_normalized_matches": 22,
+      "candidates": [
+        {
+          "source_text": "GB/T 4458.11",
+          "generated_candidate": "GB/T4458.1机",
+          "similarity": 0.9091,
+          "region_pt": [
+            110.234,
+            211.574,
+            181.11399999999998,
+            219.637
+          ],
+          "status": "manually_adjudicated",
+          "resolution": "GB/T 4458.1、ISO 690 按原图纠正；英语 con-/ci- 属换行连字符，正文保留完整 conventions/citations。",
+          "evidence": "research/pages/067.png",
+          "generated_pages": [
+            73
+          ]
+        },
+        {
+          "source_text": "[14] ISO 128-30 Technical drawings—General principles of presentation—Part 30:Basic con-",
+          "generated_candidate": "[14]ISO128-30Technicaldrawings—Generalprinciplesofpresentation—Part30:Basicconv",
+          "similarity": 0.9873,
+          "region_pt": [
+            83.173,
+            366.054,
+            522.7529999999999,
+            379.635
+          ],
+          "status": "manually_adjudicated",
+          "resolution": "GB/T 4458.1、ISO 690 按原图纠正；英语 con-/ci- 属换行连字符，正文保留完整 conventions/citations。",
+          "evidence": "research/pages/067.png",
+          "generated_pages": [
+            73
+          ]
+        },
+        {
+          "source_text": "[15]ISO 128-40Technical drawings—General principles of presentation—Part 40:Basic con-",
+          "generated_candidate": "[15]ISO128-40Technicaldrawings—Generalprinciplesofpresentation—Part40:Basicconv",
+          "similarity": 0.9873,
+          "region_pt": [
+            83.596,
+            398.308,
+            523.177,
+            410.615
+          ],
+          "status": "manually_adjudicated",
+          "resolution": "GB/T 4458.1、ISO 690 按原图纠正；英语 con-/ci- 属换行连字符，正文保留完整 conventions/citations。",
+          "evidence": "research/pages/067.png",
+          "generated_pages": [
+            73
+          ]
+        },
+        {
+          "source_text": "[17]  ISO 69o  Information and documentation—Guidelines for bibliographic references and ci-",
+          "generated_candidate": "[17]ISO690Informationanddocumentation—Guidelinesforbibliographicreferencesandcit",
+          "similarity": 0.975,
+          "region_pt": [
+            83.173,
+            444.992,
+            524.0219999999999,
+            457.72400000000005
+          ],
+          "status": "manually_adjudicated",
+          "resolution": "GB/T 4458.1、ISO 690 按原图纠正；英语 con-/ci- 属换行连字符，正文保留完整 conventions/citations。",
+          "evidence": "research/pages/067.png",
+          "generated_pages": [
+            73
+          ]
+        }
+      ],
+      "candidate_resolution": "GB/T 4458.1、ISO 690 按原图纠正；英语 con-/ci- 属换行连字符，正文保留完整 conventions/citations。",
+      "evidence_source": "research/pages/067.png"
+    },
+    {
+      "source_page": 68,
+      "generated_pages": [
+        75
+      ],
+      "status": "manual_text_review_completed",
+      "visual_review": "reviewed",
+      "manual_note": "索引 B/C：词条、排序及对应章条/图表/附录编号全部与原图核对。",
+      "historical_ocr_items_checked": 23,
+      "exact_normalized_matches": 23,
+      "candidates": [],
+      "candidate_resolution": "已对照原图逐行核查，未发现需要修订的文字差异。",
+      "evidence_source": "research/pages/068.png"
+    },
+    {
+      "source_page": 69,
+      "generated_pages": [
+        76
+      ],
+      "status": "manual_text_review_completed",
+      "visual_review": "reviewed",
+      "manual_note": "索引 D～K：关键词、同音排序、多个引用和点线；点线不作为 OCR 正文。",
+      "historical_ocr_items_checked": 27,
+      "exact_normalized_matches": 24,
+      "candidates": [
+        {
+          "source_text": "符号标准····",
+          "generated_candidate": "符号标准",
+          "similarity": 0.6667,
+          "region_pt": [
+            62.455,
+            271.839,
+            117.267,
+            284.571
+          ],
+          "status": "manually_adjudicated",
+          "resolution": "OCR 把索引点线识成多个·；这些线不应写成词条内容。",
+          "evidence": "research/pages/069.png",
+          "generated_pages": [
+            76
+          ]
+        },
+        {
+          "source_text": "规程标准···",
+          "generated_candidate": "规程标",
+          "similarity": 0.6,
+          "region_pt": [
+            63.723,
+            414.86,
+            114.72999999999999,
+            425.046
+          ],
+          "status": "manually_adjudicated",
+          "resolution": "OCR 把索引点线识成多个·；这些线不应写成词条内容。",
+          "evidence": "research/pages/069.png",
+          "generated_pages": [
+            76
+          ]
+        },
+        {
+          "source_text": "过程标准···",
+          "generated_candidate": "过程标",
+          "similarity": 0.6,
+          "region_pt": [
+            63.3,
+            524.778,
+            115.576,
+            534.964
+          ],
+          "status": "manually_adjudicated",
+          "resolution": "OCR 把索引点线识成多个·；这些线不应写成词条内容。",
+          "evidence": "research/pages/069.png",
+          "generated_pages": [
+            76
+          ]
+        }
+      ],
+      "candidate_resolution": "OCR 把索引点线识成多个·；这些线不应写成词条内容。",
+      "evidence_source": "research/pages/069.png"
+    },
+    {
+      "source_page": 70,
+      "generated_pages": [
+        77,
+        78
+      ],
+      "status": "manual_text_review_completed",
+      "visual_review": "reviewed",
+      "manual_note": "索引 K～T：术语和数的排序、公式及索引词条，“条”跨页保持全部引用。",
+      "historical_ocr_items_checked": 21,
+      "exact_normalized_matches": 20,
+      "candidates": [
+        {
+          "source_text": "术语标准···",
+          "generated_candidate": "术语标",
+          "similarity": 0.6,
+          "region_pt": [
+            70.911,
+            570.613,
+            121.918,
+            582.4960000000001
+          ],
+          "status": "manually_adjudicated",
+          "resolution": "术语标准后面的是点线，词条文字及引用完整。",
+          "evidence": "research/pages/070.png",
+          "generated_pages": [
+            77,
+            78
+          ]
+        }
+      ],
+      "candidate_resolution": "术语标准后面的是点线，词条文字及引用完整。",
+      "evidence_source": "research/pages/070.png"
+    },
+    {
+      "source_page": 71,
+      "generated_pages": [
+        78,
+        79
+      ],
+      "status": "manual_text_review_completed",
+      "visual_review": "reviewed",
+      "manual_note": "索引 T～Y：图和文件系列词条、一般性陈述 C.5、应/应该/有可能；跨页引用完整。",
+      "historical_ocr_items_checked": 33,
+      "exact_normalized_matches": 29,
+      "candidates": [
+        {
+          "source_text": "文件编号·…·",
+          "generated_candidate": "文件编号7.1.2",
+          "similarity": 0.6667,
+          "region_pt": [
+            63.3,
+            351.2,
+            114.72999999999999,
+            362.234
+          ],
+          "status": "manually_adjudicated",
+          "resolution": "索引点线是图形，关键词和多编号引用由模板输出，不是 PDF 文本缺字。",
+          "evidence": "research/pages/071.png",
+          "generated_pages": [
+            78,
+            79
+          ]
+        },
+        {
+          "source_text": "文件名称···",
+          "generated_candidate": "文件名",
+          "similarity": 0.6,
+          "region_pt": [
+            63.723,
+            383.03,
+            116.42099999999999,
+            393.215
+          ],
+          "status": "manually_adjudicated",
+          "resolution": "索引点线是图形，关键词和多编号引用由模板输出，不是 PDF 文本缺字。",
+          "evidence": "research/pages/071.png",
+          "generated_pages": [
+            78,
+            79
+          ]
+        },
+        {
+          "source_text": "一致性对应关系·",
+          "generated_candidate": "一致性对应关系5",
+          "similarity": 0.875,
+          "region_pt": [
+            64.569,
+            634.696,
+            141.368,
+            644.881
+          ],
+          "status": "manually_adjudicated",
+          "resolution": "索引点线是图形，关键词和多编号引用由模板输出，不是 PDF 文本缺字。",
+          "evidence": "research/pages/071.png",
+          "generated_pages": [
+            78,
+            79
+          ]
+        },
+        {
+          "source_text": "引言·…·",
+          "generated_candidate": "引言表3,8.2,8.",
+          "similarity": 0.4444,
+          "region_pt": [
+            62.878,
+            697.082,
+            94.858,
+            708.5409999999999
+          ],
+          "status": "manually_adjudicated",
+          "resolution": "索引点线是图形，关键词和多编号引用由模板输出，不是 PDF 文本缺字。",
+          "evidence": "research/pages/071.png",
+          "generated_pages": [
+            78,
+            79
+          ]
+        }
+      ],
+      "candidate_resolution": "索引点线是图形，关键词和多编号引用由模板输出，不是 PDF 文本缺字。",
+      "evidence_source": "research/pages/071.png"
+    },
+    {
+      "source_page": 72,
+      "generated_pages": [
+        79
+      ],
+      "status": "manual_text_review_completed",
+      "visual_review": "reviewed",
+      "manual_note": "索引 Y/Z：允许和章系列、附加信息、所有尾部词条及终结线。",
+      "historical_ocr_items_checked": 26,
+      "exact_normalized_matches": 24,
+      "candidates": [
+        {
+          "source_text": "·7.2,8.2,8.3，8.4，10.2.1",
+          "generated_candidate": "号7.2,8.2,8.3,8.4,10.2.1",
+          "similarity": 0.9565,
+          "region_pt": [
+            407.055,
+            178.896,
+            531.21,
+            188.23299999999998
+          ],
+          "status": "manually_adjudicated",
+          "resolution": "末页索引点线误识为正文标点；关键词及编号实际图像核对。",
+          "evidence": "research/pages/072.png",
+          "generated_pages": [
+            79
+          ]
+        },
+        {
+          "source_text": "专利·…··",
+          "generated_candidate": "专利8.1,8.3,8.",
+          "similarity": 0.5,
+          "region_pt": [
+            70.488,
+            319.371,
+            106.274,
+            331.678
+          ],
+          "status": "manually_adjudicated",
+          "resolution": "末页索引点线误识为正文标点；关键词及编号实际图像核对。",
+          "evidence": "research/pages/072.png",
+          "generated_pages": [
+            79
+          ]
+        }
+      ],
+      "candidate_resolution": "末页索引点线误识为正文标点；关键词及编号实际图像核对。",
+      "evidence_source": "research/pages/072.png"
+    }
+  ]
+}

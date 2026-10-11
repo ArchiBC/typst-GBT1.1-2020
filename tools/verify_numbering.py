@@ -1,0 +1,116 @@
+"""Compile before/after insertions and verify counters AND printed references."""
+from pathlib import Path
+import json, re, sys
+ROOT = Path(__file__).resolve().parents[1]
+sys.path.insert(0, str(ROOT/'.tools/python'))
+import typst
+from pypdf import PdfReader
+from compile import REFERENCE_FONTS, ROMAN_FONTS
+
+def verify_untitled_contents(folder, profiles):
+    """Check unlabelled clauses in rendered contents and their PDF destinations."""
+    results=[]
+    source=ROOT/'tools/fixtures/untitled-contents.typ'
+    for profile in profiles:
+        for inserted in (False,True):
+            for included in (False,True):
+                inputs={'font-profile':profile,'insert-clause':str(inserted).lower(),
+                        'clause-contents':str(included).lower()}
+                fonts=[ROOT/'fonts']+([REFERENCE_FONTS,ROMAN_FONTS] if profile=='reference' else [])
+                args=dict(root=str(ROOT),font_paths=list(map(str,fonts)),ignore_system_fonts=True,sys_inputs=inputs)
+                pdf=folder/f'untitled-{profile}-{int(inserted)}-{int(included)}.pdf'
+                typst.compile(str(source),output=str(pdf),**args)
+                data=json.loads(typst.query(str(source),'metadata',**args))
+                numbers=[v['value']['number'] for v in data if v['value'].get('kind')=='gbt-section']
+                method='1.4' if inserted else '1.3'
+                expected=['1.1','1.2']+(['1.3'] if inserted else [])+[method+'.1',method+'.2','A.1.1']
+                assert numbers==expected,(profile,inserted,included,numbers,expected)
+                unlabelled=[v for v in data if v['value'].get('kind')=='gbt-section' and v['value'].get('key') is None]
+                assert len(unlabelled)==len(expected)-1
+                reader=PdfReader(pdf)
+                toc=reader.pages[0]
+                entries=[]
+                for obj in toc.get('/Annots',[]):
+                    annot=obj.get_object();description=str(annot.get('/Contents',''))
+                    if not description.startswith('gbt-clause '):continue
+                    number=description.removeprefix('gbt-clause ')
+                    dest=annot['/Dest']
+                    if isinstance(dest,str):
+                        target=reader.named_destinations[dest]
+                        page=reader.get_destination_page_number(target)
+                    else:
+                        target=dest.get_object()
+                        page=next(i for i,p in enumerate(reader.pages) if p.indirect_reference==target[0])
+                        assert target[1]=='/XYZ' and float(target[3])>80,(number,target)
+                    assert page in (1,2),(number,page)
+                    assert number in re.sub(r'\s+','',reader.pages[page].extract_text()),(number,page)
+                    entries.append(number)
+                wanted=[n for n in expected if n!=method+'.2'] if included else []
+                assert entries==wanted,(profile,inserted,included,entries,wanted)
+                text=re.sub(r'\s+','',reader.pages[1].extract_text())
+                referenced='1.3' if inserted else '1.2'
+                assert f'条引用：{referenced}。标题引用：{method}。' in text
+                sizes={}
+                def visit(s,cm,tm,font,size):
+                    name=str(font.get('/BaseFont','')) if font else ''
+                    if 'E-FZ' in name or 'SourceHanSans' in name:
+                        sizes[s.strip()]=float(size)
+                reader.pages[1].extract_text(visitor_text=visit)
+                assert .8<sizes[method+'.2']/sizes[method+'.1']<.9, sizes
+                if profile=='open':
+                    assert sizes[method+'.1']==10.5 and sizes[method+'.2']==9, sizes
+                results.append(dict(font_profile=profile,inserted=inserted,clause_contents=included,
+                    unlabelled_clauses=len(unlabelled),numbers=numbers,contents_entries=entries,
+                    destinations_verified=True,printed_references_verified=True,local_font_size_verified=True))
+    return results
+
+def main(profiles=('open',)):
+    folder=ROOT/'output/qa/automatic-numbering'; folder.mkdir(parents=True, exist_ok=True)
+    source=ROOT/'tools/fixtures/automatic-numbering.typ'
+    results=[]
+    for inserted in (False, True):
+        profile=profiles[-1]
+        inputs={'font-profile':profile, 'insert-entry':str(inserted).lower(), 'insert-clause':str(inserted).lower()}
+        fonts=[ROOT/'fonts']+([REFERENCE_FONTS,ROMAN_FONTS] if profile=='reference' else [])
+        args=dict(root=str(ROOT),font_paths=list(map(str,fonts)),ignore_system_fonts=True,sys_inputs=inputs)
+        pdf=folder/('inserted.pdf' if inserted else 'baseline.pdf')
+        typst.compile(str(source),output=str(pdf),**args)
+        data=json.loads(typst.query(str(source),'metadata',**args))
+        actual={r['value']['key']:r['value']['number'] for r in data if r['value'].get('key')}
+        expected={'tested-term': '1.1.2' if inserted else '1.1.1',
+                  'related-term':'1.1.3' if inserted else '1.1.2',
+                  'first-clause':'2.1','second-clause':'2.3' if inserted else '2.2',
+                  'nested-clause':'2.4.1' if inserted else '2.3.1', 'annex-clause':'A.1.1'}
+        for key, value in expected.items():
+            assert actual.get(key)==value,(inserted,key,value,actual)
+        text=re.sub(r'\s+','', ''.join(p.extract_text() or '' for p in PdfReader(pdf).pages))
+        printed='自动引用验证：术语'+expected['tested-term']+'；条'+expected['second-clause']+'；下级条'+expected['nested-clause']+'。'
+        assert printed in text, (inserted,printed,text)
+        assert '附录引用：A.1.1。' in text
+        assert '术语'+expected['tested-term'] in text, ('index-term', inserted, text)
+        assert '条'+expected['second-clause'] in text, ('index-clause', inserted, text)
+        results.append(dict(inserted=inserted,counters=actual,printed_references_verified=True,index_references_verified=True))
+    book=ROOT/'book/gbt-1.1-2020.typ'
+    data=json.loads(typst.query(str(book),'metadata',root=str(ROOT),font_paths=list(map(str,fonts)),ignore_system_fonts=True,sys_inputs={'font-profile':profile}))
+    checked=0
+    for record in data:
+        v=record['value'];key=v.get('key')
+        if not key:continue
+        key=key.strip('<>')
+        if key.startswith('s-'):expected=key[2:].replace('-','.')
+        elif key.startswith('clause-'):expected=key[7:].replace('-','.')
+        else:continue
+        assert str(v['number'])==expected,(key,expected,v['number'])
+        checked+=1
+    (ROOT/'output/qa/numbering-query.json').write_text(json.dumps(data,ensure_ascii=False,indent=2),'utf8')
+    contents_cases=verify_untitled_contents(folder,profiles)
+    report=dict(insertion_cases=results,untitled_contents_cases=contents_cases,book_numbered_sections_checked=checked,passed=True)
+    (ROOT/'output/qa/automatic-numbering.json').write_text(json.dumps(report,ensure_ascii=False,indent=2),'utf8')
+    print(json.dumps(dict(insertion_cases=results,untitled_contents_cases=len(contents_cases),book_numbered_sections_checked=checked,passed=True),ensure_ascii=False))
+
+if __name__=='__main__':
+    import argparse
+    parser=argparse.ArgumentParser()
+    parser.add_argument('--font-profile',choices=('open','reference','both'),default='open')
+    args=parser.parse_args()
+    main(profiles=('open','reference') if args.font_profile=='both' else (args.font_profile,))

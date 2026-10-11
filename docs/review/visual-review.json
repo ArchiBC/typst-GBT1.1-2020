@@ -1,0 +1,801 @@
+{
+  "status": "manual_review_completed",
+  "reviewed_at": "2026-10-11",
+  "source_pages": 72,
+  "generated_pages": 79,
+  "pdf_sha256": "f7c5ec84b6cb41bd2a00cfa32af72c502d229091413b981a42896ecea6f397f8",
+  "method": "本轮逐页原图文字核对，查看新书 79 页缩略总览与变化页放大图；保留已确认版式，文字修改后复查。",
+  "source_text_extraction_used": false,
+  "automatic_checks": "passed",
+  "numbered_sections_checked": 279,
+  "vector_demo_fragments_checked": 32,
+  "font_height_measurement_resolution_pt": 0.125,
+  "limits": [
+    "核查按原书 72 页的内容对应到 Typst 输出 79 页，页码和断行由当前源码自动生成；不强制原分页或逐像素一致。",
+    "原出版水印与签名提示不转录；示例中的占位正文采用真实模板排版。",
+    "历史 OCR 不是原文真值；文字层比对只定位疑点，所有疑点以原图和实际输出裁决。",
+    "原字体确切历史版本尚未确认，12 组已有字高样本不能保证所有字形一致。",
+    "人工核查结论只针对记录的源码和 PDF 哈希；后续变化需复查受影响页。"
+  ],
+  "pages": [
+    {
+      "source_page": 1,
+      "generated_pages": [
+        1
+      ],
+      "visual_review": "reviewed",
+      "manual_note": "封面：名称、英文译名、一致性标识、编号、代替编号、分类号、日期及发布机构逐项比对。",
+      "ocr_warning_lines": 0
+    },
+    {
+      "source_page": 2,
+      "generated_pages": [
+        3
+      ],
+      "visual_review": "reviewed",
+      "manual_note": "目次首面：章、条的名称和编号；页码由当前源码位置生成，原书页码不硬编码。",
+      "ocr_warning_lines": 0
+    },
+    {
+      "source_page": 3,
+      "generated_pages": [
+        4
+      ],
+      "visual_review": "reviewed",
+      "manual_note": "目次续面：8.12～10.4、附录 A～D 及附录内部条目；数字和点线从正文读取。",
+      "ocr_warning_lines": 0
+    },
+    {
+      "source_page": 4,
+      "generated_pages": [
+        5
+      ],
+      "visual_review": "reviewed",
+      "manual_note": "目次末面：附录 E/F、参考文献、索引及全部图表名称、序号。",
+      "ocr_warning_lines": 1,
+      "warning_resolution": "图表名称保留；当前页码自动更新，不能和原出版页码逐字相等。"
+    },
+    {
+      "source_page": 5,
+      "generated_pages": [
+        7,
+        8
+      ],
+      "visual_review": "reviewed",
+      "manual_note": "前言首面：a)～t) 技术变化，特别检查 l)、o)、q)、引号、括号及引用编号。",
+      "ocr_warning_lines": 2,
+      "warning_resolution": "原生列项替代 OCR 错误的 l)/o)/q)，并恢复成对引号；跨页段落文字完整。"
+    },
+    {
+      "source_page": 6,
+      "generated_pages": [
+        8
+      ],
+      "visual_review": "reviewed",
+      "manual_note": "前言续面：t) 的续文、u)～y)、起草机构和人员、历次版本；正文破折号与列项不混淆。",
+      "ocr_warning_lines": 0
+    },
+    {
+      "source_page": 7,
+      "generated_pages": [
+        9
+      ],
+      "visual_review": "reviewed",
+      "manual_note": "引言：标准体系、修订缘由及末段；原 OCR 的“深人”按原图确认是“深入”。",
+      "ocr_warning_lines": 0
+    },
+    {
+      "source_page": 8,
+      "generated_pages": [
+        11
+      ],
+      "visual_review": "reviewed",
+      "manual_note": "正文首页：范围、规范性引用文件、术语 3.1.1；ISO/IEC 编号及来源年份。",
+      "ocr_warning_lines": 0
+    },
+    {
+      "source_page": 9,
+      "generated_pages": [
+        12
+      ],
+      "visual_review": "reviewed",
+      "manual_note": "术语 3.1.2～3.3.2：中文名称、英文对应词、定义、注和来源；术语引用使用标签。",
+      "ocr_warning_lines": 0
+    },
+    {
+      "source_page": 10,
+      "generated_pages": [
+        13,
+        14
+      ],
+      "visual_review": "reviewed",
+      "manual_note": "术语后段及文件类别：3.3.3～3.3.7、4.1/4.2 与分类列项；来源及中文标点。",
+      "ocr_warning_lines": 0
+    },
+    {
+      "source_page": 11,
+      "generated_pages": [
+        14,
+        15
+      ],
+      "visual_review": "reviewed",
+      "manual_note": "文件类别续项、5.1～5.3.1：核查嵌套列项、规则型语句和跨页段落。",
+      "ocr_warning_lines": 2,
+      "warning_resolution": "原 OCR 将破折号当汉字一；长段落被新页眉隔开但正文没有遗漏。"
+    },
+    {
+      "source_page": 12,
+      "generated_pages": [
+        15,
+        16
+      ],
+      "visual_review": "reviewed",
+      "manual_note": "5.3.2～5.5.2：文件使用者原则、目的导向、表述原则与总体要求；引用和续文。",
+      "ocr_warning_lines": 0
+    },
+    {
+      "source_page": 13,
+      "generated_pages": [
+        16,
+        17
+      ],
+      "visual_review": "reviewed",
+      "manual_note": "5.5.3 及 6.1.1/6.1.2：文件名称组成、引导/主体/补充元素、命名示例。",
+      "ocr_warning_lines": 0
+    },
+    {
+      "source_page": 14,
+      "generated_pages": [
+        17
+      ],
+      "visual_review": "reviewed",
+      "manual_note": "6.1.3/6.1.4、表 1、6.2.1 及表 2：英文译名、数值单位、层次和编号样式。",
+      "ocr_warning_lines": 0
+    },
+    {
+      "source_page": 15,
+      "generated_pages": [
+        18
+      ],
+      "visual_review": "reviewed",
+      "manual_note": "6.2.2 与表 3 首部：要素分类、构成及表述，功能单元和要素之间不擅加破折号。",
+      "ocr_warning_lines": 0
+    },
+    {
+      "source_page": 16,
+      "generated_pages": [
+        19
+      ],
+      "visual_review": "reviewed",
+      "manual_note": "表 3 续页、6.2.2.3 及 7.1.1：要素、脚注 a、两种部分划分方式及示例。",
+      "ocr_warning_lines": 0
+    },
+    {
+      "source_page": 17,
+      "generated_pages": [
+        19,
+        20
+      ],
+      "visual_review": "reviewed",
+      "manual_note": "部分划分、7.1.2/7.1.3、章和条：原图的星号 * 已恢复，替换错误的 ×；页首续项核对。",
+      "ocr_warning_lines": 0
+    },
+    {
+      "source_page": 18,
+      "generated_pages": [
+        20,
+        21
+      ],
+      "visual_review": "reviewed",
+      "manual_note": "段和列项：悬置段示例及 7.5.1，示例左右栏由真实 Typst 分别生成，检查示例编号与正文。",
+      "ocr_warning_lines": 0
+    },
+    {
+      "source_page": 19,
+      "generated_pages": [
+        21,
+        22
+      ],
+      "visual_review": "reviewed",
+      "manual_note": "列项续文、7.5.2/7.5.3 和 8.1：半括号、破折号、二级 · 号、封面组成和脚注。",
+      "ocr_warning_lines": 2,
+      "warning_resolution": "破折号、引号和脚注上标；PDF 的列项编号、脚注与正文读取次序不同。"
+    },
+    {
+      "source_page": 20,
+      "generated_pages": [
+        22,
+        23
+      ],
+      "visual_review": "reviewed",
+      "manual_note": "8.2/8.3：目次与前言的必备内容、列项顺序、引导语及省略号。",
+      "ocr_warning_lines": 0
+    },
+    {
+      "source_page": 21,
+      "generated_pages": [
+        23,
+        24
+      ],
+      "visual_review": "reviewed",
+      "manual_note": "8.4～8.6.2：引言、范围、规范性引用文件引导语；转页处无缺句。",
+      "ocr_warning_lines": 1,
+      "warning_resolution": "破折号和中文引号；原图中的列项/引导语已逐项核查。"
+    },
+    {
+      "source_page": 22,
+      "generated_pages": [
+        24,
+        25
+      ],
+      "visual_review": "reviewed",
+      "manual_note": "8.6.3～8.7.3：文件清单、术语和定义的构成、条目编号；引用和八项示例。",
+      "ocr_warning_lines": 0
+    },
+    {
+      "source_page": 23,
+      "generated_pages": [
+        25,
+        26
+      ],
+      "visual_review": "reviewed",
+      "manual_note": "术语条目续文：a)～h)、定义公式、来源和示例；＝、＋按原图保留。",
+      "ocr_warning_lines": 2,
+      "warning_resolution": "＝、＋曾被 OCR 当成一、十；恢复原图运算符。"
+    },
+    {
+      "source_page": 24,
+      "generated_pages": [
+        26,
+        27
+      ],
+      "visual_review": "reviewed",
+      "manual_note": "术语来源续文、8.8～8.10：符号顺序、缩略语、分类和系统构成、总体原则要求。",
+      "ocr_warning_lines": 1,
+      "warning_resolution": "原图并入/加入中的入与破折号，OCR 误作人、一；引用和正文已校正。"
+    },
+    {
+      "source_page": 25,
+      "generated_pages": [
+        27,
+        28
+      ],
+      "visual_review": "reviewed",
+      "manual_note": "8.11～8.14 与表 4：核心/其他技术要素、参考文献、索引；表头、脚注和跨页内容。",
+      "ocr_warning_lines": 1,
+      "warning_resolution": "正文跨页引入页眉；内容合并后完整。"
+    },
+    {
+      "source_page": 26,
+      "generated_pages": [
+        28,
+        29
+      ],
+      "visual_review": "reviewed",
+      "manual_note": "索引续文及 9.1～9.4.2.2：条款、附加信息、通用内容、汉字标点和常用词。",
+      "ocr_warning_lines": 0
+    },
+    {
+      "source_page": 27,
+      "generated_pages": [
+        29,
+        30
+      ],
+      "visual_review": "reviewed",
+      "manual_note": "9.4.2.3～9.4.5.2：有前提条件的要求、简称缩略语、数值表示和公差；示例前的省略号确认保留。",
+      "ocr_warning_lines": 0
+    },
+    {
+      "source_page": 28,
+      "generated_pages": [
+        30,
+        31
+      ],
+      "visual_review": "reviewed",
+      "manual_note": "公差续例、9.4.6/9.4.7 和 9.5：公式上下标、量与单位、引用和提示的正文。",
+      "ocr_warning_lines": 0
+    },
+    {
+      "source_page": 29,
+      "generated_pages": [
+        32
+      ],
+      "visual_review": "reviewed",
+      "manual_note": "9.5.3/9.5.4：具体内容编号、日期引用、规范性和资料性引用；文件代号年份分隔线。",
+      "ocr_warning_lines": 2,
+      "warning_resolution": "文件代号与年份间的一字线、省略号及引号；原图不是汉字一。"
+    },
+    {
+      "source_page": 30,
+      "generated_pages": [
+        33
+      ],
+      "visual_review": "reviewed",
+      "manual_note": "引用规则续文：试验方法、来源、限定条件、应公开获得的文件和不得引用的内容。",
+      "ocr_warning_lines": 0
+    },
+    {
+      "source_page": 31,
+      "generated_pages": [
+        33,
+        34
+      ],
+      "visual_review": "reviewed",
+      "manual_note": "引用限定条件、9.5.5 与 9.6：提示、附录目的/类型/编号构成；全部跨页续文。",
+      "ocr_warning_lines": 1,
+      "warning_resolution": "附录标识和引用中的引号/省略号、破折号；跨页续文完整。"
+    },
+    {
+      "source_page": 32,
+      "generated_pages": [
+        35
+      ],
+      "visual_review": "reviewed",
+      "manual_note": "9.6.3 与 9.7.1～9.7.4.1：附录、图的用法/编号/续图，恢复 #、*，确认 l₁/l₂/l₃。",
+      "ocr_warning_lines": 1,
+      "warning_resolution": "原图有省略号、*、# 和斜体 l₁/l₂/l₃；OCR 丢失符号/下标。"
+    },
+    {
+      "source_page": 33,
+      "generated_pages": [
+        35,
+        36
+      ],
+      "visual_review": "reviewed",
+      "manual_note": "9.7.4.2/9.7.5：标引序号和图中注、脚注；抽芯铆钉示例及量纲说明。",
+      "ocr_warning_lines": 0
+    },
+    {
+      "source_page": 34,
+      "generated_pages": [
+        37
+      ],
+      "visual_review": "reviewed",
+      "manual_note": "9.7.6 与 9.8.1/9.8.2：分图限制、表的用法和编号；引号、列项及上标 a。",
+      "ocr_warning_lines": 0
+    },
+    {
+      "source_page": 35,
+      "generated_pages": [
+        38
+      ],
+      "visual_review": "reviewed",
+      "manual_note": "9.8.3/9.8.4：续表的 # 和 *；表头单位；线密度符号原图为 ρ₁，已将错误的 l 下标改成 1。",
+      "ocr_warning_lines": 0
+    },
+    {
+      "source_page": 36,
+      "generated_pages": [
+        39
+      ],
+      "visual_review": "reviewed",
+      "manual_note": "表头正例、9.8.5 及 9.9 首段：正确的行列表头、注/脚注位置、数学公式的不等式。",
+      "ocr_warning_lines": 0
+    },
+    {
+      "source_page": 37,
+      "generated_pages": [
+        40
+      ],
+      "visual_review": "reviewed",
+      "manual_note": "数学公式：匀速式、i 下标的 MSE/MSR、分式、解释项、示例序号及公式编号。",
+      "ocr_warning_lines": 0
+    },
+    {
+      "source_page": 38,
+      "generated_pages": [
+        40,
+        41
+      ],
+      "visual_review": "reviewed",
+      "manual_note": "9.9.3.2～9.11：多层上标下标/多行式的错例正例、示例方框、注的规则和数值。",
+      "ocr_warning_lines": 0
+    },
+    {
+      "source_page": 39,
+      "generated_pages": [
+        42,
+        43
+      ],
+      "visual_review": "reviewed",
+      "manual_note": "9.12/9.13 与第 10 章开头：图表脚注 a/b/c、商品名商标 ®/TM、专利与重要提示。",
+      "ocr_warning_lines": 1,
+      "warning_resolution": "原图有 ®/TM、脚注上标 a/b/c 与 ±；历史 OCR 丢失或误识这些符号。"
+    },
+    {
+      "source_page": 40,
+      "generated_pages": [
+        43,
+        44
+      ],
+      "visual_review": "reviewed",
+      "manual_note": "10.1/10.2：单/双数页、罗马页码 I、目录和正文的编号，章条和列项间距要求。",
+      "ocr_warning_lines": 1,
+      "warning_resolution": "罗马数字 I 不是汉字工；破折号按列项符号输出。"
+    },
+    {
+      "source_page": 41,
+      "generated_pages": [
+        44,
+        45
+      ],
+      "visual_review": "reviewed",
+      "manual_note": "10.3：封面英文连接线、范围、规范性引用、术语条目及编号的编排要求。",
+      "ocr_warning_lines": 0
+    },
+    {
+      "source_page": 42,
+      "generated_pages": [
+        45,
+        46
+      ],
+      "visual_review": "reviewed",
+      "manual_note": "10.3.6 和 10.4：文献/索引、附录、图表、公式、注/脚注和示例；＝/＋/－/±/∓ 与大写 X。",
+      "ocr_warning_lines": 3,
+      "warning_resolution": "原图为 ＝/＋/－/±/∓ 及大写 X，OCR 误作十、×等；公式编号点线不是正文。"
+    },
+    {
+      "source_page": 43,
+      "generated_pages": [
+        46
+      ],
+      "visual_review": "reviewed",
+      "manual_note": "示例线框及 10.4.6：变量斜体、单位正体、角度及单位间隙的要求。",
+      "ocr_warning_lines": 0
+    },
+    {
+      "source_page": 44,
+      "generated_pages": [
+        47
+      ],
+      "visual_review": "reviewed",
+      "manual_note": "附录 A：全部层次示例、条目/图表/公式编号和附录前缀。",
+      "ocr_warning_lines": 0
+    },
+    {
+      "source_page": 45,
+      "generated_pages": [
+        49
+      ],
+      "visual_review": "reviewed",
+      "manual_note": "附录 B 首面：B.1/B.2、项目特性与标记体系、埋头铆钉举例。",
+      "ocr_warning_lines": 0
+    },
+    {
+      "source_page": 46,
+      "generated_pages": [
+        50
+      ],
+      "visual_review": "reviewed",
+      "manual_note": "图 B.1 及 B.3～B.6.2：标记段、字符、描述段、识别段和发布年份；加人校正为加入。",
+      "ocr_warning_lines": 1,
+      "warning_resolution": "原图为加入与＋、中文引号，OCR 的加人和十错误。"
+    },
+    {
+      "source_page": 47,
+      "generated_pages": [
+        51
+      ],
+      "visual_review": "reviewed",
+      "manual_note": "B.6.3：特性段、数据段及两个标记示例；℃、±、58-82、16/03/08、N-、P20；保留原文“11°法后角”。",
+      "ocr_warning_lines": 8,
+      "warning_resolution": "℃、±、一字线及尺寸/等级标记在 OCR 中混淆；结合原图和每个标记的解释项核查，不改写原文“11°法后角”。"
+    },
+    {
+      "source_page": 48,
+      "generated_pages": [
+        52
+      ],
+      "visual_review": "reviewed",
+      "manual_note": "第三个标记示例及 B.7：GB/T 67、ISO 1580-M5×20，英文标记和国际标准的采用；B.6.3.3/B.7.1 改为自动引用。",
+      "ocr_warning_lines": 1,
+      "warning_resolution": "× 是乘号，中文引号和中文“引用”的 OCR 多出字符；B.7 编号由原生引用读取。"
+    },
+    {
+      "source_page": 49,
+      "generated_pages": [
+        53
+      ],
+      "visual_review": "reviewed",
+      "manual_note": "附录 C 的 C.1～C.3：能愿动词、祈使句和表注；删除原文没有的句末句号，原图“在…之前”为一个省略号。",
+      "ocr_warning_lines": 0
+    },
+    {
+      "source_page": 50,
+      "generated_pages": [
+        54
+      ],
+      "visual_review": "reviewed",
+      "manual_note": "附录 C 的 C.4/C.5、表 C.4～C.7：允许、能力、可能性、陈述；保留带句号的注，删除另外增添的句号。",
+      "ocr_warning_lines": 0
+    },
+    {
+      "source_page": 51,
+      "generated_pages": [
+        55
+      ],
+      "visual_review": "reviewed",
+      "manual_note": "附录 D：D.1～D.3、专利信息说明及三条原生列项；引号和省略号。",
+      "ocr_warning_lines": 0
+    },
+    {
+      "source_page": 52,
+      "generated_pages": [
+        57
+      ],
+      "visual_review": "reviewed",
+      "manual_note": "附录 E 引导页：规范性标识、12 个文件格式示例及标准化指导性技术文件的说明。",
+      "ocr_warning_lines": 0
+    },
+    {
+      "source_page": 53,
+      "generated_pages": [
+        58
+      ],
+      "visual_review": "reviewed",
+      "manual_note": "图 E.1：单数页、尺寸标注、占位正文及页眉编号；由模板编译。",
+      "ocr_warning_lines": 0
+    },
+    {
+      "source_page": 54,
+      "generated_pages": [
+        59
+      ],
+      "visual_review": "reviewed",
+      "manual_note": "图 E.2：双数页、装订内外边距、尺寸标注及占位正文。",
+      "ocr_warning_lines": 0
+    },
+    {
+      "source_page": 55,
+      "generated_pages": [
+        60
+      ],
+      "visual_review": "reviewed",
+      "manual_note": "图 E.3：正文首页名称、重要提示、字号与正文留白位置。",
+      "ocr_warning_lines": 0
+    },
+    {
+      "source_page": 56,
+      "generated_pages": [
+        61
+      ],
+      "visual_review": "reviewed",
+      "manual_note": "图 E.4：封底的旋转编号、尺寸标注和边框。",
+      "ocr_warning_lines": 0
+    },
+    {
+      "source_page": 57,
+      "generated_pages": [
+        62
+      ],
+      "visual_review": "reviewed",
+      "manual_note": "图 E.5：国家标准封面代号、顺序号、名称、译名、一致性标识、日期和机构。",
+      "ocr_warning_lines": 0
+    },
+    {
+      "source_page": 58,
+      "generated_pages": [
+        63
+      ],
+      "visual_review": "reviewed",
+      "manual_note": "图 E.6：行业标准封面；备案号原图是 XXXX—XXXX，已改正，顺序号保持 5 个 X。",
+      "ocr_warning_lines": 0
+    },
+    {
+      "source_page": 59,
+      "generated_pages": [
+        64
+      ],
+      "visual_review": "reviewed",
+      "manual_note": "图 E.7：地方标准封面；顺序号及代替行原图为 DBXX/T XXX—XXXX，已改成 3 个 X。",
+      "ocr_warning_lines": 0
+    },
+    {
+      "source_page": 60,
+      "generated_pages": [
+        65
+      ],
+      "visual_review": "reviewed",
+      "manual_note": "图 E.8：逐项核对 30 个名称/占位符及页码；章、条、附录、图表占位符已修正；前言 III/引言 IV 由真实分页生成。",
+      "ocr_warning_lines": 0
+    },
+    {
+      "source_page": 61,
+      "generated_pages": [
+        66
+      ],
+      "visual_review": "reviewed",
+      "manual_note": "图 E.9：前言及引言格式、占位正文、两条注和标题替换说明。",
+      "ocr_warning_lines": 0
+    },
+    {
+      "source_page": 62,
+      "generated_pages": [
+        67
+      ],
+      "visual_review": "reviewed",
+      "manual_note": "图 E.10：文献条目编号、占位文本、尺寸与注。",
+      "ocr_warning_lines": 0
+    },
+    {
+      "source_page": 63,
+      "generated_pages": [
+        68
+      ],
+      "visual_review": "reviewed",
+      "manual_note": "图 E.11：索引分组、所有示例编号、逗号和注；点线为模板生成的图形。",
+      "ocr_warning_lines": 0
+    },
+    {
+      "source_page": 64,
+      "generated_pages": [
+        69
+      ],
+      "visual_review": "reviewed",
+      "manual_note": "图 E.12：附录三行标题、占位正文、尺寸和注。",
+      "ocr_warning_lines": 0
+    },
+    {
+      "source_page": 65,
+      "generated_pages": [
+        71,
+        72
+      ],
+      "visual_review": "reviewed",
+      "manual_note": "表 F.1 的 01～28：各位置、内容、字号字体；第 23 项“第二行”已恢复；25～28 在新书的续表中。",
+      "ocr_warning_lines": 0
+    },
+    {
+      "source_page": 66,
+      "generated_pages": [
+        72
+      ],
+      "visual_review": "reviewed",
+      "manual_note": "表 F.1 的 29～48：36～40 在 6 行分组内均匀排列，没有“36 跨两行”的单项关系；#、*、示例 X、注 X 及 a/b 脚注。",
+      "ocr_warning_lines": 0
+    },
+    {
+      "source_page": 67,
+      "generated_pages": [
+        73
+      ],
+      "visual_review": "reviewed",
+      "manual_note": "参考文献：18 项逐项核对；GB/T 4458.1、ISO 690，英语行末连字符只用于原文换行，不转录为词内字符。",
+      "ocr_warning_lines": 2,
+      "warning_resolution": "GB/T 4458.1、ISO 690 按原图纠正；英语 con-/ci- 属换行连字符，正文保留完整 conventions/citations。"
+    },
+    {
+      "source_page": 68,
+      "generated_pages": [
+        75
+      ],
+      "visual_review": "reviewed",
+      "manual_note": "索引 B/C：词条、排序及对应章条/图表/附录编号全部与原图核对。",
+      "ocr_warning_lines": 0
+    },
+    {
+      "source_page": 69,
+      "generated_pages": [
+        76
+      ],
+      "visual_review": "reviewed",
+      "manual_note": "索引 D～K：关键词、同音排序、多个引用和点线；点线不作为 OCR 正文。",
+      "ocr_warning_lines": 0
+    },
+    {
+      "source_page": 70,
+      "generated_pages": [
+        77,
+        78
+      ],
+      "visual_review": "reviewed",
+      "manual_note": "索引 K～T：术语和数的排序、公式及索引词条，“条”跨页保持全部引用。",
+      "ocr_warning_lines": 0
+    },
+    {
+      "source_page": 71,
+      "generated_pages": [
+        78,
+        79
+      ],
+      "visual_review": "reviewed",
+      "manual_note": "索引 T～Y：图和文件系列词条、一般性陈述 C.5、应/应该/有可能；跨页引用完整。",
+      "ocr_warning_lines": 0
+    },
+    {
+      "source_page": 72,
+      "generated_pages": [
+        79
+      ],
+      "visual_review": "reviewed",
+      "manual_note": "索引 Y/Z：允许和章系列、附加信息、所有尾部词条及终结线。",
+      "ocr_warning_lines": 0
+    }
+  ],
+  "open_pdf_sha256": "b217b5d4e13a3381420115f4004df673825f94cd742850007319a46159956c2e",
+  "source_sha256": "de976965ba8f6562e7e72bd3da5e44e1c6ca5f45efc08fd18305ad88c1c6f957",
+  "source_pdf_sha256": "df673d9b44c6cf720cb46d94e533e0e14ddfdbadd65d84dfeb0acad15d1e38a3",
+  "changed_generated_pages": [
+    20,
+    21,
+    35,
+    38,
+    52,
+    53,
+    54,
+    63,
+    64,
+    65,
+    71,
+    72
+  ],
+  "unchanged_generated_pages": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28,
+    29,
+    30,
+    31,
+    32,
+    33,
+    34,
+    36,
+    37,
+    39,
+    40,
+    41,
+    42,
+    43,
+    44,
+    45,
+    46,
+    47,
+    48,
+    49,
+    50,
+    51,
+    55,
+    56,
+    57,
+    58,
+    59,
+    60,
+    61,
+    62,
+    66,
+    67,
+    68,
+    69,
+    70,
+    73,
+    74,
+    75,
+    76,
+    77,
+    78,
+    79
+  ]
+}

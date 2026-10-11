@@ -1,3 +1,13 @@
-fonts/
-open_font/
-backgroud/
+.tools/
+.venv/
+__pycache__/
+*.pyc
+*.part
+fonts/*.otf
+fonts/*.ttf
+fonts/*.ttc
+fonts/reference/
+output/qa/
+output/tmp/
+output/*.json
+output/*.zip

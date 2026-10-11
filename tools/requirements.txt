@@ -1,0 +1,4 @@
+typst==0.15.0
+pypdf==6.10.0
+pypdfium2==5.13.0
+Pillow==12.3.0

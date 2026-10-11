@@ -1,0 +1,423 @@
+{
+  "input_sha256": "5c054f7210b2e259927c8730781817ecdf0a09d30fa88c2d2d0963e8bd7350f7",
+  "font_profile": "open",
+  "examples": [
+    {
+      "source": "book/demos/e1.typ",
+      "pdf": "book/demo-pdf/e1.pdf",
+      "source_pages": 1,
+      "embedded_page": 1,
+      "media_box_pt": [
+        0.0,
+        0.0,
+        595.2756,
+        841.8898
+      ],
+      "sha256": "7effe1f8ef7b0153cdab793bec105b73f21065670e9e7b18fe3892b74e03dca8"
+    },
+    {
+      "source": "book/demos/e10.typ",
+      "pdf": "book/demo-pdf/e10.pdf",
+      "source_pages": 1,
+      "embedded_page": 1,
+      "media_box_pt": [
+        0.0,
+        0.0,
+        595.2756,
+        841.8898
+      ],
+      "sha256": "6a0c0166c6f5e43184e3d2e89fdb99109f9f5013569941ac4d4ab12b7c43ef1a"
+    },
+    {
+      "source": "book/demos/e11.typ",
+      "pdf": "book/demo-pdf/e11.pdf",
+      "source_pages": 1,
+      "embedded_page": 1,
+      "media_box_pt": [
+        0.0,
+        0.0,
+        595.2756,
+        841.8898
+      ],
+      "sha256": "13aafd7807c193c6cbadc4ccaac4fa2daf978521852d4ce762fc4ba22bdb081a"
+    },
+    {
+      "source": "book/demos/e12.typ",
+      "pdf": "book/demo-pdf/e12.pdf",
+      "source_pages": 1,
+      "embedded_page": 1,
+      "media_box_pt": [
+        0.0,
+        0.0,
+        595.2756,
+        841.8898
+      ],
+      "sha256": "1fcaaf39d8634b51ed10e21501b3d18e04d9169f77a87a1a6572cf467704f25b"
+    },
+    {
+      "source": "book/demos/e2.typ",
+      "pdf": "book/demo-pdf/e2.pdf",
+      "source_pages": 2,
+      "embedded_page": 2,
+      "media_box_pt": [
+        0.0,
+        0.0,
+        595.2756,
+        841.8898
+      ],
+      "sha256": "a21187c4becee5194a13f9c7c6821d79273a1d30d10dcc87823c31b2c320850a"
+    },
+    {
+      "source": "book/demos/e3.typ",
+      "pdf": "book/demo-pdf/e3.pdf",
+      "source_pages": 1,
+      "embedded_page": 1,
+      "media_box_pt": [
+        0.0,
+        0.0,
+        595.2756,
+        841.8898
+      ],
+      "sha256": "2a424de98a59daafb2e9103fd811e600f7f33bfa08d26c171682e0309f8944a7"
+    },
+    {
+      "source": "book/demos/e4.typ",
+      "pdf": "book/demo-pdf/e4.pdf",
+      "source_pages": 1,
+      "embedded_page": 1,
+      "media_box_pt": [
+        0.0,
+        0.0,
+        595.2756,
+        841.8898
+      ],
+      "sha256": "f1efe96625b9699b3701fd9a6cce92c386433e0110158678786896fa27b01e15"
+    },
+    {
+      "source": "book/demos/e5.typ",
+      "pdf": "book/demo-pdf/e5.pdf",
+      "source_pages": 1,
+      "embedded_page": 1,
+      "media_box_pt": [
+        0.0,
+        0.0,
+        595.2756,
+        841.8898
+      ],
+      "sha256": "8f45a7cc41a4a23cd3151d390da7010ee89a8e3617d9e55046b51a637f63b0c7"
+    },
+    {
+      "source": "book/demos/e6.typ",
+      "pdf": "book/demo-pdf/e6.pdf",
+      "source_pages": 1,
+      "embedded_page": 1,
+      "media_box_pt": [
+        0.0,
+        0.0,
+        595.2756,
+        841.8898
+      ],
+      "sha256": "932154a8c9ddcd73a47d69595047576415bcd3557e7defb5cdf02804ff2a66eb"
+    },
+    {
+      "source": "book/demos/e7.typ",
+      "pdf": "book/demo-pdf/e7.pdf",
+      "source_pages": 1,
+      "embedded_page": 1,
+      "media_box_pt": [
+        0.0,
+        0.0,
+        595.2756,
+        841.8898
+      ],
+      "sha256": "b55524eafbe6fb084e4f5f647959864ce036dc7df8f48e8da71bf0babf4dc6f6"
+    },
+    {
+      "source": "book/demos/e8.typ",
+      "pdf": "book/demo-pdf/e8.pdf",
+      "source_pages": 20,
+      "embedded_page": 1,
+      "media_box_pt": [
+        0.0,
+        0.0,
+        595.2756,
+        841.8898
+      ],
+      "sha256": "858281c4cca41ad8bc2345bfae9db74205d217363b34c29c18c89db98e546b45"
+    },
+    {
+      "source": "book/demos/e9.typ",
+      "pdf": "book/demo-pdf/e9.pdf",
+      "source_pages": 2,
+      "embedded_page": 1,
+      "media_box_pt": [
+        0.0,
+        0.0,
+        595.2756,
+        841.8898
+      ],
+      "sha256": "ecad005474f2509e67ebc69c09dcac079d680ab83cccbfe6774dd2c6564c00c7"
+    },
+    {
+      "source": "book/demos/equation-number.typ",
+      "pdf": "book/demo-pdf/equation-number.pdf",
+      "source_pages": 1,
+      "embedded_page": 1,
+      "media_box_pt": [
+        0.0,
+        0.0,
+        467.71652,
+        18.5
+      ],
+      "sha256": "9e01e800378692cc287e6aaa0fc5333f55ff5a1a410267b6cb2410fa96368380"
+    },
+    {
+      "source": "book/demos/figure-page.typ",
+      "pdf": "book/demo-pdf/figure-page.pdf",
+      "source_pages": 1,
+      "embedded_page": 1,
+      "media_box_pt": [
+        0.0,
+        0.0,
+        467.71652,
+        18.5
+      ],
+      "sha256": "01bbae6c47e21f9c8c8fc59e5e9300308d74c8c80a8fae12a80e76a737f272dd"
+    },
+    {
+      "source": "book/demos/hanging-paragraph.typ",
+      "pdf": "book/demo-pdf/hanging-paragraph.pdf",
+      "source_pages": 1,
+      "embedded_page": 1,
+      "media_box_pt": [
+        0.0,
+        0.0,
+        467.71652,
+        270.0
+      ],
+      "sha256": "30601cf1ce3d60d822c66d88cf9edb14b941bca9e62ba76ea66329d74f05a530"
+    },
+    {
+      "source": "book/demos/hierarchy.typ",
+      "pdf": "book/demo-pdf/hierarchy.pdf",
+      "source_pages": 1,
+      "embedded_page": 1,
+      "media_box_pt": [
+        0.0,
+        0.0,
+        467.71652,
+        370.0
+      ],
+      "sha256": "057ba17dd6f6a6e6d09d888361d0938932f5da0cabe4d515431f9642554bde8f"
+    },
+    {
+      "source": "book/demos/math-1.typ",
+      "pdf": "book/demo-pdf/math-1.pdf",
+      "source_pages": 1,
+      "embedded_page": 1,
+      "media_box_pt": [
+        0.0,
+        0.0,
+        467.71652,
+        102.512
+      ],
+      "sha256": "7e39042304d386ca214c025fb5f300f864ee10d913f2f8eba54cc06008f31eaa"
+    },
+    {
+      "source": "book/demos/math-2.typ",
+      "pdf": "book/demo-pdf/math-2.pdf",
+      "source_pages": 1,
+      "embedded_page": 1,
+      "media_box_pt": [
+        0.0,
+        0.0,
+        467.71652,
+        88.512
+      ],
+      "sha256": "6d2b0477d0d4dad88003eebdf051a193b2b70845c79b07934c88257c0cc9c349"
+    },
+    {
+      "source": "book/demos/math-3.typ",
+      "pdf": "book/demo-pdf/math-3.pdf",
+      "source_pages": 1,
+      "embedded_page": 1,
+      "media_box_pt": [
+        0.0,
+        0.0,
+        467.71652,
+        52.5
+      ],
+      "sha256": "322283f2e4722ac2575b3c5061f6147037675a7c21e3073af3b479a38021b17d"
+    },
+    {
+      "source": "book/demos/math-4.typ",
+      "pdf": "book/demo-pdf/math-4.pdf",
+      "source_pages": 1,
+      "embedded_page": 1,
+      "media_box_pt": [
+        0.0,
+        0.0,
+        467.71652,
+        101.2
+      ],
+      "sha256": "0838bc94bd0340932884e1b161063bd6a0a7f1895f076cd5d1148efa20bdff04"
+    },
+    {
+      "source": "book/demos/math-fraction.typ",
+      "pdf": "book/demo-pdf/math-fraction.pdf",
+      "source_pages": 1,
+      "embedded_page": 1,
+      "media_box_pt": [
+        0.0,
+        0.0,
+        467.71652,
+        92.5
+      ],
+      "sha256": "8897803cba5b9887178f9f5291caa721d8299ce167390214cf6a30c69c37e7db"
+    },
+    {
+      "source": "book/demos/math-subscripts.typ",
+      "pdf": "book/demo-pdf/math-subscripts.pdf",
+      "source_pages": 1,
+      "embedded_page": 1,
+      "media_box_pt": [
+        0.0,
+        0.0,
+        467.71652,
+        125.332
+      ],
+      "sha256": "d458736562e5d5d3ac126f07fbd21a1f85d0fca5c8618b443ab05eabe8255fb0"
+    },
+    {
+      "source": "book/demos/mechanical-figure.typ",
+      "pdf": "book/demo-pdf/mechanical-figure.pdf",
+      "source_pages": 1,
+      "embedded_page": 1,
+      "media_box_pt": [
+        0.0,
+        0.0,
+        467.71652,
+        422.0
+      ],
+      "sha256": "a6526956fca1967b3b17b70369c828a51967c55d8325540c3a2e6ebd880df563"
+    },
+    {
+      "source": "book/demos/subfigures.typ",
+      "pdf": "book/demo-pdf/subfigures.pdf",
+      "source_pages": 1,
+      "embedded_page": 1,
+      "media_box_pt": [
+        0.0,
+        0.0,
+        467.71652,
+        250.6
+      ],
+      "sha256": "e2b5ce67e63bc13a4abbfd67fdcf57b8ccc69158aa6a26d154bfacd0949b7377"
+    },
+    {
+      "source": "book/demos/table-headers-1.typ",
+      "pdf": "book/demo-pdf/table-headers-1.pdf",
+      "source_pages": 1,
+      "embedded_page": 1,
+      "media_box_pt": [
+        0.0,
+        0.0,
+        467.71652,
+        87.12
+      ],
+      "sha256": "58956675c44929fb89a9493214d0c317f22ee2b54c8d07db55a6bcd8e7643c9e"
+    },
+    {
+      "source": "book/demos/table-headers-2.typ",
+      "pdf": "book/demo-pdf/table-headers-2.pdf",
+      "source_pages": 1,
+      "embedded_page": 1,
+      "media_box_pt": [
+        0.0,
+        0.0,
+        467.71652,
+        73.62
+      ],
+      "sha256": "b6859318cc6ee26b12fb498bdd98b254bf677bf260e247cb0354a46f510ff734"
+    },
+    {
+      "source": "book/demos/table-headers-3.typ",
+      "pdf": "book/demo-pdf/table-headers-3.pdf",
+      "source_pages": 1,
+      "embedded_page": 1,
+      "media_box_pt": [
+        0.0,
+        0.0,
+        467.71652,
+        85.32
+      ],
+      "sha256": "e496960b4bab5da5c6c5535be68985f40df7594d0e80adb40d8c57af3ebf69d4"
+    },
+    {
+      "source": "book/demos/table-headers-4.typ",
+      "pdf": "book/demo-pdf/table-headers-4.pdf",
+      "source_pages": 1,
+      "embedded_page": 1,
+      "media_box_pt": [
+        0.0,
+        0.0,
+        467.71652,
+        77.25
+      ],
+      "sha256": "619ac2517b229b86f849565188f26b21fd3294d4cbbd03471e4e245b08f9934e"
+    },
+    {
+      "source": "book/demos/table-headers-5.typ",
+      "pdf": "book/demo-pdf/table-headers-5.pdf",
+      "source_pages": 1,
+      "embedded_page": 1,
+      "media_box_pt": [
+        0.0,
+        0.0,
+        467.71652,
+        79.25
+      ],
+      "sha256": "b33c91af6fe86ecf691fa41dbf8240a750f688daa09da1c13c44ce2857aeedf4"
+    },
+    {
+      "source": "book/demos/table-layout.typ",
+      "pdf": "book/demo-pdf/table-layout.pdf",
+      "source_pages": 1,
+      "embedded_page": 1,
+      "media_box_pt": [
+        0.0,
+        0.0,
+        467.71652,
+        80.12
+      ],
+      "sha256": "01f551a8cbd77545c78e83e0281c04567746385f7ceb4d8b1c7312d92b856af7"
+    },
+    {
+      "source": "book/demos/table-notes.typ",
+      "pdf": "book/demo-pdf/table-notes.pdf",
+      "source_pages": 1,
+      "embedded_page": 1,
+      "media_box_pt": [
+        0.0,
+        0.0,
+        467.71652,
+        167.21
+      ],
+      "sha256": "2cd4e713697825bb6fa1d9502afb79b076661b0cd130037c34118cdc538079b4"
+    },
+    {
+      "source": "book/demos/table-page.typ",
+      "pdf": "book/demo-pdf/table-page.pdf",
+      "source_pages": 1,
+      "embedded_page": 1,
+      "media_box_pt": [
+        0.0,
+        0.0,
+        467.71652,
+        32.0
+      ],
+      "sha256": "d430e6fb60d7aff71a710176db77af89b79babfb44768522b7346a1eb4a2845d"
+    }
+  ],
+  "method": "native Typst compilation; selected generated PDF page; vector PDF embedding"
+}
