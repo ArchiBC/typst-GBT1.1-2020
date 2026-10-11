@@ -1,13 +1,33 @@
-.tools/
-.venv/
+# Local dependencies, font downloads and caches
+/.tools/
+/.venv/
 __pycache__/
-*.pyc
+*.py[cod]
 *.part
-fonts/*.otf
-fonts/*.ttf
-fonts/*.ttc
-fonts/reference/
-output/qa/
-output/tmp/
-output/*.json
-output/*.zip
+*.tmp
+*.bak
+*~
+Thumbs.db
+.DS_Store
+/fonts/reference/
+/fonts/**/*.otf
+/fonts/**/*.ttf
+/fonts/**/*.ttc
+/fonts/**/*.otc
+/fonts/**/*.woff
+/fonts/**/*.woff2
+
+# Local scans, OCR drafts and historical review evidence
+/research/
+/GBT+1.1-2020.pdf
+/source-cover.png
+
+# Keep only the four published outputs here.
+# book/demo-pdf/ remains tracked because the book embeds those vector fragments.
+/output/*
+!/output/pdf/
+/output/pdf/*
+!/output/pdf/gbt-1.1-2020-open-fonts.pdf
+!/output/pdf/gbt-1.1-2020-replica.pdf
+!/output/pdf/standard-example.pdf
+!/output/pdf/template-manual.pdf

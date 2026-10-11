@@ -110,8 +110,13 @@ python tools/verify_numbering.py
 python tools/render_outputs.py output/pdf/gbt-1.1-2020-open-fonts.pdf
 python tools/package.py
 python tools/verify_bundle.py
+# 预览清理范围后清理可再生文件
+python tools/clean.py --dry-run
+python tools/clean.py
 ```
 
-源码包包含已下载的开源字体，可离线编译；`verify_bundle.py` 在新目录解包重编，核对每页文字。`.tools/`、扫描图、历史 OCR 中间稿和大幅页面预览不提交到仓库。
+源码包包含已下载的开源字体，可离线编译；`verify_bundle.py` 在新目录解包重编，核对每页文字。字体二进制、`.tools/`、`output/qa/`、`output/tmp/`、构建报告和源码 ZIP 由 `.gitignore` 排除；字体清单、许可和 `docs/` 核查记录保留在 Git 中。
+
+`clean.py` 清理临时解包目录、QA 预览与测试输出、构建报告、源码 ZIP 和脚本字节码；保留源码、本地字体、运行依赖、`output/pdf/` 的四个正式 PDF，以及 `book/demo-pdf/` 的 32 个示例片段。清理后可重新运行构建、渲染或打包命令生成所需结果。
 
 新代码采用 [MIT](LICENSE) 许可；标准内容、图形、字体及第三方组件的来源和许可见 [THIRD_PARTY.md](THIRD_PARTY.md)。原封面实现作者为 ArchiBC；新接口以 `gbt.with(...)` 为入口，旧 `GBT11(...)` 写法保留在历史目录。
