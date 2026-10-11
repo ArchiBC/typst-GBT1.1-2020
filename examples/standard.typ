@@ -36,10 +36,9 @@ GB/T 1.1—2020#h(1em)标准化工作导则　第 1 部分：标准化文件的�
 下列术语和定义适用于本文件。
 
 #term([标准化文件], [standardizing document],
-  [通过标准化活动制定的文件。], source: [GB/T 1.1—2020，3.1.1],
-  key: "standardizing-document", notes: ([本模板以可编辑的标准化文件为输出对象。],))
-#term([版心], [type area], [页面中用于编排正文内容的区域。], key: "type-area",
-  examples: ([正文中包括章、条、段和列项等层次。],))
+  [通过标准化活动制定的文件。], source: [GB/T 1.1—2020，3.1.1], notes: ([本模板以可编辑的标准化文件为输出对象。],))
+#term([版心], [type area], [页面中用于编排正文内容的区域。],
+  examples: ([正文中包括章、条、段和列项等层次。],)) <type-area>
 
 = 符号和缩略语
 下列符号和缩略语适用于本文件。
@@ -87,7 +86,7 @@ GB/T 1.1—2020#h(1em)标准化工作导则　第 1 部分：标准化文件的�
   - 第一项；
   - 第二项。
 
-#clause(level: 3, key: "untitled-clause") 无标题条的编号之后空一个汉字的间隙接排条文。参见版心（#ref(<type-area>)）。
+#clause(level: 3) 无标题条的编号之后空一个汉字的间隙接排条文。参见版心（@type-area）。
 
 #pagebreak()
 = 试验方法

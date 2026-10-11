@@ -53,11 +53,11 @@ typst compile --root . --font-path fonts --ignore-system-fonts examples/blank.ty
 = 要求 <requirements>
 == 一般要求 <general>
 
-#clause(key: "first")
+#clause() <first>
 产品应满足规定的条件。
 
 #clause()
-另一条正文；不加 key 也会自动编号和编目。
+另一条正文；不加标签也会自动编号和编目。
 
 参见 @general 和 @first。
 
@@ -67,7 +67,7 @@ typst compile --root . --font-path fonts --ignore-system-fonts examples/blank.ty
   - 子项二。
 ```
 
-有标题章条使用原生 `= / == / ===`，列项使用 `+ / -`；`clause()` 标记无标题条的起点，正文正常书写。术语 `term()` 和无标题条共用标题计数器；`key` 只用于标签，引用从目标位置读取当前编号。
+有标题章条使用原生 `= / == / ===`，列项使用 `+ / -`；`clause()` 标记无标题条的起点，正文正常书写。术语 `term()` 和无标题条共用标题计数器，自动编号和编目无需标签。仅在正文或索引需要引用时追加原生 `<标签>`，用 `@标签` 读取目标当前位置的编号，与普通标题和图表的写法一致。
 
 `gbt-table` 支持 `table.cell(rowspan: ..., colspan: ...)`；长表重复表题、表头、单位及“（续）”，注和脚注排在末页。图表和公式使用原生标签引用。附录重置条款、术语、图表和公式编号。
 

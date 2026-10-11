@@ -22,18 +22,18 @@
 参考印本的字号映射及测量证据在 docs/font-size-map.csv 和 docs/font-size-map.json。标称字号、实际墨迹字高、字形宽度及字面间距分别记录。
 
 = 章、条与引用
-有标题的章条使用 Typst 标题语法，编号和目录由原生计数器生成。无标题条以 clause 标记开头，后接普通正文。clause 默认取最近有标题层次的下一级；需要切换层次时指定 level。直接写 #raw("#clause()") 即可自动编号并生成目录条目，无需 key。
+有标题的章条使用 Typst 标题语法，编号和目录由原生计数器生成。无标题条以 clause 标记开头，后接普通正文。clause 默认取最近有标题层次的下一级；需要切换层次时指定 level。直接写 #raw("#clause()") 即可自动编号并生成目录条目，无需标签。
 
-#code("= 要求 <requirements>\n== 一般要求 <general>\n#clause(key: \"first\") 无标题条正文。\n\n#clause(key: \"second\") 另一条普通正文。\n\n参见 @general 和 #ref(<first>)。")
+#code("= 要求 <requirements>\n== 一般要求 <general>\n#clause() <first> 无标题条正文。\n\n#clause() 另一条普通正文。\n\n参见 @general 和 @first。")
 
-key 仅用于建立显式引用标签。插入、删除或移动条目后，条号、目录及引用随计数器更新。附录内自动添加字母前缀并重新计数。目录深度由 contents-depth 控制；单条设置 outlined: false 可隐藏其目录项，整份文件设置 clause-contents: false 可统一隐藏无标题条。原书按参考印本采用后一设置。
+仅在正文或索引需要引用时，在条目后附原生 #raw("<标签>")，引用写为 #raw("@标签")，与普通标题和图表一致。插入、删除或移动条目后，条号、目录及引用随计数器更新。附录内自动添加字母前缀并重新计数。目录深度由 contents-depth 控制；单条设置 outlined: false 可隐藏其目录项，整份文件设置 clause-contents: false 可统一隐藏无标题条。原书按参考印本采用后一设置。
 
-#code("#clause() 不需要引用标签的条。\n\n#clause(key: \"first\") 需要引用的条。\n\n参见 @first。\n\n#clause(outlined: false) 编号，但不列入目录的条。")
+#code("#clause() 不需要引用标签的条。\n\n#clause() <first> 需要引用的条。\n\n参见 @first。\n\n#clause(outlined: false) 编号，但不列入目录的条。")
 
 == 实际示例
-#clause(key: "manual-first") 本条由计数器产生编号。
+#clause() <manual-first> 本条由计数器产生编号。
 
-#clause(key: "manual-second") 引用上一条：#ref(<manual-first>)。
+#clause() 引用上一条：#[@manual-first]。
 
 = 列项
 有序列项使用加号，无序列项使用减号；缩进表示嵌套。模板将一级有序列项排为 a）、b）等，二级排为 1）、2）等；无序列项一级为破折号，二级为居中圆点。
@@ -50,12 +50,12 @@ key 仅用于建立显式引用标签。插入、删除或移动条目后，条�
   - 二级第二项。
 
 = 术语、注与示例
-term 的三个位置参数为中文术语、英文对应词、定义。编号自动占用当前层次的下一级，key 建立可引用目标。source 是外部来源文字；notes、examples 是内容数组。
+term 的三个位置参数为中文术语、英文对应词、定义。编号自动占用当前层次的下一级；需要引用时，将原生标签附在调用之后。source 是外部来源文字；notes、examples 是内容数组。
 
-#code("#term([标准], [standard], [术语定义。], key: \"term-standard\")\n#term([基础标准], [basic standard],\n  [具有广泛适用范围的标准（#ref(<term-standard>)）。],\n  key: \"term-basic-standard\")")
+#code("#term([标准], [standard], [术语定义。]) <term-standard>\n#term([基础标准], [basic standard],\n  [具有广泛适用范围的标准（#[@term-standard]）。])")
 
-#term([标准], [standard], [术语组件示例。], key: "manual-term")
-#term([相关概念], [related concept], [引用标准（#ref(<manual-term>)）。], key: "manual-related")
+#term([标准], [standard], [术语组件示例。]) <manual-term>
+#term([相关概念], [related concept], [引用标准（#[@manual-term]）。])
 
 note、example 分别编排注与示例；framed: true 设置示例边框。需要示出真实排版时，先编译一个使用同一模板的 demo.typ，再嵌入其生成 PDF。
 

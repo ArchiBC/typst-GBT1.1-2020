@@ -26,8 +26,8 @@
   参考框线#index-mark("框线")。
 ]
 #annex("B", [无需先声明有标题条])[
-  #clause(key: "bare-annex-clause") 附录中的首条。
-  #term([附录术语], [annex term], [附录中的第二条。], key: "bare-annex-term")
+  #clause() <bare-annex-clause> 附录中的首条。
+  #term([附录术语], [annex term], [附录中的第二条。]) <bare-annex-term>
   附录条目引用：@bare-annex-clause、@bare-annex-term。
 ]
 #keyword-index()

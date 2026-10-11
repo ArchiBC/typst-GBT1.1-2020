@@ -150,16 +150,36 @@
   h(body-indent - body-size)
 }
 
-#let clause(key: none, level: auto, outlined: true) = context {
+#let bind-native-target(source) = context {
+  let section = query(selector(heading).before(here())).last()
+  let owners = query(source)
+  metadata((kind: "gbt-native-target", source: source, target: section.location(),
+    number: numbering(section.numbering, ..counter(heading).at(section.location())),
+    label: if owners.len() > 0 and owners.first().has("label") { str(owners.first().label) } else { none }))
+}
+
+// Native labels attach to a contextual component. Resolve that component to
+// its single native heading; numbering and outline entries still belong to it.
+#let resolve-reference-target(target) = {
+  if target.func() == heading or target.func() == figure { target }
+  else {
+    let bindings = query(metadata).filter(e => type(e.value) == dictionary and
+      e.value.at("kind", default: none) == "gbt-native-target" and e.value.source == target.location())
+    if bindings.len() > 0 { query(bindings.first().value.target).first() } else { target }
+  }
+}
+
+#let clause(level: auto, outlined: true) = context {
+  let source = here()
   let depth = if level == auto { clause-parent-level.get() + 1 } else { level }
   assert(depth <= 6, message: "无标题条的编号层级不得超过六级。")
   // A native heading owns numbering, outline inclusion and reference location.
   // Its show rule renders only an inline marker before the ordinary paragraph.
   // Capture the paragraph size before the heading's own style is applied.
   // Keeping it on the native element avoids competing local show rules.
-  let marker = heading(level: depth, outlined: outlined, supplement: "gbt-clause",
+  heading(level: depth, outlined: outlined, supplement: "gbt-clause",
     metadata((marker-size: text.size)))
-  if key == none { marker } else { [#marker#label(key)] }
+  bind-native-target(source)
 }
 
 #let is-kind(it, kind) = it.supplement == kind or it.supplement == [#kind]
@@ -201,12 +221,13 @@
   }
 ])
 
-#let term(chinese, english, definition, key: none, level: auto, source: none, notes: (), examples: ()) = context {
+#let term(chinese, english, definition, level: auto, source: none, notes: (), examples: ()) = context {
+  let origin = here()
   let depth = if level == auto { clause-parent-level.get() + 1 } else { level }
-  let title = heading(level: depth, outlined: false, supplement: "gbt-term")[
+  heading(level: depth, outlined: false, supplement: "gbt-term")[
     #black(chinese)#h(10.5pt)#text(font: latin-bold, weight: if font-profile == "reference" { "regular" } else { "bold" }, english)
   ]
-  if key == none { title } else { [#title#label(key)] }
+  bind-native-target(origin)
   block(sticky: source != none and notes.len() == 0 and examples.len() == 0,
     par(first-line-indent: body-indent, definition))
   for (i, item) in examples.enumerate() { example(item, number: if examples.len() > 1 { i + 1 } else { none }) }
@@ -475,21 +496,20 @@
   show figure.caption: it => none
   show figure.where(kind: table): set block(breakable: true)
   show ref: it => context {
-    let target = query(it.target)
-    if target.len() > 0 and target.first().func() == heading {
-      let target = target.first()
+    let found = query(it.target)
+    let target = if found.len() > 0 { resolve-reference-target(found.first()) } else { none }
+    if it.form == "page" { it }
+    else if target != none and target.func() == heading {
       link(target.location(), if is-kind(target, "gbt-annex") {
         let details = annex-title-state.at(target.location())
         [附录#h(0.5em)#details.letter]
       } else if target.numbering == none { target.body } else {
         numbering(target.numbering, ..counter(heading).at(target.location()))
       })
-    } else if target.len() > 0 and target.first().func() == figure and target.first().kind == math.equation {
-      let target = target.first()
+    } else if target != none and target.func() == figure and target.kind == math.equation {
       link(target.location(), if target.numbering == none { [公式] }
         else { [公式（#numbering(target.numbering, ..equation-counter.at(target.location()))）] })
-    } else if target.len() > 0 and target.first().func() == metadata and "number" in target.first().value {
-      let target = target.first()
+    } else if target != none and target.func() == metadata and "number" in target.value {
       link(target.location(), target.value.number)
     } else { it }
   }
