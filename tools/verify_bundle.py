@@ -29,6 +29,7 @@ def main():
     env['PYTHONPATH']=str(ROOT/'.tools/python')+os.pathsep+env.get('PYTHONPATH','')
     env['GBT_REFERENCE_FONTS']=str(project/'no-reference-fonts')
     env['GBT_ROMAN_FONTS']=str(project/'no-system-fonts')
+    env['GBT_CONSTRUCTION_FONTS']=str(project/'no-construction-fonts')
     subprocess.run([sys.executable,'-X','utf8','tools/build.py','--font-profile','open'],
                    cwd=project,env=env,check=True)
     sys.path.insert(0,str(ROOT/'.tools/python'))
@@ -43,6 +44,14 @@ def main():
     assert inspection['raster_image_objects']==0
     source=Path('book/gbt-1.1-2020.typ')
     assert (project/source).read_bytes()==(ROOT/source).read_bytes()
+    construction=project/'output/pdf/gb55031-2022-replica.pdf'
+    construction_reader,construction_text,construction_inspection=inspect_file(construction)
+    baseline_construction=PdfReader(ROOT/'output/pdf/gb55031-2022-replica.pdf')
+    assert len(construction_reader.pages)==len(baseline_construction.pages)==76
+    assert [compact(t) for t in construction_text]==[
+        compact(p.extract_text() or '') for p in baseline_construction.pages]
+    assert construction_inspection['raster_image_objects']==10
+    assert (project/'book/gb55031-2022.typ').read_bytes()==(ROOT/'book/gb55031-2022.typ').read_bytes()
     manifest=json.loads((project/'book/demo-pdf/manifest.json').read_text('utf8'))
     assert manifest['font_profile']=='open' and len(manifest['examples'])==32
     for demo in manifest['examples']:
@@ -53,9 +62,11 @@ def main():
                 extraction_directory=str(project),font_profile='open',pages=len(reader.pages),
                 source_pdf_required=False,reference_fonts_required=False,
                 fresh_demo_fragments=len(manifest['examples']),
-                same_page_text_as_delivered_open_pdf=True,main_inspection=inspection)
+                same_page_text_as_delivered_open_pdf=True,main_inspection=inspection,
+                construction_pages=len(construction_reader.pages),construction_same_page_text=True,
+                construction_inspection=construction_inspection)
     (ROOT/'output/bundle-verification.json').write_text(json.dumps(result,ensure_ascii=False,indent=2),'utf8')
-    print(json.dumps({k:v for k,v in result.items() if k not in ('main_inspection','extraction_directory')},ensure_ascii=False))
+    print(json.dumps({k:v for k,v in result.items() if k not in ('main_inspection','construction_inspection','extraction_directory')},ensure_ascii=False))
 
 
 if __name__=='__main__':main()

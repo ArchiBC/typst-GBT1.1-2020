@@ -1,5 +1,5 @@
 {
-  "input_sha256": "b3c855ed5eac57edadeb0231134ec2aeee552801010675f2c9b82ae17aeebe87",
+  "input_sha256": "e813284ed873ee7615f62a1d0be057adb187256fef7bed8a5a2b4da2afca18b5",
   "font_profile": "open",
   "examples": [
     {
@@ -13,7 +13,7 @@
         595.2756,
         841.8898
       ],
-      "sha256": "7effe1f8ef7b0153cdab793bec105b73f21065670e9e7b18fe3892b74e03dca8"
+      "sha256": "fac3d88d84508614985dddf2371e0f73eaa3ad79e02e1fbff3a307679822eee9"
     },
     {
       "source": "book/demos/e10.typ",
@@ -26,7 +26,7 @@
         595.2756,
         841.8898
       ],
-      "sha256": "6a0c0166c6f5e43184e3d2e89fdb99109f9f5013569941ac4d4ab12b7c43ef1a"
+      "sha256": "1f73393ad6e8e9932d49c3efa1dd1c235385ed84a2fd8fd91721ec61c0a5a4aa"
     },
     {
       "source": "book/demos/e11.typ",
@@ -39,7 +39,7 @@
         595.2756,
         841.8898
       ],
-      "sha256": "13aafd7807c193c6cbadc4ccaac4fa2daf978521852d4ce762fc4ba22bdb081a"
+      "sha256": "6c65d36036133c51bf3dfe6738fd16e273a4a782d4b823ca6d6cdd03320dd756"
     },
     {
       "source": "book/demos/e12.typ",
@@ -52,7 +52,7 @@
         595.2756,
         841.8898
       ],
-      "sha256": "1fcaaf39d8634b51ed10e21501b3d18e04d9169f77a87a1a6572cf467704f25b"
+      "sha256": "9e7c558cb7d673e17de1802b15c79332efcbf9a28ba32823fbd0dfdc449a39c0"
     },
     {
       "source": "book/demos/e2.typ",
@@ -65,7 +65,7 @@
         595.2756,
         841.8898
       ],
-      "sha256": "a21187c4becee5194a13f9c7c6821d79273a1d30d10dcc87823c31b2c320850a"
+      "sha256": "d325b6666b512c897580c4ad821f3075d26d3db0794d978b6a36f54ee5ec1b39"
     },
     {
       "source": "book/demos/e3.typ",
@@ -78,7 +78,7 @@
         595.2756,
         841.8898
       ],
-      "sha256": "2a424de98a59daafb2e9103fd811e600f7f33bfa08d26c171682e0309f8944a7"
+      "sha256": "f6ff4d430fe0cf0a0d68422535a99a438d73831445cdbfa898581ddc87ce56c2"
     },
     {
       "source": "book/demos/e4.typ",
@@ -91,7 +91,7 @@
         595.2756,
         841.8898
       ],
-      "sha256": "f1efe96625b9699b3701fd9a6cce92c386433e0110158678786896fa27b01e15"
+      "sha256": "fa7ede777cf1a070b077d441831f571e922ddd768f4ac63ba3fc52b5be5f73c0"
     },
     {
       "source": "book/demos/e5.typ",
@@ -104,7 +104,7 @@
         595.2756,
         841.8898
       ],
-      "sha256": "8f45a7cc41a4a23cd3151d390da7010ee89a8e3617d9e55046b51a637f63b0c7"
+      "sha256": "170b4cb80cee131ce491bbcb4a391f6ed378488117d8319df0254f3a5fe0293f"
     },
     {
       "source": "book/demos/e6.typ",
@@ -117,7 +117,7 @@
         595.2756,
         841.8898
       ],
-      "sha256": "932154a8c9ddcd73a47d69595047576415bcd3557e7defb5cdf02804ff2a66eb"
+      "sha256": "4fdcacac0511bb417d51efd77cc162eed16bbe29e729e051a79849a0950d12c9"
     },
     {
       "source": "book/demos/e7.typ",
@@ -130,7 +130,7 @@
         595.2756,
         841.8898
       ],
-      "sha256": "b55524eafbe6fb084e4f5f647959864ce036dc7df8f48e8da71bf0babf4dc6f6"
+      "sha256": "a25312e3588b66f4c945fe03d14f40cc01eb71720cdaefb25d075ab0e349333d"
     },
     {
       "source": "book/demos/e8.typ",
@@ -143,12 +143,12 @@
         595.2756,
         841.8898
       ],
-      "sha256": "858281c4cca41ad8bc2345bfae9db74205d217363b34c29c18c89db98e546b45"
+      "sha256": "2469f5c233805c0ef76a3e23f12c09d239d4a927a6bb90453f6b2f7beb383938"
     },
     {
       "source": "book/demos/e9.typ",
       "pdf": "book/demo-pdf/e9.pdf",
-      "source_pages": 2,
+      "source_pages": 1,
       "embedded_page": 1,
       "media_box_pt": [
         0.0,
@@ -156,7 +156,7 @@
         595.2756,
         841.8898
       ],
-      "sha256": "ecad005474f2509e67ebc69c09dcac079d680ab83cccbfe6774dd2c6564c00c7"
+      "sha256": "f121afc6cddf2c9a1d41a9faf79c590f99ca40ec7076d21e2f68010f5535330d"
     },
     {
       "source": "book/demos/equation-number.typ",
@@ -182,7 +182,7 @@
         467.71652,
         18.5
       ],
-      "sha256": "01bbae6c47e21f9c8c8fc59e5e9300308d74c8c80a8fae12a80e76a737f272dd"
+      "sha256": "1cbbc668ecb1383599320d97594937d1b27631012dab8ed49f876416748253ee"
     },
     {
       "source": "book/demos/hanging-paragraph.typ",
@@ -195,7 +195,7 @@
         467.71652,
         270.0
       ],
-      "sha256": "30601cf1ce3d60d822c66d88cf9edb14b941bca9e62ba76ea66329d74f05a530"
+      "sha256": "9bbc615a16a16145a54a15e807cef5b6421e1fb06ed3b8aa8649f79377ed2cb6"
     },
     {
       "source": "book/demos/hierarchy.typ",
@@ -208,7 +208,7 @@
         467.71652,
         370.0
       ],
-      "sha256": "057ba17dd6f6a6e6d09d888361d0938932f5da0cabe4d515431f9642554bde8f"
+      "sha256": "c46985f858a3a381cdc2ab02bced69bf0f8dca5568606945380e5f555c5c8e2e"
     },
     {
       "source": "book/demos/math-1.typ",
@@ -299,7 +299,7 @@
         467.71652,
         422.0
       ],
-      "sha256": "a6526956fca1967b3b17b70369c828a51967c55d8325540c3a2e6ebd880df563"
+      "sha256": "5843b218f2e454a5ce9b0005f6a6b1b0ac3695221814f1745c8fd61ee0892a63"
     },
     {
       "source": "book/demos/subfigures.typ",
@@ -310,9 +310,9 @@
         0.0,
         0.0,
         467.71652,
-        250.6
+        252.1
       ],
-      "sha256": "e2b5ce67e63bc13a4abbfd67fdcf57b8ccc69158aa6a26d154bfacd0949b7377"
+      "sha256": "854bc9e99e5e066151da01615e5049cb35ed3164013ea3eccfe7b53ed513d5c9"
     },
     {
       "source": "book/demos/table-headers-1.typ",
@@ -338,7 +338,7 @@
         467.71652,
         73.62
       ],
-      "sha256": "b6859318cc6ee26b12fb498bdd98b254bf677bf260e247cb0354a46f510ff734"
+      "sha256": "a1e840a3545a3047183ff2fe13eb729bd248931681160c52f51af4da6350a731"
     },
     {
       "source": "book/demos/table-headers-3.typ",
@@ -349,9 +349,9 @@
         0.0,
         0.0,
         467.71652,
-        85.32
+        85.77
       ],
-      "sha256": "e496960b4bab5da5c6c5535be68985f40df7594d0e80adb40d8c57af3ebf69d4"
+      "sha256": "80db208372dafd561dd631e2dfd7b02b3c6a512c8ba7c5a495ff05dcbe8eada1"
     },
     {
       "source": "book/demos/table-headers-4.typ",
@@ -388,9 +388,9 @@
         0.0,
         0.0,
         467.71652,
-        80.12
+        84.12
       ],
-      "sha256": "01f551a8cbd77545c78e83e0281c04567746385f7ceb4d8b1c7312d92b856af7"
+      "sha256": "df3241483567ae9f3d1cc0c86d29735a5d60578726bda46b7db0dfdc8f82922e"
     },
     {
       "source": "book/demos/table-notes.typ",
@@ -401,9 +401,9 @@
         0.0,
         0.0,
         467.71652,
-        167.21
+        167.66
       ],
-      "sha256": "2cd4e713697825bb6fa1d9502afb79b076661b0cd130037c34118cdc538079b4"
+      "sha256": "c7d827af37e87db1e28db12dc54922dca56e1c8f72a214aa450fa1b4a39e1e65"
     },
     {
       "source": "book/demos/table-page.typ",
@@ -416,7 +416,7 @@
         467.71652,
         32.0
       ],
-      "sha256": "d430e6fb60d7aff71a710176db77af89b79babfb44768522b7346a1eb4a2845d"
+      "sha256": "01f61ece27a5bdd86809fb7dc0a95a53671142d836f71a5b35e0365bd2ae1956"
     }
   ],
   "method": "native Typst compilation; selected generated PDF page; vector PDF embedding"

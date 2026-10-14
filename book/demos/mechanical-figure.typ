@@ -14,7 +14,7 @@
   #place(top + left, dx: (x1 + x2) / 2 - 4pt, dy: y - 11pt, title)
 ]
 #let drawing = box(width: 390pt, height: 133pt)[
-  #set text(size: 7.5pt)
+  #set text(size: calibrated(7.5pt))
   #place(top + left, curve(stroke: 0.7pt, fill: none,
     curve.move((76pt, 76pt)), curve.line((89pt, 68pt)), curve.line((296pt, 68pt)),
     curve.line((296pt, 84pt)), curve.line((89pt, 84pt)), curve.close()))

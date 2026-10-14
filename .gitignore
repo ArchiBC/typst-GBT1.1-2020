@@ -22,7 +22,7 @@ Thumbs.db
 /GBT+1.1-2020.pdf
 /source-cover.png
 
-# Keep only the four published outputs here.
+# Keep the published outputs here.
 # book/demo-pdf/ remains tracked because the book embeds those vector fragments.
 /output/*
 !/output/pdf/
@@ -31,3 +31,5 @@ Thumbs.db
 !/output/pdf/gbt-1.1-2020-replica.pdf
 !/output/pdf/standard-example.pdf
 !/output/pdf/template-manual.pdf
+!/output/pdf/gb55031-2022-replica.pdf
+!/output/pdf/construction-standard-example.pdf

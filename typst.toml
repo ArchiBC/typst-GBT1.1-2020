@@ -1,10 +1,10 @@
 [package]
 name = "gbt-standard"
-version = "0.1.0"
+version = "0.2.0"
 entrypoint = "template/lib.typ"
 authors = ["ArchiBC"]
 license = "MIT"
-description = "GB/T 1.1—2020 国标写作模板与完整 Typst 样书。"
+description = "国标与工程建设规范模板，支持条文说明汇编，附 GB/T 1.1—2020 和 GB 55031—2022 样书。"
 repository = "https://github.com/ArchiBC/typst-GBT1.1-2020"
 compiler = "0.15.0"
 exclude = [".tools/", ".venv/", "output/", "legacy/", "docs/review/", "tools/", "book/", "fonts/reference/"]

@@ -1,6 +1,6 @@
 // Native Typst paths and tiling only. Coordinates use the supplied 482 × 241
 // specimen. Arc segments share analytic tangents, and bevels share vertices.
-#let gb-mark(width: 40mm) = {
+#let gb-mark(width: 40mm, ink: black) = {
   let u = width / 482
   let p(x, y) = ((x - 28) * u, (y - 74) * u)
   let m(x, y) = curve.move(p(x, y))
@@ -45,12 +45,12 @@
   let bottom-cut = ellipse-point(439, 241.5, 44.5, 42.5, -40deg)
   let dots = tiling(size: (6 * u, 6 * u), relative: "parent")[
     #rect(width: 6 * u, height: 6 * u, fill: white, stroke: none)
-    #place(top + left, dx: 0.2 * u, dy: 0.2 * u, circle(radius: 1.05 * u, fill: black, stroke: none))
-    #place(top + left, dx: 3.2 * u, dy: 3.2 * u, circle(radius: 1.05 * u, fill: black, stroke: none))
+    #place(top + left, dx: 0.2 * u, dy: 0.2 * u, circle(radius: 1.05 * u, fill: ink, stroke: none))
+    #place(top + left, dx: 3.2 * u, dy: 3.2 * u, circle(radius: 1.05 * u, fill: ink, stroke: none))
   ]
-  let face(..commands) = place(top + left, curve(fill: dots, stroke: 1.5 * u, ..commands.pos()))
+  let face(..commands) = place(top + left, curve(fill: dots, stroke: ink + 1.5 * u, ..commands.pos()))
   box(width: width, height: width / 2)[
-    #place(top + left, curve(fill: black, stroke: none,
+    #place(top + left, curve(fill: ink, stroke: none,
       m(263,74), l(151,74), ..arc(151,194.5,123,120.5,-90deg,-270deg),
       l(263,315), l(263,165), l(151,165), l(151,225), l(201,225), l(201,254), l(151,254),
       ..arc(151,195,59,59,90deg,270deg), l(263,136), z))
@@ -62,7 +62,7 @@
     #face(m(151,165), l(263,165), l(233,195), l(181,195), z)
     #face(m(151,165), l(181,195), l(151,225), z)
 
-    #place(top + left, curve(fill: black, stroke: none, fill-rule: "even-odd",
+    #place(top + left, curve(fill: ink, stroke: none, fill-rule: "even-odd",
       m(275,74), l(434,74), ..arc(434,147,76,73,-90deg,0deg),
       c(510,166.5,505.25,183.5,495,195), c(505.25,206.5,510,225.5,510,245),
       ..arc(439,245,71,70,0deg,90deg), l(275,315), z,
@@ -77,7 +77,7 @@
       c(449,225,462,219,..bottom-cut), ..arc(439,241.5,44.5,42.5,-40deg,90deg), z)
     // Draw shared seams after every patterned face. A later white pattern
     // tile must not erase part of a preceding face's edge at an intersection.
-    #place(top + left, curve(fill: none, stroke: 1.5 * u,
+    #place(top + left, curve(fill: none, stroke: ink + 1.5 * u,
       m(..go), l(..gi), m(..bo), l(435,133),
       m(151,165), l(181,195), l(233,195), l(263,165),
       m(231,195), l(201,225), l(201,254), l(231,284),

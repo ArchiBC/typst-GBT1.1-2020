@@ -5,7 +5,7 @@ import json
 from pathlib import Path
 
 from bootstrap import prepare
-from compile import ROOT, compile_file
+from compile import ROOT, compile_file, construction_fonts
 from build_demos import build as build_demos, dependencies
 
 BOOKS = {'open': 'gbt-1.1-2020-open-fonts.pdf', 'reference': 'gbt-1.1-2020-replica.pdf'}
@@ -23,9 +23,10 @@ def book_inputs(profile):
     return digest.hexdigest()
 
 
-def build(profiles=('open',), force=False):
+def build(profiles=('open',), force=False, construction_profile=None):
     from verify import inspect_file, verify_table_f1, verify_contents_specimen, verify_cover_specimen
     prepare(check_only=True)
+    construction_profile=construction_profile or construction_fonts()[0]
     folder = ROOT / 'output/pdf'
     records = []
     for profile in profiles:
@@ -46,12 +47,22 @@ def build(profiles=('open',), force=False):
             if stem in ('e6', 'e7'):
                 record['cover_specimen'] = verify_cover_specimen(ROOT / item['pdf'])
             demos.append(record)
+        from verify_annex_e import verify_native
+        annex_e = verify_native(profile)
+        from verify_typography import verify_native_demos
+        typography_demos = verify_native_demos(profile)
         records.append(dict(font_profile=profile, input_sha256=book_inputs(profile), book=inspection,
-                            demos=demos, demo_input_sha256=manifest['input_sha256']))
+                            demos=demos, demo_input_sha256=manifest['input_sha256'], annex_e=annex_e,
+                            typography_demos=typography_demos))
     for source, name in (('examples/standard.typ', 'standard-example.pdf'),
-                         ('book/manual.typ', 'template-manual.pdf')):
-        compile_file(ROOT / source, folder / name, profile='open')
+                         ('book/manual.typ', 'template-manual.pdf'),
+                         ('examples/construction-standard.typ', 'construction-standard-example.pdf'),
+                         ('book/gb55031-2022.typ', 'gb55031-2022-replica.pdf')):
+        engineering=name in ('construction-standard-example.pdf','gb55031-2022-replica.pdf')
+        compile_file(ROOT / source, folder / name, profile='open',
+                     construction_profile=construction_profile if engineering else 'open')
     report = dict(profiles=records, source_sha256=fingerprint(ROOT / 'book/gbt-1.1-2020.typ'),
+                  construction_source_sha256=fingerprint(ROOT / 'book/gb55031-2022.typ'),
                   not_built_in_this_run=[name for p, name in BOOKS.items() if p not in profiles
                                          and (folder / name).exists()])
     (ROOT / 'output/build.json').write_text(json.dumps(report, ensure_ascii=False, indent=2)+'\n', 'utf8')
@@ -62,9 +73,10 @@ def main():
     parser = argparse.ArgumentParser()
     parser.add_argument('--font-profile', choices=('open', 'reference', 'both'), default='open')
     parser.add_argument('--force-demos', action='store_true')
+    parser.add_argument('--construction-font-profile', choices=('open','windows'))
     args = parser.parse_args()
     profiles = ('open', 'reference') if args.font_profile=='both' else (args.font_profile,)
-    build(profiles, force=args.force_demos)
+    build(profiles, force=args.force_demos,construction_profile=args.construction_font_profile)
     from verify import main as verify
     verify(profiles=profiles)
 

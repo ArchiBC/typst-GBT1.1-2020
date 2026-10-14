@@ -1,4 +1,5 @@
-// Measured by tools/font_calibration.py. Reference printing only.
+// Physical ink sizes measured from source page images; docs/font-size-map.json.
+// Reference printing only.
 // Keep normative sizes for new standards in the open font profile.
 #let reference-sizes = (
   category: 25.556pt,

@@ -1,0 +1,350 @@
+{
+  "date": "2026-10-11",
+  "compiler": "Typst 0.15.0",
+  "passed": true,
+  "template": "template/lib.typ",
+  "alignment": {
+    "before": {
+      "reference_numbers": [
+        "3.3.1",
+        "3.1.2"
+      ],
+      "reference_baseline_error_pt": [
+        0.9966000000000577,
+        0.9966000000000577
+      ],
+      "publisher_left_edges_pt": [
+        190.40802,
+        192.63623
+      ],
+      "publisher_left_edge_difference_pt": 2.2282100000000185
+    },
+    "after": {
+      "reference_numbers": [
+        "3.3.1",
+        "3.1.2"
+      ],
+      "reference_baseline_error_pt": [
+        0.0,
+        0.0
+      ],
+      "publisher_left_edges_pt": [
+        190.40802,
+        190.40802
+      ],
+      "publisher_left_edge_difference_pt": 0.0
+    }
+  },
+  "artifacts": [
+    {
+      "file": "output/pdf/gbt-1.1-2020-replica.pdf",
+      "pages": 79,
+      "sha256": "5f200795931743bdd11deaaf5c4159e29b1db24ff2b3e914ba267cfc61515319",
+      "normalized_text_preserved": true,
+      "normalized_text_repagination_pages": [],
+      "rendered_changed_pages": [
+        11,
+        12,
+        13,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        24,
+        26,
+        28,
+        29,
+        30,
+        31,
+        32,
+        33,
+        34,
+        35,
+        36,
+        37,
+        38,
+        39,
+        40,
+        41,
+        42,
+        47,
+        50,
+        51,
+        52,
+        53,
+        54,
+        58,
+        59,
+        60,
+        61,
+        62,
+        63,
+        64,
+        65,
+        66,
+        67,
+        68,
+        69,
+        71
+      ]
+    },
+    {
+      "file": "output/pdf/gbt-1.1-2020-open-fonts.pdf",
+      "pages": 79,
+      "sha256": "005ea5f288ed74751f4357f6acd9d1cd200a2f45e1cba3ff4b596360cda163a5",
+      "normalized_text_preserved": true,
+      "normalized_text_repagination_pages": [],
+      "rendered_changed_pages": [
+        28,
+        38,
+        39,
+        50,
+        58,
+        59,
+        60,
+        61,
+        62,
+        63,
+        64,
+        65,
+        66,
+        67,
+        68,
+        69
+      ]
+    },
+    {
+      "file": "output/pdf/standard-example.pdf",
+      "pages": 21,
+      "sha256": "3170f374787cf9852c76412757332578e9b72b47b2436486bd9b5bb02e8c0e6d",
+      "normalized_text_preserved": true,
+      "normalized_text_repagination_pages": [],
+      "rendered_changed_pages": [
+        11,
+        15
+      ]
+    },
+    {
+      "file": "output/pdf/template-manual.pdf",
+      "pages": 10,
+      "sha256": "097f4e3413275d21e8c5e869a142db74fd317680ef9b56499cb46573bc87cf0f",
+      "normalized_text_preserved": true,
+      "normalized_text_repagination_pages": [],
+      "rendered_changed_pages": [
+        9
+      ]
+    }
+  ],
+  "verification": {
+    "fonts_embedded": true,
+    "no_text_outside_pages": true,
+    "numbered_sections_per_profile": 296,
+    "insertion_cases": 4,
+    "untitled_contents_cases": 8,
+    "table_continuation_and_merged_cells_passed": true,
+    "table_f1_serials_passed": true,
+    "generated_open_vector_fragments": 32,
+    "rendered_alignment_passed": true,
+    "each_page_normalized_text_preserved": true
+  },
+  "initial_targeted_fix": {
+    "artifacts": [
+      {
+        "file": "output/pdf/gbt-1.1-2020-open-fonts.pdf",
+        "pages": 79,
+        "sha256": "aa60a3264b0710b8963491f1a993609cf07640a950e1a25b9bf87e32170c1bbc",
+        "normalized_text_repagination_pages": [],
+        "rendered_changed_pages_count": 0
+      },
+      {
+        "file": "output/pdf/gbt-1.1-2020-replica.pdf",
+        "pages": 79,
+        "sha256": "ec9ccdce5dd814d9ab03136851a935f13e4466c4ce7c7c7f7651bb4712cde97c",
+        "normalized_text_repagination_pages": [
+          76,
+          77,
+          78,
+          79
+        ],
+        "rendered_changed_pages_count": 78
+      },
+      {
+        "file": "output/pdf/standard-example.pdf",
+        "pages": 21,
+        "sha256": "f89ce74aeb7f1be4b0cd1873351d1e3418f129d22f9a2e1111434841f51ab56d",
+        "normalized_text_repagination_pages": [],
+        "rendered_changed_pages_count": 0
+      },
+      {
+        "file": "output/pdf/template-manual.pdf",
+        "pages": 10,
+        "sha256": "321cb1a1a3402475ac70d5c7f0e19ace63f2670a27498d7c3a727003ec041538",
+        "normalized_text_repagination_pages": [],
+        "rendered_changed_pages_count": 0
+      }
+    ],
+    "verification": {
+      "reference_body_text_preserved": true,
+      "render_scale": 2,
+      "reference_pages_visually_reviewed": 79,
+      "numbered_sections_per_profile": 296,
+      "insertion_cases": 4,
+      "untitled_contents_cases": 8,
+      "fonts_embedded": true,
+      "no_text_outside_pages": true,
+      "table_continuation_and_merged_cells_passed": true,
+      "generated_open_vector_fragments": 32
+    }
+  },
+  "full_book_review": {
+    "comparison_baseline": "after initial targeted fixes",
+    "measured_fixes": {
+      "before": {
+        "note_prefix_baseline_error_pt": 0.1275634765625,
+        "bold_table_cell_baseline_error_pt": 0.055084228515625,
+        "formula_definition_baseline_errors_pt": [
+          0.65374755859375,
+          0.65374755859375,
+          0.6536865234375,
+          0.65374755859375,
+          0.65374755859375,
+          0.65374755859375
+        ],
+        "diagram_label_baseline_error_pt": 0.8489990234375
+      },
+      "after": {
+        "note_prefix_baseline_error_pt": 0.0,
+        "bold_table_cell_baseline_error_pt": 0.0,
+        "formula_definition_baseline_errors_pt": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "diagram_label_baseline_error_pt": 0.0
+      }
+    },
+    "rendered_alignment": {
+      "passed": true,
+      "tolerance_pt": 0.01,
+      "artifacts": [
+        {
+          "profile": "open",
+          "fixture": {
+            "file": "output/qa/alignment-open.pdf",
+            "baseline_errors_pt": {
+              "mixed_text": 0.0,
+              "单行注基线": 0.0,
+              "多行注首行": 0.0,
+              "表注首行": 0.0,
+              "table_cells": 0.0,
+              "速度释义": 0.0,
+              "距离释义": 0.0,
+              "时间释义": 0.0,
+              "横坐标释义": 0.0,
+              "纵坐标释义": 0.0,
+              "equation_number": 0.0
+            },
+            "wrapped_notes_share_left_edge": true,
+            "table_notes_left_aligned": true,
+            "formula_definitions_left_aligned": true,
+            "superscripts_preserved": true
+          },
+          "book": {
+            "file": "output/pdf/gbt-1.1-2020-open-fonts.pdf",
+            "pages_scanned": 79,
+            "publisher_left_edges_pt": [
+              196.47244262695312,
+              196.47244262695312
+            ],
+            "term_reference_error_pt": 0.0,
+            "diagram_label_error_pt": 0.0,
+            "note_labels_checked": 33,
+            "max_note_baseline_error_pt": 0,
+            "ordinary_pairs_checked": 2143,
+            "intentional_offsets": [
+              {
+                "page": 60,
+                "first": "25",
+                "second": "1范围",
+                "delta_pt": 2.95074462890625
+              }
+            ]
+          }
+        },
+        {
+          "profile": "reference",
+          "fixture": {
+            "file": "output/qa/alignment-reference.pdf",
+            "baseline_errors_pt": {
+              "mixed_text": 0.0,
+              "单行注基线": 0.0,
+              "多行注首行": 0.0,
+              "表注首行": 0.0,
+              "table_cells": 0.0,
+              "速度释义": 0.0,
+              "距离释义": 0.0,
+              "时间释义": 0.0,
+              "横坐标释义": 0.0,
+              "纵坐标释义": 0.0,
+              "equation_number": 0.0
+            },
+            "wrapped_notes_share_left_edge": true,
+            "table_notes_left_aligned": true,
+            "formula_definitions_left_aligned": true,
+            "superscripts_preserved": true
+          },
+          "book": {
+            "file": "output/pdf/gbt-1.1-2020-replica.pdf",
+            "pages_scanned": 79,
+            "publisher_left_edges_pt": [
+              190.40802001953125,
+              190.40802001953125
+            ],
+            "term_reference_error_pt": 0.0,
+            "diagram_label_error_pt": 0.0,
+            "note_labels_checked": 33,
+            "max_note_baseline_error_pt": 0,
+            "ordinary_pairs_checked": 2512,
+            "intentional_offsets": [
+              {
+                "page": 18,
+                "first": "必备",
+                "second": "资料性",
+                "delta_pt": 1.71429443359375
+              },
+              {
+                "page": 18,
+                "first": "附加信息",
+                "second": "条文、注、脚注、指明附录",
+                "delta_pt": 1.71429443359375
+              }
+            ]
+          }
+        }
+      ]
+    },
+    "old_fixture_rejected": {
+      "reference": "note prefix baseline difference 0.12756 pt",
+      "open": "multiline table note prefix centered 6.75 pt below first line"
+    },
+    "reference_pages_visually_reviewed": 79,
+    "open_pages_visually_reviewed": 79,
+    "standard_example_pages_visually_reviewed": 21,
+    "template_manual_pages_visually_reviewed": 10,
+    "alignment_fixture_pages_visually_reviewed": 2,
+    "render_scale": 2,
+    "detail_render_scale": 3,
+    "ordinary_pairs_checked": 4655,
+    "note_labels_checked": 66,
+    "each_page_normalized_text_preserved": true,
+    "repagination": false,
+    "check_command": "python tools/verify.py --font-profile both"
+  }
+}

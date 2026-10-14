@@ -6,7 +6,10 @@
 #let empty-row = range(4).map(_ => table.cell(stroke: (bottom: none), inset: 0pt, box(height: 27pt)))
 #let diagram-table-layout() = gbt-table([表 X　表题], number: none, closed: false,
   columns: (1fr, 1fr, 1fr, 1fr), headers: range(4).map(_ => crosses(4, advance: 9.0243pt)), rows: (empty-row,))
-#let diagram-table-page() = block(width: 100%, stroke: 0.5pt, inset: 4pt, align(center, black[表 3（第 2 页/共 5 页）]))
+#let diagram-table-page() = block(width: 100%, stroke: 0.5pt, inset: 4pt)[
+  #set text(font: song, size: body-size, top-edge: body-size * 0.88, bottom-edge: -body-size * 0.12)
+  #align(center)[#black(size: 10.5pt)[表 3]（第 2 页/共 5 页）]
+]
 #let diagram-table-headers-1() = gbt-table([], number: none, closed: false,
   columns: (1fr, 1fr, 1fr, 1fr), headers: ([类型], [线密度\ kg/m], [内圆直径\ mm], [外圆直径\ mm]), rows: (empty-row,))
 #let diagram-table-headers-2() = gbt-table([], number: none, closed: false,
@@ -38,7 +41,9 @@
 ]
 
 #let equation-example(body, definitions: (), formula-gap: 1.5em) = block(stroke: 0.5pt, inset: (x: 18pt, y: 8pt))[
-  #set text(size: note-size)
+  #set align(left)
+  // Use one physical line box for the 9 pt math and calibrated note text.
+  #set text(size: note-size, top-edge: note-size * 0.88, bottom-edge: -note-size * 0.12)
   #show math.equation: set text(size: 9pt)
   #set par(first-line-indent: 0pt, leading: 13.5pt - note-size)
   #align(center, math.equation(block: false, math.display(body)))
@@ -46,7 +51,7 @@
     v(formula-gap)
     [式中：]
     v(0.3em)
-    grid(columns: (auto, auto, 1fr), column-gutter: 0.5em, row-gutter: 13.5pt - note-size,
+    grid(columns: (auto, auto, 1fr), align: left + top, column-gutter: 0.5em, row-gutter: 13.5pt - note-size,
       ..definitions.map(it => (it.at(0), [——], it.at(1))).flatten())
   }
 ]

@@ -4,6 +4,8 @@
 #import "letter-marks.typ": db-mark
 #import "index.typ": index-mark, index-body
 #import "fonts.typ": *
+#import "explanations.typ": explain, explanations, explanation-entry-marker
+#import "construction.typ": construction-page, construction-text, construction-paragraph, construction-heading, construction-cover, construction-explanation-heading, construction-explanation-entry, construction-enum-marker, construction-song, construction-song-family, construction-hei, construction-roman, construction-font-profile
 #let annex-state = state("gbt-annex", none)
 #let annex-title-state = state("gbt-annex-title", none)
 #let equation-counter = counter(figure.where(kind: math.equation))
@@ -21,9 +23,15 @@
   pagebreak(to: target, weak: weak)
 }
 
-#let black(body, size: 10.5pt) = text(font: hei, weight: black-weight,
-  size: if font-profile == "reference" and size == 10.5pt { reference-sizes.body-hei }
-    else if font-profile == "reference" and size == 9pt { reference-sizes.small-hei } else { calibrated(size) }, body)
+#let black(body, size: auto) = context {
+  let base = if size == auto { text.size } else { calibrated(size) }
+  let rendered = if size == auto and cjk-role(text.font) == "hei" { base } else { black-size(base) }
+  let edge(value) = if type(value) == length { value.to-absolute() } else { value }
+  text(font: hei, weight: black-weight, size: rendered,
+    baseline: text.baseline.to-absolute(),
+    top-edge: if size == auto { edge(text.top-edge) } else { base * 0.88 },
+    bottom-edge: if size == auto { edge(text.bottom-edge) } else { -base * 0.12 }, body)
+}
 #let fit-line(body, width) = context {
   let natural = measure(body).width
   if natural > width { scale(x: width / natural * 100%, reflow: true, body) } else { body }
@@ -38,7 +46,8 @@
 #let standard-number(code, serial, year) = [#standard-code(code)#h(0.5em)#text(font: digits, weight: "regular", [#serial—#year])]
 #let letter-mark(body, width: 40mm, height: 20mm, note: none, font: if font-profile == "reference" { "EU-F1" } else { "Source Han Sans SC" }) = context {
   // A logo's cap height must not inherit the running-text Latin calibration.
-  show regex("[\\x21-\\x7e\\u00a0-\\u024f]+"): it => it
+  show western-pattern: it => it
+  show numeral-pattern: it => it
   let marked = if body == [XX] { [X#h(0.25em)X] } else { body }
   let lettering = text(font: font, weight: "regular", size: 56pt,
     // These specimen fonts have no sCapHeight. Use the measured X bound;
@@ -108,7 +117,8 @@
         block(width: 100%, align(center, fit-line(part, 170mm)))
       }
       #v(10mm)
-      #set text(font: ((name: latin-bold, covers: if font-profile == "reference" { regex("[\\x00-\\x7f\\u00a0-\\u024f]") } else { "latin-in-cjk" }), if font-profile == "reference" { "FZHei-B01" } else { "Source Han Sans SC" }),
+      #set text(font: ((name: latin-bold, covers: bold-covers),
+        ..if font-profile == "reference" { ((name: latin, covers: latin-covers),) } else { () }, hei-family),
         size: if font-profile == "reference" { reference-sizes.cover-latin } else { 14pt },
         tracking: if font-profile == "reference" { reference-spacing.cover-latin.tracking } else { 0pt },
         weight: if font-profile == "reference" { "regular" } else { "bold" })
@@ -128,10 +138,11 @@
   place(top + left, dx: 25mm, dy: if organizations.len() == 1 { 273mm } else if font-profile == "reference" { 264mm } else { 267mm }, block(width: 170mm)[
     #let single = organizations.len() == 1
     #set par(leading: if font-profile == "reference" { 19.2129pt - reference-sizes.publisher } else { 3mm })
+    // Center the publisher group, but share one left edge across name lines.
     #align(center, grid(columns: (auto, auto), column-gutter: publisher-gap, align: horizon,
-      scale(x: if font-profile == "reference" and not single { reference-spacing.publisher.x } else { 100% }, reflow: true,
+      align(left, scale(x: if font-profile == "reference" and not single { reference-spacing.publisher.x } else { 100% }, reflow: true,
         text(font: if single { hei } else { display-song }, size: if single { 14pt } else if font-profile == "reference" { reference-sizes.publisher } else { 18pt },
-        tracking: if font-profile == "reference" and not single { reference-spacing.publisher.tracking } else { 0pt }, weight: if font-profile == "reference" { "regular" } else { "bold" }, [#organizations.join(linebreak())#if organization-note != none { super(organization-note) }])),
+        tracking: if font-profile == "reference" and not single { reference-spacing.publisher.tracking } else { 0pt }, weight: if font-profile == "reference" { "regular" } else { "bold" }, [#organizations.join(linebreak())#if organization-note != none { super(organization-note) }]))),
       black([发#h(3mm)布], size: 14pt)))
   ])
   // A non-floating item makes the absolutely positioned page real.
@@ -199,16 +210,17 @@
 }
 
 #let note(body, number: none) = context pad(left: -note-outdent(list-depth-state.get()), block(above: 0.3em, below: 0.3em)[
-  #set text(font: song, size: note-size)
+  #set text(font: song, size: note-size, top-edge: note-size * 0.88, bottom-edge: -note-size * 0.12)
   #set par(first-line-indent: 0pt, leading: 13.5pt - note-size)
   #pad(left: 2em)[
-    #grid(columns: (auto, 1fr), column-gutter: 0pt,
+    #grid(columns: (auto, 1fr), column-gutter: 0pt, align: left + top,
       black(if number == none { [注：] } else { [注#number：] }, size: 9pt), body)
   ]
 ])
 
 #let example(body, number: none, framed: false, inline: false) = context pad(left: -note-outdent(list-depth-state.get()), block(above: 0.4em, below: 0.4em)[
-  #set text(font: song, size: note-size)
+  #set align(left)
+  #set text(font: song, size: note-size, top-edge: note-size * 0.88, bottom-edge: -note-size * 0.12)
   #set par(first-line-indent: 0pt, leading: 13.5pt - note-size, spacing: 13.5pt - note-size)
   #set list(marker: depth => unordered-marker(depth, 18pt), indent: 0pt, body-indent: 0pt, spacing: 15pt - note-size)
   #set enum(numbering: (..numbers) => numbered-marker(numbers, 18pt), full: true, indent: 0pt, body-indent: 0pt, spacing: 15pt - note-size)
@@ -217,7 +229,11 @@
     par(first-line-indent: (amount: 18pt, all: true))[#prefix#body]
   } else {
     block(sticky: true)[#h(18pt)#prefix]
-    if framed { block(stroke: 0.5pt, inset: 1em)[#set text(size: body-size); #set par(leading: body-gap); #body] } else { [#set par(first-line-indent: (amount: 18pt, all: true)); #body] }
+    if framed { block(stroke: 0.5pt, inset: 1em)[
+      #set text(size: body-size, top-edge: body-size * 0.88, bottom-edge: -body-size * 0.12)
+      #set par(leading: body-gap)
+      #body
+    ] } else { [#set par(first-line-indent: (amount: 18pt, all: true)); #body] }
   }
 ])
 
@@ -225,7 +241,7 @@
   let origin = here()
   let depth = if level == auto { clause-parent-level.get() + 1 } else { level }
   heading(level: depth, outlined: false, supplement: "gbt-term")[
-    #black(chinese)#h(10.5pt)#text(font: latin-bold, weight: if font-profile == "reference" { "regular" } else { "bold" }, english)
+    #black(chinese)#h(10.5pt)#text(font: latin-bold-fonts, weight: if font-profile == "reference" { "regular" } else { "bold" }, english)
   ]
   bind-native-target(origin)
   block(sticky: source != none and notes.len() == 0 and examples.len() == 0,
@@ -246,7 +262,7 @@
   table-counter.update(0)
   image-counter.update(0)
   equation-counter.update(0)
-  set heading(numbering: (..numbers) => letter + "." + numbers.pos().map(str).join("."))
+  set heading(numbering: (..numbers) => letter + "." + numbers.pos().map(str).join("."), supplement: "gbt-annex-section")
   set figure(numbering: n => letter + "." + str(n))
   let title-heading = heading(level: 1, numbering: none, supplement: "gbt-annex")[附录#h(0.5em)#letter#if normative { [（规范性）] } else { [（资料性）] }#h(1em)#title]
   [#title-heading#label("annex-" + lower(letter))]
@@ -256,9 +272,9 @@
 }
 
 #let figure-note(body, letter: "a") = {
-  set text(font: song, size: note-size)
-  set par(first-line-indent: 0pt)
-  pad(left: 2em, grid(columns: (1em, 1fr), super(letter), body))
+  set text(font: song, size: note-size, top-edge: note-size * 0.88, bottom-edge: -note-size * 0.12)
+  set par(first-line-indent: 0pt, leading: 13.5pt - note-size)
+  pad(left: 2em, grid(columns: (1em, 1fr), align: left + top, super(letter), body))
 }
 
 #let gbt-table(caption, columns: (), headers: (), rows: (), notes: (), footnotes: (),
@@ -289,12 +305,15 @@
     caption: if continued { none } else { caption }, outlined: outlined and not continued and number != none, gap: 0pt,
     block(above: 0.5em, below: 1em, breakable: rows.len() > 8)[
       #set par(first-line-indent: 0pt)
-      #set text(font: song, size: calibrated(font-size))
+      // Keep cell baselines equal when a calibrated black font is slightly larger.
+      #set text(font: song, size: calibrated(font-size),
+        top-edge: calibrated(font-size) * 0.88, bottom-edge: -calibrated(font-size) * 0.12)
       #table(columns: columns, inset: (x: 0.6em, y: 0.59em), stroke: body-stroke, align: cell-align,
         table.vline(x: 0, start: 1, stroke: 0.8pt),
         table.vline(x: columns.len(), start: 1, stroke: 0.8pt),
         table.header(
           table.cell(colspan: columns.len(), stroke: none, inset: (x: 0pt, top: 0pt, bottom: 1.5em))[
+            #set text(size: body-size, top-edge: body-size * 0.88, bottom-edge: -body-size * 0.12)
             #context {
               let outer = query(figure.where(kind: table).before(here(), inclusive: true)).last()
               let id = if number == auto {
@@ -304,7 +323,8 @@
               let carry = continued or here().page() > outer.location().page()
               align(center)[#black[#if number != none { [表#h(0.5em)#id#h(1em)] }#caption]#if carry { text(font: song, weight: "regular", size: body-size)[（续）] }]
             }
-            #if unit != none { v(0.3em); align(right, text(font: song, size: note-size, unit)) }
+            #if unit != none { v(0.3em); align(right, text(font: song, size: note-size,
+              top-edge: note-size * 0.88, bottom-edge: -note-size * 0.12, unit)) }
           ],
           table.hline(stroke: 0.8pt),
           ..if header-rows.len() > 0 { header-rows.flatten().map(it => if it.func() == table.cell { it } else { table.cell(align: center + horizon, it) }) }
@@ -327,15 +347,20 @@
     block(above: 1em, below: 0.5em)[
       #set align(left)
       #set par(first-line-indent: 0pt)
-      #if unit != none { align(right, text(font: song, size: 9pt, unit)) }
-      #align(center)[#set text(font: song, size: font-size); #body]
+      #if unit != none { align(right, text(font: song, size: note-size,
+        top-edge: note-size * 0.88, bottom-edge: -note-size * 0.12, unit)) }
+      #align(center)[
+        #let size = calibrated(font-size)
+        #set text(font: song, size: size, top-edge: size * 0.88, bottom-edge: -size * 0.12)
+        #body
+      ]
       #for (i, item) in notes.enumerate() { note(item, number: if notes.len() > 1 { i + 1 } else { none }) }
       #for (i, item) in footnotes.enumerate() { figure-note(item, letter: numbering("a", i + 1)) }
       #v(0.5em)
       #context {
         let outer = query(figure.where(kind: image).before(here(), inclusive: true)).last()
         let id = if number == none { none } else { numbering(outer.numbering, ..image-counter.at(outer.location())) }
-        align(center, black[#if id != none { [图#h(0.5em)#id#h(1em)] }#caption])
+        align(center, black(size: 10.5pt)[#if id != none { [图#h(0.5em)#id#h(1em)] }#caption])
       }
     ]
   )
@@ -346,6 +371,7 @@
   ..if number == none { (numbering: none) } else if number != auto { (numbering: n => number) } else { (:) },
   caption: [], gap: 0pt,
   block(above: 0.7em, below: 0.5em)[
+    #set align(left)
     #set par(first-line-indent: 0pt)
     #context {
       let outer = query(figure.where(kind: math.equation).before(here(), inclusive: true)).last()
@@ -359,7 +385,7 @@
     }
     #if definitions.len() > 0 {
       par(first-line-indent: 2em)[式中：]
-      pad(left: 2em, grid(columns: (auto, auto, 1fr), column-gutter: 0.5em, row-gutter: 0.2em,
+      pad(left: 2em, grid(columns: (auto, auto, 1fr), align: left + top, column-gutter: 0.5em, row-gutter: 0.2em,
         ..definitions.map(it => (it.at(0), [——], it.at(1))).flatten()))
     }
   ]
@@ -400,15 +426,21 @@
   important: none, two-sided: true, back: false,
   cover-page: true, main-title: true, end-rule: true, folio: auto,
   publication-layout: font-profile == "reference", body,
+  page-layout: (:), text-style: (:), paragraph-style: (:),
+  renderers: (:), front-matter: none, back-matter: none,
+  list-style: (:), enum-style: (:),
 ) = {
   set document(title: title.join(" "), author: organizations, keywords: ("GB/T 1.1-2020", "Typst", "标准化文件"))
   set text(font: song, size: body-size, lang: "zh", region: "CN", hyphenate: false, overhang: false, cjk-latin-spacing: none,
-    ligatures: false, discretionary-ligatures: false,
+    kerning: false, ligatures: false, discretionary-ligatures: false,
     top-edge: 0.88em, bottom-edge: -0.12em)
   set par(justify: true, first-line-indent: (amount: body-indent, all: true), leading: body-gap, spacing: paragraph-gap)
+  set text(..text-style)
+  set par(..paragraph-style)
   show strong: it => context {
-    let size = if text.size == body-size { 10.5pt } else if text.size == note-size { 9pt } else { text.size }
-    black(it.body, size: size)
+    if "strong" in renderers { (renderers.strong)(it) }
+    else if cjk-role(text.font) != none { black(it.body) }
+    else { text(weight: "bold", it.body) }
   }
   set heading(numbering: "1.1", supplement: none)
   set figure(numbering: "1")
@@ -417,12 +449,20 @@
     it
   }
   show heading: it => context {
+    let heading-size = text-style.at("size", default: body-size)
+    set text(size: heading-size, top-edge: heading-size * 0.88, bottom-edge: -heading-size * 0.12)
     let numbers = if it.numbering != none { counter(heading).at(it.location()) } else { () }
     let level = it.level
     let is-clause = is-kind(it, "gbt-clause")
     if it.numbering != none and not is-clause and not is-kind(it, "gbt-term") { clause-parent-level.update(level) }
     assert(level <= 6, message: "GB/T 1.1—2020 的条最多细分为五个层次（标题级别不超过 6）。")
-    if it.numbering == none {
+    if "heading" in renderers {
+      if it.numbering != none {
+        metadata((kind: if is-clause or is-kind(it, "gbt-term") { "gbt-section" } else { "gbt-heading" },
+          number: numbering(it.numbering, ..numbers), key: if it.has("label") { str(it.label) } else { none }))
+      }
+      (renderers.heading)(it)
+    } else if it.numbering == none {
       let is-annex = is-kind(it, "gbt-annex")
       let is-index = is-kind(it, "gbt-index")
       let is-toc = is-kind(it, "gbt-toc")
@@ -467,6 +507,8 @@
     indent: 0pt, body-indent: 0pt, spacing: paragraph-gap, marker-align: left)
   set enum(full: true, numbering: (..numbers) => numbered-marker(numbers, body-indent),
     indent: 0pt, body-indent: 0pt, spacing: paragraph-gap, number-align: left)
+  set list(..list-style)
+  set enum(..enum-style)
   show list: set par(first-line-indent: 0pt)
   show enum: set par(first-line-indent: 0pt)
   show enum.item: it => context {
@@ -483,7 +525,7 @@
     list-depth-state.update(depth)
   }
   show footnote.entry: it => context {
-    set text(font: song, size: note-size)
+    set text(font: song, size: note-size, top-edge: note-size * 0.88, bottom-edge: -note-size * 0.12)
     set par(first-line-indent: 0pt, hanging-indent: 0pt, leading: 13.5pt - note-size)
     let location = it.note.location()
     pad(left: 18pt, grid(columns: (18pt, 1fr), column-gutter: 0pt, align: top,
@@ -515,43 +557,30 @@
   }
   two-sided-state.update(two-sided)
   if cover-page {
-    cover(title: title, english: english, code: code, serial: serial, year: year, ics: ics, ccs: ccs,
+    if "cover" in renderers { (renderers.cover)((title: title, english: english, code: code, serial: serial,
+      year: year, ics: ics, ccs: ccs, issued: issued, implemented: implemented,
+      organizations: organizations, category: category, logo: logo,
+      replaces: replaces, adopted: adopted, record: record, draft: draft)) }
+    else { cover(title: title, english: english, code: code, serial: serial, year: year, ics: ics, ccs: ccs,
       replaces: replaces, adopted: adopted, issued: issued, implemented: implemented,
-      organizations: organizations, category: category, logo: logo, record: record, draft: draft)
+      organizations: organizations, category: category, logo: logo, record: record, draft: draft) }
     pagebreak(to: if two-sided { "odd" } else { none })
   }
-  // The supplied printing uses smaller ink outlines with a full fifth-size
-  // ideograph advance. Preserve that advance while matching the measured ink.
-  show regex("[\\p{Han}\\u3000-\\u303f\\uff00-\\uffef]+"): it => context {
-    let advance = if text.size < 9pt { 9.0243pt } else if text.size < 12pt { 10.4798pt } else { 15.5256pt }
-    text(tracking: if font-profile == "reference" { advance - text.size } else { 0pt }, it)
-  }
-  show regex("[\\x21-\\x7e\\u00a0-\\u024f]+"): it => context {
-    let families = if type(text.font) == array { text.font } else { (text.font,) }
-    let names = families.map(f => lower(if type(f) == str { f } else { f.name }))
-    let roman = "times new roman" in names or "liberation serif" in names or "eu-hz" in names
-    let sans = "eu-fz" in names
-    let ratio = if "eu-hz" in names { reference-sizes.body-latin-bold / reference-sizes.body-song }
-      else if roman { reference-sizes.body-latin / reference-sizes.body-song }
-      else if sans { reference-sizes.cover-digits / reference-sizes.body-hei } else { 1 }
-    let rendered-size = if font-profile == "reference" { text.size * ratio } else { text.size }
-    let lettering = text(size: rendered-size,
-      baseline: if font-profile == "reference" { 0.1em } else { 0pt },
-      top-edge: text.size * 0.88 - if font-profile == "reference" { rendered-size * 0.1 } else { 0pt },
-      bottom-edge: -text.size * 0.12 + if font-profile == "reference" { rendered-size * 0.1 } else { 0pt },
-      tracking: if font-profile == "reference" and "eu-hz" in names { reference-spacing.body-latin-bold.tracking * (text.size / body-size) }
-        else if font-profile == "reference" and roman { reference-spacing.body-latin.tracking * (text.size / body-size) } else { 0pt },
-      spacing: 100%, kerning: false, ligatures: false, discretionary-ligatures: false, it)
-    if font-profile == "reference" and sans { box(scale(x: reference-spacing.cover-digits.x, reflow: true, box(lettering))) } else { lettering }
-  }
+  show cjk-pattern: cjk-lettering
+  // Split numerals from words before resolving coverage. A font stack can
+  // select different faces and calibration ratios for each in one heading.
+  show western-pattern: western-lettering
+  show numeral-pattern: western-lettering
   counter(page).update(1)
-  let running = black(standard-number(code, serial, year))
+  let running = black(standard-number(code, serial, year), size: 10.5pt)
   set page(paper: "a4", margin: (inside: 25mm, outside: if publication-layout { 22mm } else { 20mm }, top: 35mm, bottom: 25mm),
     binding: left, numbering: "I", header-ascent: 5mm, footer-descent: if publication-layout { 2.5mm } else { 6mm },
     header: context align(if calc.odd(counter(page).get().first()) { right } else { left }, running),
     footer: context pad(x: if publication-layout { 4mm } else { 0mm }, align(if calc.odd(counter(page).get().first()) { right } else { left },
       text(font: song, size: note-size, if folio != auto { folio } else {
         counter(page).display(if here().page-numbering() == "I" { "I" } else { "1" }) }))))
+  set page(..page-layout)
+  if front-matter != none { front-matter }
   if contents {
     front-title([目#h(32pt)次], kind: "gbt-toc")
     set par(first-line-indent: 0pt)
@@ -573,7 +602,8 @@
       let indent = (it.level - 1 + if in-annex { 1 } else { 0 }) * 1em
       let prefix = it.prefix()
       let is-clause = element.func() == heading and (is-kind(element, "gbt-clause"))
-      if (not is-clause or clause-contents) and not (in-annex and it.level >= contents-depth) {
+      if (not is-kind(element, "gbt-explanation-heading") and
+        (not is-clause or clause-contents) and not (in-annex and it.level >= contents-depth)) {
         // B.1, C.1, etc. are level-one headings inside the annex counter,
         // but remain subordinate entries in the document's contents.
         let pitch = if element.func() == heading and it.level == 1 and not in-annex { 18.2pt } else { 15.75pt }
@@ -600,10 +630,28 @@
   }
   if important != none { block(above: 0.5em, below: 0.5em, black[重要提示：#important]) }
   body
+  if back-matter != none { back-matter }
   if end-rule { end-mark() }
   if back {
     pagebreak(to: if two-sided { "even" } else { none })
     back-cover(code: code, serial: serial, year: year)
   }
+}
+
+// Profiles merge styles independently so overriding one hook keeps the rest.
+#let construction-standard(..args) = {
+  let supplied = args.named()
+  let defaults = (code: "GB", category: "中华人民共和国国家标准", ics: "", ccs: "P",
+    contents: false, main-title: false, end-rule: false,
+    page-layout: construction-page, text-style: construction-text,
+    paragraph-style: construction-paragraph,
+    list-style: (:), enum-style: (numbering: construction-enum-marker),
+    renderers: (cover: construction-cover, heading: construction-heading,
+      strong: it => text(font: construction-hei, weight: "bold", it.body)))
+  let options = defaults + supplied
+  for key in ("page-layout", "text-style", "paragraph-style", "renderers", "list-style", "enum-style") {
+    options.insert(key, defaults.at(key) + supplied.at(key, default: (:)))
+  }
+  gbt(..options, ..args.pos())
 }
 

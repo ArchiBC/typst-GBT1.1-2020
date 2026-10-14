@@ -1,0 +1,975 @@
+{
+  "date": "2026-10-13",
+  "source_text_extraction_used": false,
+  "status": "passed",
+  "source_sha256": "132c7489a40d0dc385a5ed3ab3339ca4012c6c05262ef0938eb915c9b2c0b331",
+  "reproduced_issues": [
+    {
+      "profile": "reference",
+      "before": {
+        "inherited_note_black_size_pt": 9.569000244140625,
+        "heading_fonts": [
+          "VMYYAN+FZHTK--GBK1-0",
+          "XNPFMH+E-FZ"
+        ],
+        "explicit_baseline_shifts_pt": {
+          "MRAISE": 0.0,
+          "NLOWER": 0.0
+        }
+      },
+      "after": {
+        "inherited_note_black_size_pt": 8.392999649047852,
+        "heading_fonts": [
+          "DLMWFE+E-HZ",
+          "XNPFMH+E-FZ",
+          "YXAZOU+FZHTK--GBK1-0"
+        ],
+        "explicit_baseline_shifts_pt": {
+          "MRAISE": 2.0,
+          "NLOWER": -2.0
+        }
+      },
+      "before_fixture_sha256": "4c3ef1f5169460d6a5179b4112a49ac7a6021d6dfc73c9be34bbc8e09c50f3c8"
+    },
+    {
+      "profile": "open",
+      "before": {
+        "inherited_note_black_size_pt": 10.5,
+        "heading_fonts": [
+          "HIFBSJ+SourceHanSansSC-Medium"
+        ],
+        "explicit_baseline_shifts_pt": {
+          "MRAISE": 0.0,
+          "NLOWER": 0.0
+        }
+      },
+      "after": {
+        "inherited_note_black_size_pt": 9.0,
+        "heading_fonts": [
+          "FCNNID+SourceHanSansSC-Medium",
+          "ZBQUIY+LiberationSerif-Bold"
+        ],
+        "explicit_baseline_shifts_pt": {
+          "MRAISE": 2.0,
+          "NLOWER": -2.0
+        }
+      },
+      "before_fixture_sha256": "192483bcd525d64df9c804dd2ba48d2fd724f650f4827f49d43331d2d1be274a"
+    }
+  ],
+  "artifacts": [
+    {
+      "file": "output/pdf/gbt-1.1-2020-open-fonts.pdf",
+      "pages_before": 79,
+      "pages_after": 79,
+      "sha256_before": "1b5b4abbd26f44da875a647c30edb5bfc14cd22c8e97268f73f178a4e52a96bf",
+      "sha256_after": "b1e37447b0726248cb2e9351dc9c92e7122faef78c79b8d3961796c4680b2f44",
+      "normalized_text_preserved": true,
+      "normalized_text_repagination_pages": [
+        37,
+        38
+      ],
+      "running_frame_inclusive_text_equal": false,
+      "running_frame_inclusive_per_page_text_equal": false
+    },
+    {
+      "file": "output/pdf/gbt-1.1-2020-replica.pdf",
+      "pages_before": 79,
+      "pages_after": 79,
+      "sha256_before": "df12992f107998888972fb6186ede6f59d46dc17fd0aec210e459424299121e3",
+      "sha256_after": "495b2e1940b3ec8d9a5988faae8fe75f83c306ec21c2ca8a2695649d395851e0",
+      "normalized_text_preserved": true,
+      "normalized_text_repagination_pages": [
+        38,
+        39,
+        40,
+        41
+      ],
+      "running_frame_inclusive_text_equal": false,
+      "running_frame_inclusive_per_page_text_equal": false
+    },
+    {
+      "file": "output/pdf/standard-example.pdf",
+      "pages_before": 21,
+      "pages_after": 21,
+      "sha256_before": "dcc42a6f3a3268445d78f3249166a9d7f0879d40e9722dd32e72c2023a695883",
+      "sha256_after": "4d31f06a759917941af1f85704a115f202697311062fd9c06d88ba6806882a89",
+      "normalized_text_preserved": true,
+      "normalized_text_repagination_pages": [],
+      "running_frame_inclusive_text_equal": true,
+      "running_frame_inclusive_per_page_text_equal": true
+    },
+    {
+      "file": "output/pdf/template-manual.pdf",
+      "pages_before": 10,
+      "pages_after": 10,
+      "sha256_before": "e98e8c0a05b15c82648ad54ca762c71f9aeb1f86edb698840cca5a866f86ec57",
+      "sha256_after": "7fb950f1e18c993679428759238b59dd698c71f3e314661629b9f544a5c8f89e",
+      "normalized_text_preserved": true,
+      "normalized_text_repagination_pages": [],
+      "running_frame_inclusive_text_equal": true,
+      "running_frame_inclusive_per_page_text_equal": true
+    }
+  ],
+  "typography": {
+    "passed": true,
+    "tolerance_pt": 0.01,
+    "artifacts": [
+      {
+        "profile": "reference",
+        "fixture": {
+          "file": "output/qa/typography-reference.pdf",
+          "pages": 2,
+          "samples": [
+            {
+              "sample": "正文基准ABCxyz123",
+              "role": "body",
+              "physical_sizes_pt": [
+                9.571,
+                9.966,
+                9.966
+              ],
+              "baseline_error_pt": 0.0
+            },
+            {
+              "sample": "混排标题Typography123",
+              "role": "black",
+              "physical_sizes_pt": [
+                9.569,
+                9.426,
+                10.05
+              ],
+              "baseline_error_pt": 0.0
+            },
+            {
+              "sample": "强调混排Bold456",
+              "role": "black",
+              "physical_sizes_pt": [
+                9.569,
+                9.426,
+                10.05
+              ],
+              "baseline_error_pt": 0.0
+            },
+            {
+              "sample": "小五宋体note123",
+              "role": "note",
+              "physical_sizes_pt": [
+                8.248,
+                8.542286,
+                8.542286
+              ],
+              "baseline_error_pt": 0.0
+            },
+            {
+              "sample": "小五强调Bold456",
+              "role": "note-black",
+              "physical_sizes_pt": [
+                8.393,
+                8.079429,
+                8.614286
+              ],
+              "baseline_error_pt": 0.0
+            },
+            {
+              "sample": "继承黑体Black789",
+              "role": "note-black",
+              "physical_sizes_pt": [
+                8.393,
+                8.079429,
+                8.614286
+              ],
+              "baseline_error_pt": 0.0
+            },
+            {
+              "sample": "小五示例Example123",
+              "role": "note",
+              "physical_sizes_pt": [
+                8.248,
+                8.542286,
+                8.542286
+              ],
+              "baseline_error_pt": 0.0
+            },
+            {
+              "sample": "示例强调Strong456",
+              "role": "note-black",
+              "physical_sizes_pt": [
+                8.393,
+                8.079429,
+                8.614286
+              ],
+              "baseline_error_pt": 0.0
+            },
+            {
+              "sample": "常规单元Regular123",
+              "role": "note",
+              "physical_sizes_pt": [
+                8.248,
+                8.542286,
+                8.542286
+              ],
+              "baseline_error_pt": 0.0
+            },
+            {
+              "sample": "强调单元Strong456",
+              "role": "note-black",
+              "physical_sizes_pt": [
+                8.393,
+                8.079429,
+                8.614286
+              ],
+              "baseline_error_pt": 0.0
+            },
+            {
+              "sample": "单位Unitmm",
+              "role": "note",
+              "physical_sizes_pt": [
+                8.248,
+                8.542286,
+                8.542286
+              ],
+              "baseline_error_pt": 0.0
+            },
+            {
+              "sample": "单位Figureunitmm",
+              "role": "note",
+              "physical_sizes_pt": [
+                8.248,
+                8.542286,
+                8.542286
+              ],
+              "baseline_error_pt": 0.0
+            },
+            {
+              "sample": "图内文字Figurebody123",
+              "role": "figure",
+              "physical_sizes_pt": [
+                6.873333,
+                7.118571,
+                7.118571
+              ],
+              "baseline_error_pt": 0.0
+            },
+            {
+              "sample": "图内强调Figurebold456",
+              "role": "figure-black",
+              "physical_sizes_pt": [
+                6.994167,
+                6.732857,
+                7.178571
+              ],
+              "baseline_error_pt": 0.0
+            },
+            {
+              "sample": "中英表题Table123",
+              "role": "black",
+              "physical_sizes_pt": [
+                9.569,
+                9.426,
+                10.05
+              ],
+              "baseline_error_pt": 0.0
+            },
+            {
+              "sample": "中英图题Figure123",
+              "role": "black",
+              "physical_sizes_pt": [
+                9.569,
+                9.426,
+                10.05
+              ],
+              "baseline_error_pt": 0.0
+            },
+            {
+              "sample": "示例图题Nestedfigure123",
+              "role": "black",
+              "physical_sizes_pt": [
+                9.569,
+                9.426,
+                10.05
+              ],
+              "baseline_error_pt": 0.0
+            },
+            {
+              "sample": "示例图内Nestedbody456",
+              "role": "figure",
+              "physical_sizes_pt": [
+                6.873333,
+                7.118571,
+                7.118571
+              ],
+              "baseline_error_pt": 0.0
+            },
+            {
+              "sample": "脚注内容Footnote123",
+              "role": "note",
+              "physical_sizes_pt": [
+                8.248,
+                8.542286,
+                8.542286
+              ],
+              "baseline_error_pt": 0.0
+            },
+            {
+              "sample": "脚注强调Bold456",
+              "role": "note-black",
+              "physical_sizes_pt": [
+                8.393,
+                8.079429,
+                8.614286
+              ],
+              "baseline_error_pt": 0.0
+            },
+            {
+              "sample": "中英混排检验Typography2026",
+              "role": "front-black",
+              "physical_sizes_pt": [
+                14.749,
+                14.363429,
+                15.314286
+              ],
+              "baseline_error_pt": 0.0
+            }
+          ],
+          "nested_fonts": [
+            {
+              "sample": "嵌入西文EMBED123",
+              "physical_sizes_pt": [
+                8.393,
+                8.079429
+              ]
+            },
+            {
+              "sample": "图内嵌套NEST789",
+              "physical_sizes_pt": [
+                6.994167,
+                6.732857
+              ]
+            }
+          ],
+          "intentional_shifts_pt": {
+            "MRAISE": 2.0,
+            "NLOWER": -2.0,
+            "黑体上移012": 2.0,
+            "黑体下移034": -2.0,
+            "XSUP": 4.515869140625,
+            "YSUB": -1.42578125
+          },
+          "extra_tracking_pt": 1.0,
+          "custom_font_preserved": true,
+          "custom_size_inherited": true,
+          "extended_scripts_use_roman": true,
+          "italic_preserved": true,
+          "symbols": [
+            {
+              "symbol": "商标®",
+              "font": "HGARZZ+TimesNewRomanPSMT",
+              "size_pt": 9.965999603271484
+            },
+            {
+              "symbol": "版权©",
+              "font": "HGARZZ+TimesNewRomanPSMT",
+              "size_pt": 9.965999603271484
+            },
+            {
+              "symbol": "标识TM",
+              "font": "HGARZZ+TimesNewRomanPSMT",
+              "size_pt": 9.965999603271484
+            }
+          ]
+        },
+        "inspection": {
+          "file": "output\\qa\\typography-reference.pdf",
+          "pages": 2,
+          "fonts": {
+            "/DLMWFE+E-HZ": true,
+            "/XNPFMH+E-FZ": true,
+            "/FOCRVH+FZXBSJW--GB1-0": true,
+            "/YXAZOU+FZHTK--GBK1-0": true,
+            "/LIBCJE+FZSSK--GBK1-0": true,
+            "/HGARZZ+TimesNewRomanPSMT": true,
+            "/GVTAHH+TimesNewRomanPS-ItalicMT": true,
+            "/HVMHQG+TimesNewRomanPS-BoldMT": true,
+            "/WEYXLT+DejaVuSansMono": true,
+            "/JRBYHS+DejaVuSansMono-Bold": true,
+            "/PRKKCJ+NewCMMath-Book-Identity-H": true
+          },
+          "raster_image_objects": 0,
+          "links": 6,
+          "text_outside_page": 0,
+          "sha256": "4b3a03f4c7caa4147e10d481d1aeb10f6bfcdbdfefe5ca1cd46e45d2829247cb"
+        }
+      },
+      {
+        "profile": "open",
+        "fixture": {
+          "file": "output/qa/typography-open.pdf",
+          "pages": 2,
+          "samples": [
+            {
+              "sample": "正文基准ABCxyz123",
+              "role": "body",
+              "physical_sizes_pt": [
+                10.5,
+                10.5,
+                10.5
+              ],
+              "baseline_error_pt": 0.0
+            },
+            {
+              "sample": "混排标题Typography123",
+              "role": "black",
+              "physical_sizes_pt": [
+                10.5,
+                10.5,
+                10.5
+              ],
+              "baseline_error_pt": 0.0
+            },
+            {
+              "sample": "强调混排Bold456",
+              "role": "black",
+              "physical_sizes_pt": [
+                10.5,
+                10.5,
+                10.5
+              ],
+              "baseline_error_pt": 0.0
+            },
+            {
+              "sample": "小五宋体note123",
+              "role": "note",
+              "physical_sizes_pt": [
+                9,
+                9,
+                9
+              ],
+              "baseline_error_pt": 0.0
+            },
+            {
+              "sample": "小五强调Bold456",
+              "role": "note-black",
+              "physical_sizes_pt": [
+                9,
+                9,
+                9
+              ],
+              "baseline_error_pt": 0.0
+            },
+            {
+              "sample": "继承黑体Black789",
+              "role": "note-black",
+              "physical_sizes_pt": [
+                9,
+                9,
+                9
+              ],
+              "baseline_error_pt": 0.0
+            },
+            {
+              "sample": "小五示例Example123",
+              "role": "note",
+              "physical_sizes_pt": [
+                9,
+                9,
+                9
+              ],
+              "baseline_error_pt": 0.0
+            },
+            {
+              "sample": "示例强调Strong456",
+              "role": "note-black",
+              "physical_sizes_pt": [
+                9,
+                9,
+                9
+              ],
+              "baseline_error_pt": 0.0
+            },
+            {
+              "sample": "常规单元Regular123",
+              "role": "note",
+              "physical_sizes_pt": [
+                9,
+                9,
+                9
+              ],
+              "baseline_error_pt": 0.0
+            },
+            {
+              "sample": "强调单元Strong456",
+              "role": "note-black",
+              "physical_sizes_pt": [
+                9,
+                9,
+                9
+              ],
+              "baseline_error_pt": 0.0
+            },
+            {
+              "sample": "单位Unitmm",
+              "role": "note",
+              "physical_sizes_pt": [
+                9,
+                9,
+                9
+              ],
+              "baseline_error_pt": 0.0
+            },
+            {
+              "sample": "单位Figureunitmm",
+              "role": "note",
+              "physical_sizes_pt": [
+                9,
+                9,
+                9
+              ],
+              "baseline_error_pt": 0.0
+            },
+            {
+              "sample": "图内文字Figurebody123",
+              "role": "figure",
+              "physical_sizes_pt": [
+                7.5,
+                7.5,
+                7.5
+              ],
+              "baseline_error_pt": 0.0
+            },
+            {
+              "sample": "图内强调Figurebold456",
+              "role": "figure-black",
+              "physical_sizes_pt": [
+                7.5,
+                7.5,
+                7.5
+              ],
+              "baseline_error_pt": 0.0
+            },
+            {
+              "sample": "中英表题Table123",
+              "role": "black",
+              "physical_sizes_pt": [
+                10.5,
+                10.5,
+                10.5
+              ],
+              "baseline_error_pt": 0.0
+            },
+            {
+              "sample": "中英图题Figure123",
+              "role": "black",
+              "physical_sizes_pt": [
+                10.5,
+                10.5,
+                10.5
+              ],
+              "baseline_error_pt": 0.0
+            },
+            {
+              "sample": "示例图题Nestedfigure123",
+              "role": "black",
+              "physical_sizes_pt": [
+                10.5,
+                10.5,
+                10.5
+              ],
+              "baseline_error_pt": 0.0
+            },
+            {
+              "sample": "示例图内Nestedbody456",
+              "role": "figure",
+              "physical_sizes_pt": [
+                7.5,
+                7.5,
+                7.5
+              ],
+              "baseline_error_pt": 0.0
+            },
+            {
+              "sample": "脚注内容Footnote123",
+              "role": "note",
+              "physical_sizes_pt": [
+                9,
+                9,
+                9
+              ],
+              "baseline_error_pt": 0.0
+            },
+            {
+              "sample": "脚注强调Bold456",
+              "role": "note-black",
+              "physical_sizes_pt": [
+                9,
+                9,
+                9
+              ],
+              "baseline_error_pt": 0.0
+            },
+            {
+              "sample": "中英混排检验Typography2026",
+              "role": "front-black",
+              "physical_sizes_pt": [
+                16,
+                16,
+                16
+              ],
+              "baseline_error_pt": 0.0
+            }
+          ],
+          "nested_fonts": [
+            {
+              "sample": "嵌入西文EMBED123",
+              "physical_sizes_pt": [
+                9,
+                9
+              ]
+            },
+            {
+              "sample": "图内嵌套NEST789",
+              "physical_sizes_pt": [
+                7.5,
+                7.5
+              ]
+            }
+          ],
+          "intentional_shifts_pt": {
+            "MRAISE": 2.0,
+            "NLOWER": -2.0,
+            "黑体上移012": 2.0,
+            "黑体下移034": -2.0,
+            "XSUP": 4.7578125,
+            "YSUB": -1.502197265625
+          },
+          "extra_tracking_pt": 1.0,
+          "custom_font_preserved": true,
+          "custom_size_inherited": true,
+          "extended_scripts_use_roman": true,
+          "italic_preserved": true,
+          "symbols": [
+            {
+              "symbol": "商标®",
+              "font": "HENDBW+LiberationSerif",
+              "size_pt": 10.5
+            },
+            {
+              "symbol": "版权©",
+              "font": "HENDBW+LiberationSerif",
+              "size_pt": 10.5
+            },
+            {
+              "symbol": "标识TM",
+              "font": "HENDBW+LiberationSerif",
+              "size_pt": 10.5
+            }
+          ]
+        },
+        "inspection": {
+          "file": "output\\qa\\typography-open.pdf",
+          "pages": 2,
+          "fonts": {
+            "/ZBQUIY+LiberationSerif-Bold": true,
+            "/EIRWON+SourceHanSansSC-Regular-Identity-H": true,
+            "/HENDBW+LiberationSerif": true,
+            "/FCNNID+SourceHanSansSC-Medium-Identity-H": true,
+            "/DJPYOU+SourceHanSerifSC-Bold-Identity-H": true,
+            "/HQOUHF+SourceHanSerifSC-Regular-Identity-H": true,
+            "/GVTAHH+LiberationSerif-Italic": true,
+            "/WEYXLT+DejaVuSansMono": true,
+            "/JRBYHS+DejaVuSansMono-Bold": true,
+            "/PRKKCJ+NewCMMath-Book-Identity-H": true
+          },
+          "raster_image_objects": 0,
+          "links": 6,
+          "text_outside_page": 0,
+          "sha256": "9fd806dc0bfcc661aaeff9e23e3f573ea1328309f8447f074dd290284aa47a23"
+        }
+      }
+    ],
+    "native_demos": {
+      "profile": "open",
+      "samples": [
+        {
+          "sample": "a)分图题",
+          "role": "note-black",
+          "physical_sizes_pt": [
+            9,
+            9,
+            9
+          ],
+          "baseline_error_pt": 0.0
+        },
+        {
+          "sample": "b)分图题",
+          "role": "note-black",
+          "physical_sizes_pt": [
+            9,
+            9,
+            9
+          ],
+          "baseline_error_pt": 0.0
+        },
+        {
+          "sample": "图X图题",
+          "role": "black",
+          "physical_sizes_pt": [
+            10.5,
+            10.5,
+            10.5
+          ],
+          "baseline_error_pt": 0.0
+        },
+        {
+          "sample": "表3",
+          "role": "black",
+          "physical_sizes_pt": [
+            10.5,
+            10.5,
+            10.5
+          ],
+          "baseline_error_pt": 0.0
+        },
+        {
+          "sample": "第2页/共5页",
+          "role": "body",
+          "physical_sizes_pt": [
+            10.5,
+            10.5,
+            10.5
+          ],
+          "baseline_error_pt": 0.0
+        }
+      ],
+      "subfigure_caption_size_verified": true,
+      "continuation_uses_song": true
+    }
+  },
+  "native_demo_profiles": [
+    {
+      "profile": "reference",
+      "samples": [
+        {
+          "sample": "a)分图题",
+          "role": "note-black",
+          "physical_sizes_pt": [
+            8.393,
+            8.079429,
+            8.614286
+          ],
+          "baseline_error_pt": 0.0
+        },
+        {
+          "sample": "b)分图题",
+          "role": "note-black",
+          "physical_sizes_pt": [
+            8.393,
+            8.079429,
+            8.614286
+          ],
+          "baseline_error_pt": 0.0
+        },
+        {
+          "sample": "图X图题",
+          "role": "black",
+          "physical_sizes_pt": [
+            9.569,
+            9.426,
+            10.05
+          ],
+          "baseline_error_pt": 0.0
+        },
+        {
+          "sample": "表3",
+          "role": "black",
+          "physical_sizes_pt": [
+            9.569,
+            9.426,
+            10.05
+          ],
+          "baseline_error_pt": 0.0
+        },
+        {
+          "sample": "第2页/共5页",
+          "role": "body",
+          "physical_sizes_pt": [
+            9.571,
+            9.966,
+            9.966
+          ],
+          "baseline_error_pt": 0.0
+        }
+      ],
+      "subfigure_caption_size_verified": true,
+      "continuation_uses_song": true
+    },
+    {
+      "profile": "open",
+      "samples": [
+        {
+          "sample": "a)分图题",
+          "role": "note-black",
+          "physical_sizes_pt": [
+            9,
+            9,
+            9
+          ],
+          "baseline_error_pt": 0.0
+        },
+        {
+          "sample": "b)分图题",
+          "role": "note-black",
+          "physical_sizes_pt": [
+            9,
+            9,
+            9
+          ],
+          "baseline_error_pt": 0.0
+        },
+        {
+          "sample": "图X图题",
+          "role": "black",
+          "physical_sizes_pt": [
+            10.5,
+            10.5,
+            10.5
+          ],
+          "baseline_error_pt": 0.0
+        },
+        {
+          "sample": "表3",
+          "role": "black",
+          "physical_sizes_pt": [
+            10.5,
+            10.5,
+            10.5
+          ],
+          "baseline_error_pt": 0.0
+        },
+        {
+          "sample": "第2页/共5页",
+          "role": "body",
+          "physical_sizes_pt": [
+            10.5,
+            10.5,
+            10.5
+          ],
+          "baseline_error_pt": 0.0
+        }
+      ],
+      "subfigure_caption_size_verified": true,
+      "continuation_uses_song": true
+    }
+  ],
+  "build_input_sha256": {
+    "reference": "caa3db6bec9d3f7eb0ad40a33d576dbe19ad81352cde4bbc54ee6754d16cd83c",
+    "open": "254df7f3c30ee629dc104886233cb73abc75195061870971dcb68fedb9f12e42"
+  },
+  "source_files": [
+    {
+      "file": "template/fonts.typ",
+      "sha256": "0bcb9855b04e384303294761c32c04602ffd6276bf2bf72fda9f6642816f734b"
+    },
+    {
+      "file": "template/lib.typ",
+      "sha256": "549cc68b6a00e41198c63a1eb175c192c316352b490b3e0de41dfb4aa9b89167"
+    },
+    {
+      "file": "template/font-sizes.typ",
+      "sha256": "dda843540fe1359d88adc0e86c8c526c8c14beee0003b0c00fa950790e711b18"
+    },
+    {
+      "file": "tools/fixtures/typography.typ",
+      "sha256": "d2a78acbcde4bd7713c0b7735bb511244c629e5cd1e8507c4e3b3e7b6060be44"
+    },
+    {
+      "file": "tools/verify_typography.py",
+      "sha256": "647d4c850f76376e2ae45ebc2ce907eecf5a0a7d7baa70f7c2dc23208f9e6e37"
+    }
+  ],
+  "reference_fonts": [
+    {
+      "file": "FZSSK.TTF",
+      "sha256": "00fdbfb433aaf4c00dd02b79319bbfe94ffca399dba1be9e6455e4bb650e0273"
+    },
+    {
+      "file": "FZHT_GB18030.TTF",
+      "sha256": "5614e8b4f920c7e5fd09879d70a37b4d2e35519db22a5ab2e2ba288aa9997b16"
+    },
+    {
+      "file": "FZXBSJW.TTF",
+      "sha256": "da8112c147eb8839666fdbec9522d282eff972cf5ac6a03f14fffe0454bb0b4e"
+    },
+    {
+      "file": "E-HZ.ttf",
+      "sha256": "3d2d1a2db9ad6388085c5d93433bb2b9b79484999ee5cfffa0fb7448b8caeb82"
+    },
+    {
+      "file": "E-FZ.ttf",
+      "sha256": "79651d163a5a5c924c123fe0160e3149fe4fdd900826c8742358340e386be7e7"
+    },
+    {
+      "file": "E-F1.ttf",
+      "sha256": "d56407105f15d51af24ddbb132f51644bcd27dad4b547970b1049063eed09465"
+    },
+    {
+      "file": "times.ttf",
+      "sha256": "931c5de5c70401d9324d5014c123802b4fb753000360ceb2f56c589403cd58c5"
+    },
+    {
+      "file": "timesbd.ttf",
+      "sha256": "54fbe2c70af7c85a97bed0573227e3ccc4b2486012e3ca2a40c6bc77065846f5"
+    },
+    {
+      "file": "timesbi.ttf",
+      "sha256": "3a29d114cb5229e8dbda5bef6c69be4a210a13b7277de4d66e9fc86963226f6c"
+    },
+    {
+      "file": "timesi.ttf",
+      "sha256": "e7f7a88b65188328aea58670f955022e23c712f55679524729da1e4e03c49d88"
+    }
+  ],
+  "open_fonts_manifest_sha256": "9722b82de91cb272786170f7c62d1408584773bc92b9294185bbaff7695c618a",
+  "visual_review": {
+    "rendered_deliverable_pages": 189,
+    "rendered_fixture_pages": 4,
+    "dpi": 144,
+    "contact_sheets_reviewed": 17,
+    "full_pages_reviewed": {
+      "reference": [
+        11,
+        37,
+        38,
+        41,
+        42,
+        71
+      ],
+      "open": [
+        12,
+        17
+      ]
+    },
+    "typography_fixture_body_reviewed": [
+      "reference",
+      "open"
+    ],
+    "poppler_page_reviewed": {
+      "profile": "reference",
+      "page": 41,
+      "dpi": 144
+    }
+  },
+  "existing_checks": {
+    "status": "passed",
+    "numbering_per_profile": 296,
+    "insert_combinations": 4,
+    "contents_combinations": 8,
+    "vector_demos_per_profile": 32,
+    "all_fonts_embedded": true,
+    "text_outside_pages": 0,
+    "automatic_table_continuation": true,
+    "merged_cells": true,
+    "table_f1": true,
+    "annex_e_native_demos": true
+  }
+}

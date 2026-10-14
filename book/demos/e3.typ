@@ -1,3 +1,6 @@
 #import "../../template/lib.typ": *
-#show: gbt.with(publication-layout: false, cover-page: false, end-rule: false, contents: false, two-sided: false, serial: "XXXXX", year: "XXXX", title: ([标准名称],), folio: [])
-= 范围
+#import "../specimens.typ": specimen-page, specimen-title, specimen-at, specimen-text
+#specimen-page()[
+  #specimen-title([标准名称])
+  #specimen-at(25.5, 62, specimen-text(font: hei, size: 12pt, weight: black-weight)[1#h(1em)范围])
+]

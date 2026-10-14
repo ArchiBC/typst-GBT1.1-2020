@@ -1,4 +1,9 @@
 #import "../../template/lib.typ": *
-#import "common.typ": placeholder
-#show: gbt.with(publication-layout: false, cover-page: false, main-title: false, end-rule: false, contents: false, two-sided: false, serial: "XXXXX", year: "XXXX", folio: [])
-#annex("A", [附录标题], normative: true)[#placeholder]
+#import "../specimens.typ": specimen-page, specimen-title, specimen-row
+#specimen-page()[
+  #specimen-title([附#h(1em)录#h(1em)A], size: 10.5pt)
+  #specimen-title([（规范性）], size: 10.5pt, y: 49)
+  #specimen-title([附录标题], size: 10.5pt, y: 53.5)
+  #specimen-row(42, 33, 63)
+  #specimen-row(44, 25.5, 67)
+]

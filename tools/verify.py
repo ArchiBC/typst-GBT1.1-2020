@@ -11,8 +11,9 @@ from pypdf import PdfReader
 import pypdfium2 as pdfium
 from compile import compile_file
 
-ALLOWED = ("SourceHanSerifSC", "SourceHanSansSC", "LiberationSerif", "LibertinusSerif", "NewCMMath", "DejaVuSansMono")
-REFERENCE = ("FZSSK", "FZHTK", "FZXBSJW", "E-BZ", "E-HZ", "E-FZ", "E-F1", "TimesNewRomanPSMT")
+ALLOWED = ("SourceHanSerifSC", "SourceHanSansSC", "LiberationSerif", "LibertinusSerif", "NewCMMath", "DejaVuSansMono",
+           "SimSun", "SimHei", "TimesNewRoman")
+REFERENCE = ("FZSSK", "FZHTK", "FZXBSJW", "E-BZ", "E-HZ", "E-FZ", "E-F1", "TimesNewRoman")
 def compact(text):
     return re.sub(r"\s+", "", text)
 
@@ -226,9 +227,21 @@ def main(profiles=('open',)):
     source=json.loads((ROOT/"docs/source-manifest.json").read_text("utf8"))
     from verify_numbering import main as numbering_checks
     numbering_checks(profiles=profiles)
+    from verify_alignment import main as alignment_checks
+    alignment_checks(profiles=profiles)
+    from verify_typography import main as typography_checks
+    typography_checks(profiles=profiles)
+    from verify_annex_e import verify_native
+    annex_e = verify_native(demo_manifest['font_profile'])
+    (ROOT/'output/qa/annex-e-verification.json').write_text(json.dumps(annex_e, ensure_ascii=False, indent=2), 'utf8')
+    from verify_explanations import main as explanation_checks
+    explanations = explanation_checks()
+    for filename in ('construction-standard-example.pdf', 'template-manual.pdf'):
+        inspect_file(ROOT/'output/pdf'/filename)
     output=dict(status="passed",source_pdf_sha256=source["sha256"],
                 source_text_extraction_used=False,compiler_tested="0.15.0",artifacts=reports,
-                demo_font_profile=demo_manifest['font_profile'],demos=demo_reports)
+                demo_font_profile=demo_manifest['font_profile'],demos=demo_reports,
+                explanations=explanations)
     (ROOT/"output/verification.json").write_text(json.dumps(output,ensure_ascii=False,indent=2),encoding="utf8")
     for r in reports: print(f"PASS {r['file']}: {r['pages']} pages, fonts embedded, no text outside page")
     print("PASS automatic table continuation, references, annex counters, starter and back cover")

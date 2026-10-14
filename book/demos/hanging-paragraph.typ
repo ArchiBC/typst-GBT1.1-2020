@@ -19,7 +19,7 @@
   #set par(first-line-indent: (amount: 18pt, all: true), leading: 12.5pt - note-size, spacing: 7pt)
   #show heading.where(supplement: none): it => context block(above: 10pt, below: 10pt, sticky: true)[
     #set par(first-line-indent: 0pt)
-    #black[#numbering(it.numbering, ..counter(heading).at(it.location()))#h(1em)#it.body]
+    #black(size: 10.5pt)[#numbering(it.numbering, ..counter(heading).at(it.location()))#h(1em)#it.body]
   ]
   #grid(columns: (1fr, 1fr), column-gutter: 14pt,
     panel([不#h(1em)正#h(1em)确], [

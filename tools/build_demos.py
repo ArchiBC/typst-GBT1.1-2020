@@ -14,7 +14,8 @@ def dependencies(profile='open'):
     paths = []
     for folder in ('template', 'book/demos', 'vendor/cetz-0.5.2', 'fonts'):
         paths.extend(p for p in (ROOT / folder).rglob('*') if p.is_file())
-    paths += [ROOT / 'book/illustrations.typ', ROOT/'tools/compile.py', ROOT/'tools/build_demos.py']
+    paths += [ROOT / 'book/illustrations.typ', ROOT / 'book/specimens.typ',
+              ROOT/'tools/compile.py', ROOT/'tools/build_demos.py']
     digest = hashlib.sha256()
     for p in sorted(paths):
         digest.update(p.relative_to(ROOT).as_posix().encode()); digest.update(p.read_bytes())

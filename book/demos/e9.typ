@@ -1,3 +1,6 @@
-#import "../../template/lib.typ": *
-#import "common.typ": placeholder
-#show: gbt.with(publication-layout: false, cover-page: false, main-title: false, end-rule: false, contents: false, two-sided: false, serial: "XXXXX", year: "XXXX", preface: [#placeholder], folio: [])
+#import "../specimens.typ": specimen-page, specimen-title, specimen-row
+#specimen-page()[
+  #specimen-title([前#h(32pt)言])
+  #specimen-row(42, 33, 62)
+  #specimen-row(44, 25.5, 66)
+]

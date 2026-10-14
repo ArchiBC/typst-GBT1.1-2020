@@ -1,12 +1,26 @@
 #import "../../template/lib.typ": *
 #import "common.typ": placeholder
-// Every page number is queried from an actual paginated example book.
-// The specimen starts its preface at III; include its second contents side.
-#show outline.where(target: figure.where(kind: table)): it => [#it#pagebreak()#box(height: 1pt)]
-#show: gbt.with(publication-layout: false, cover-page: false, end-rule: false,
-  two-sided: false, serial: "XXXXX", year: "XXXX", title: ([标准名称],),
-  preface: placeholder, introduction: placeholder, folio: [], contents-depth: 2,
-  figure-list: true, table-list: true)
+#import "../specimens.typ": specimen-page, specimen-title, specimen-at, specimen-contents
+#specimen-page()[
+  #specimen-title([目#h(32pt)次])
+  #specimen-at(25.5, 61.15, block(width: 164.5mm, specimen-contents()))
+]
+#pagebreak()
+#specimen-page(header: false)[]
+#pagebreak()
+// Query real chapters and counters: every outline entry and folio is automatic.
+#show: gbt.with(publication-layout: false, cover-page: false, main-title: false,
+  end-rule: false, contents: false, two-sided: false, serial: "XXXXX", year: "XXXX", folio: [])
+#counter(page).update(3)
+#set page(numbering: "I")
+#front-title([前#h(32pt)言], outlined: true)
+#placeholder
+#pagebreak()
+#front-title([引#h(32pt)言], outlined: true)
+#placeholder
+#pagebreak()
+#counter(page).update(1)
+#set page(numbering: "1")
 = 范围
 #placeholder
 = 规范性引用文件

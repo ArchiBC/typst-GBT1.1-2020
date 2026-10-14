@@ -1,5 +1,18 @@
-#import "../../template/lib.typ": *
-#import "common.typ": crosses
-#show: gbt.with(publication-layout: false, cover-page: false, main-title: false, end-rule: false, contents: false, two-sided: false, serial: "XXXXX", year: "XXXX", folio: [])
-#set par(leading: 15pt - body-size, spacing: 15pt - body-size)
-#references((crosses(38, line-height: 7.2pt), crosses(77, line-height: 7.2pt), crosses(34, line-height: 7.2pt), crosses(93, line-height: 7.2pt), crosses(57, line-height: 7.2pt)))
+#import "../specimens.typ": specimen-page, specimen-title, specimen-at, specimen-text, specimen-row
+#specimen-page()[
+  #specimen-title([参#h(0.5em)考#h(0.5em)文#h(0.5em)献], size: 10.5pt)
+  #let y = 54.5
+  #for (i, count) in (38, 77, 34, 93, 57).enumerate() {
+    specimen-at(33, y, specimen-text("[" + str(i + 1) + "]"))
+    let first = calc.min(count, 40)
+    specimen-row(first, 41, y)
+    count -= first
+    y += 4.35
+    while count > 0 {
+      let row = calc.min(count, 44)
+      specimen-row(row, 25.5, y)
+      count -= row
+      y += 4.35
+    }
+  }
+]

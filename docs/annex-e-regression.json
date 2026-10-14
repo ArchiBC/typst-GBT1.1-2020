@@ -1,0 +1,390 @@
+{
+  "date": "2026-10-12",
+  "passed": true,
+  "compiler": "Typst 0.15.0",
+  "source": {
+    "file": "GBT+1.1-2020.pdf",
+    "sha256": "df673d9b44c6cf720cb46d94e533e0e14ddfdbadd65d84dfeb0acad15d1e38a3",
+    "physical_pages_reviewed": [
+      52,
+      53,
+      54,
+      55,
+      56,
+      57,
+      58,
+      59,
+      60,
+      61,
+      62,
+      63,
+      64
+    ],
+    "text_extraction_used": false
+  },
+  "source_to_output": [
+    {
+      "figure": "E.1",
+      "source_page": 53,
+      "output_page": 58
+    },
+    {
+      "figure": "E.2",
+      "source_page": 54,
+      "output_page": 59
+    },
+    {
+      "figure": "E.3",
+      "source_page": 55,
+      "output_page": 60
+    },
+    {
+      "figure": "E.4",
+      "source_page": 56,
+      "output_page": 61
+    },
+    {
+      "figure": "E.5",
+      "source_page": 57,
+      "output_page": 62
+    },
+    {
+      "figure": "E.6",
+      "source_page": 58,
+      "output_page": 63
+    },
+    {
+      "figure": "E.7",
+      "source_page": 59,
+      "output_page": 64
+    },
+    {
+      "figure": "E.8",
+      "source_page": 60,
+      "output_page": 65
+    },
+    {
+      "figure": "E.9",
+      "source_page": 61,
+      "output_page": 66
+    },
+    {
+      "figure": "E.10",
+      "source_page": 62,
+      "output_page": 67
+    },
+    {
+      "figure": "E.11",
+      "source_page": 63,
+      "output_page": 68
+    },
+    {
+      "figure": "E.12",
+      "source_page": 64,
+      "output_page": 69
+    }
+  ],
+  "review": {
+    "dpi": 180,
+    "reference_pages_visually_reviewed": [
+      57,
+      58,
+      59,
+      60,
+      61,
+      62,
+      63,
+      64,
+      65,
+      66,
+      67,
+      68,
+      69
+    ],
+    "open_pages_visually_reviewed": [
+      57,
+      58,
+      59,
+      60,
+      61,
+      62,
+      63,
+      64,
+      65,
+      66,
+      67,
+      68,
+      69
+    ],
+    "original_scanned_pages_embedded": false,
+    "source_edits": "editable Typst lettering and vector geometry"
+  },
+  "profiles": [
+    {
+      "font_profile": "reference",
+      "pages": 79,
+      "before_sha256": "5f200795931743bdd11deaaf5c4159e29b1db24ff2b3e914ba267cfc61515319",
+      "sha256": "df12992f107998888972fb6186ede6f59d46dc17fd0aec210e459424299121e3",
+      "normalized_text_changed_pages": [
+        58,
+        59,
+        62,
+        63,
+        64,
+        68
+      ],
+      "raster_changed_pages_144dpi": [
+        58,
+        59,
+        60,
+        61,
+        62,
+        63,
+        64,
+        65,
+        66,
+        67,
+        68,
+        69
+      ],
+      "pages_outside_annex_e_unchanged": true,
+      "file": "output/pdf/gbt-1.1-2020-replica.pdf",
+      "native_specimens": [
+        {
+          "figure": "E.1",
+          "placeholders": 88
+        },
+        {
+          "figure": "E.2",
+          "placeholders": 88
+        },
+        {
+          "figure": "E.3",
+          "placeholders": 0
+        },
+        {
+          "figure": "E.4",
+          "placeholders": 0
+        },
+        {
+          "figure": "E.5",
+          "placeholders": 0,
+          "publisher_baseline_error_pt": 0.0,
+          "date_baseline_error_pt": 0.0,
+          "replacement_baseline_error_pt": 0.0,
+          "title_ink_center_mm": 104.9684959411621
+        },
+        {
+          "figure": "E.6",
+          "placeholders": 2,
+          "publisher_baseline_error_pt": 0.0,
+          "date_baseline_error_pt": 0.0,
+          "replacement_baseline_error_pt": 0.0,
+          "title_ink_center_mm": 104.9684959411621,
+          "category_baseline_error_pt": 0.0
+        },
+        {
+          "figure": "E.7",
+          "placeholders": 4,
+          "publisher_baseline_error_pt": 0.0,
+          "date_baseline_error_pt": 0.0,
+          "replacement_baseline_error_pt": 0.0,
+          "title_ink_center_mm": 104.9684959411621
+        },
+        {
+          "figure": "E.8",
+          "placeholders": 132
+        },
+        {
+          "figure": "E.9",
+          "placeholders": 86
+        },
+        {
+          "figure": "E.10",
+          "placeholders": 299
+        },
+        {
+          "figure": "E.11",
+          "placeholders": 46
+        },
+        {
+          "figure": "E.12",
+          "placeholders": 86
+        }
+      ],
+      "embedded_fonts": true,
+      "raster_image_objects": 0,
+      "alignment": {
+        "file": "output/pdf/gbt-1.1-2020-replica.pdf",
+        "pages_scanned": 79,
+        "publisher_left_edges_pt": [
+          190.40802001953125,
+          190.40802001953125
+        ],
+        "term_reference_error_pt": 0.0,
+        "diagram_label_error_pt": 0.0,
+        "note_labels_checked": 33,
+        "max_note_baseline_error_pt": 0,
+        "ordinary_pairs_checked": 2511,
+        "intentional_offsets": [
+          {
+            "page": 18,
+            "first": "必备",
+            "second": "资料性",
+            "delta_pt": 1.71429443359375
+          },
+          {
+            "page": 18,
+            "first": "附加信息",
+            "second": "条文、注、脚注、指明附录",
+            "delta_pt": 1.71429443359375
+          }
+        ]
+      }
+    },
+    {
+      "font_profile": "open",
+      "pages": 79,
+      "before_sha256": "005ea5f288ed74751f4357f6acd9d1cd200a2f45e1cba3ff4b596360cda163a5",
+      "sha256": "1b5b4abbd26f44da875a647c30edb5bfc14cd22c8e97268f73f178a4e52a96bf",
+      "normalized_text_changed_pages": [
+        58,
+        59,
+        62,
+        63,
+        64,
+        68
+      ],
+      "raster_changed_pages_144dpi": [
+        58,
+        59,
+        60,
+        61,
+        62,
+        63,
+        64,
+        65,
+        66,
+        67,
+        68,
+        69
+      ],
+      "pages_outside_annex_e_unchanged": true,
+      "file": "output/pdf/gbt-1.1-2020-open-fonts.pdf",
+      "native_specimens": [
+        {
+          "figure": "E.1",
+          "placeholders": 88
+        },
+        {
+          "figure": "E.2",
+          "placeholders": 88
+        },
+        {
+          "figure": "E.3",
+          "placeholders": 0
+        },
+        {
+          "figure": "E.4",
+          "placeholders": 0
+        },
+        {
+          "figure": "E.5",
+          "placeholders": 0,
+          "publisher_baseline_error_pt": 0.0,
+          "date_baseline_error_pt": 0.0,
+          "replacement_baseline_error_pt": 0.0,
+          "title_ink_center_mm": 104.92124699486625
+        },
+        {
+          "figure": "E.6",
+          "placeholders": 2,
+          "publisher_baseline_error_pt": 0.0,
+          "date_baseline_error_pt": 0.0,
+          "replacement_baseline_error_pt": 0.0,
+          "title_ink_center_mm": 104.92124699486625,
+          "category_baseline_error_pt": 0.0
+        },
+        {
+          "figure": "E.7",
+          "placeholders": 4,
+          "publisher_baseline_error_pt": 0.0,
+          "date_baseline_error_pt": 0.0,
+          "replacement_baseline_error_pt": 0.0,
+          "title_ink_center_mm": 104.92124699486625
+        },
+        {
+          "figure": "E.8",
+          "placeholders": 132
+        },
+        {
+          "figure": "E.9",
+          "placeholders": 86
+        },
+        {
+          "figure": "E.10",
+          "placeholders": 299
+        },
+        {
+          "figure": "E.11",
+          "placeholders": 46
+        },
+        {
+          "figure": "E.12",
+          "placeholders": 86
+        }
+      ],
+      "embedded_fonts": true,
+      "raster_image_objects": 0,
+      "alignment": {
+        "file": "output/pdf/gbt-1.1-2020-open-fonts.pdf",
+        "pages_scanned": 79,
+        "publisher_left_edges_pt": [
+          196.47244262695312,
+          196.47244262695312
+        ],
+        "term_reference_error_pt": 0.0,
+        "diagram_label_error_pt": 0.0,
+        "note_labels_checked": 33,
+        "max_note_baseline_error_pt": 0,
+        "ordinary_pairs_checked": 2142,
+        "intentional_offsets": [
+          {
+            "page": 60,
+            "first": "25",
+            "second": "1范围",
+            "delta_pt": 0.69134521484375
+          }
+        ]
+      }
+    }
+  ],
+  "other_artifacts": [
+    {
+      "file": "output/pdf/standard-example.pdf",
+      "sha256": "2846013cfae56303d512be9f47feb34f61a12726d1e39353191802baa2ccfef0",
+      "raster_changed_pages_144dpi": []
+    },
+    {
+      "file": "output/pdf/template-manual.pdf",
+      "sha256": "9f2f31bae79be2508540abac6eb6db575575d0b79bdbcf1099ec82669f80659a",
+      "raster_changed_pages_144dpi": []
+    }
+  ],
+  "verification": {
+    "status": "passed",
+    "book_numbered_sections_checked": 296,
+    "numbering_insertion_cases": 4,
+    "untitled_contents_cases": 8,
+    "fonts_embedded": true,
+    "no_text_outside_page": true,
+    "generated_vector_fragments_per_profile": 32,
+    "automatic_table_continuation_and_merged_cells": true,
+    "annex_e_native_geometry": true
+  },
+  "commands": [
+    "python tools/build.py --font-profile both",
+    "python tools/verify.py --font-profile both",
+    "python tools/verify_annex_e.py"
+  ]
+}

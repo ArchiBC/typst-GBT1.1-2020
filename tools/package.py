@@ -8,13 +8,15 @@ from bootstrap import prepare
 ROOT = Path(__file__).resolve().parents[1]
 OUTPUT = ROOT / 'output/typst-gbt-1.1-2020.zip'
 PDF_FILES = ('gbt-1.1-2020-open-fonts.pdf', 'gbt-1.1-2020-replica.pdf',
-             'standard-example.pdf', 'template-manual.pdf')
+             'standard-example.pdf', 'template-manual.pdf',
+             'gb55031-2022-replica.pdf', 'construction-standard-example.pdf')
 TOOLS = ('bootstrap.py', 'build.py', 'build_demos.py', 'compile.py', 'clean.py',
-         'package.py', 'render_outputs.py', 'verify.py', 'verify_numbering.py',
-         'verify_bundle.py', 'requirements.txt', 'setup.ps1', 'build.ps1')
-FIXTURES = ('automatic-numbering.typ', 'book-numbering.json', 'components.typ',
+         'package.py', 'render_outputs.py', 'verify.py', 'verify_numbering.py', 'verify_alignment.py',
+         'verify_bundle.py', 'verify_annex_e.py', 'verify_typography.py', 'verify_explanations.py', 'requirements.txt', 'setup.ps1', 'build.ps1')
+FIXTURES = ('alignment.typ', 'typography.typ', 'automatic-numbering.typ', 'book-numbering.json', 'components.typ',
             'gb-mark.typ', 'index-and-merged-cells.typ', 'layout-variants.typ',
-            'untitled-contents.typ')
+            'untitled-contents.typ', 'explanations.typ', 'construction-profile.typ', 'moved-explanations.typ',
+            'semantic-content.typ', 'semantic-entry.typ')
 FONT_DOCUMENTS = ('README.md', 'manifest.json', 'Liberation-LICENSE.txt',
                   'SourceHanSans-LICENSE.txt', 'SourceHanSerif-LICENSE.txt')
 
@@ -41,7 +43,7 @@ def members():
     files = [ROOT / name for name in ('README.md', 'LICENSE', 'THIRD_PARTY.md',
                                      'typst.toml', 'lib.typ', '.gitignore', '.gitattributes')]
     for folder, suffixes in (('template', {'.typ', '.json', '.txt'}),
-                             ('examples', {'.typ'}), ('book', {'.typ'}),
+                             ('examples', {'.typ'}), ('book', {'.typ', '.png'}),
                              ('vendor', {'.typ', '.toml', '.md', '.wasm'}),
                              ('docs', {'.md', '.json', '.csv'})):
         files.extend(source_files(folder, suffixes))
